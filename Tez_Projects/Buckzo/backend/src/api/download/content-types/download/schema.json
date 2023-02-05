@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "downloads",
+  "info": {
+    "singularName": "download",
+    "pluralName": "downloads",
+    "displayName": "Downloads",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Content": {
+      "type": "richtext"
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "File": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "DownloadCategories": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::download-categorie.download-categorie"
+    },
+    "SubTitle": {
+      "type": "richtext"
+    },
+    "Title": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

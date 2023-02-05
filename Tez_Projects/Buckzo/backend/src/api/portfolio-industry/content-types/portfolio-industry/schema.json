@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "portfolio_industries",
+  "info": {
+    "singularName": "portfolio-industry",
+    "pluralName": "portfolio-industries",
+    "displayName": "PortfolioIndustries",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "NavURL": {
+      "type": "string"
+    },
+    "Title": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

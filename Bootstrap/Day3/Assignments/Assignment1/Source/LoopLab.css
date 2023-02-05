@@ -1,0 +1,70 @@
+body{
+    background: #333;
+    color: #fff;
+}
+
+.navbar{
+   opacity: 0.8;
+}
+
+#Home{
+    background: url('../../../Assets/home.jpg') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 700px;
+}
+
+#Home .home-inner{
+    padding-top: 150px;
+}
+
+#Home .dark-overlay{
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    min-height: 700px;
+}
+
+.card-form{
+    opacity: 0.8;
+}
+
+.fa{
+    background-color: #fff;
+    padding: 4px;
+    font-size: 30px;
+    border-radius: 6px;
+}
+
+#Explore{
+    background: #333;
+}
+
+#Explore-content .fa{
+    color: #fff;
+    background: #333;
+    padding: 4px;
+    border-radius: 6px;
+    font-size: 30px;
+}
+
+#Create-content{
+    background: #333;
+}
+
+#Create-content .fa{
+    background-color: #fff;
+    padding: 4px;
+    font-size: 30px;
+    border-radius: 6px;
+}
+
+#Share-content .fa{
+    color: #fff;
+    background: #333;
+    padding: 4px;
+    border-radius: 6px;
+    font-size: 30px;
+}

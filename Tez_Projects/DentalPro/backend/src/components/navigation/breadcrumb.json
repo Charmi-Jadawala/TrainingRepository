@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_navigation_breadcrumb",
+  "info": {
+    "displayName": "055 - Breadcrumb",
+    "icon": "greater-than",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "VueReferenceCode": {
+      "type": "string",
+      "required": true,
+      "default": "Breadcrumb"
+    },
+    "GuideURL": {
+      "type": "string"
+    },
+    "BreadcrumbLevels": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::page.page"
+    }
+  }
+}

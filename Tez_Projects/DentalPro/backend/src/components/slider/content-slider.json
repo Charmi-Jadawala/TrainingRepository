@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_slider_contentslider",
+  "info": {
+    "displayName": "006 - Simple Content Slider",
+    "icon": "grip-horizontal",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "SimpleContentBanner": {
+      "type": "component",
+      "repeatable": true,
+      "component": "banner.content-banner",
+      "required": true
+    },
+    "VueReferenceCode": {
+      "type": "string",
+      "default": "SCS",
+      "required": true
+    },
+    "GuideURL": {
+      "type": "string"
+    }
+  }
+}

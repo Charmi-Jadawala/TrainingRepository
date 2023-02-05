@@ -1,0 +1,184 @@
+<div class="container-fluid bg-primary text-white">
+    <div class="container ps-1">
+        <div class="row">
+            <div class="col-6 text-start">
+                <h2 class="p-2 m-0"><span class="ion-plus-round"></span>&nbsp;&nbsp;Add Course</h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container border border-1 my-3 p-0">
+    <h4 class="bg-light border-bottom mb-0 p-2">Add Course</h4>
+    <form [formGroup]="courseForm" (ngSubmit)="onCourseSubmit()" class="p-3">
+        <div>
+            <div class="mb-3">
+                <label for="cname" class="form-label pb-1 mb-0 fs-5">Course Name<span class="text-danger">*</span></label>
+                <input type="text" id="cname" class="form-control" formControlName="courseName">
+            </div>
+            <div class="mb-3">
+                <label for="about" class="form-label pb-1 mb-0 fs-5">About Course</label>
+                <angular-editor id="about" formControlName="about" [config]="editorConfig">
+                </angular-editor>
+            </div>
+            <div class="mb-3">
+                <label for="offby" class="form-label pb-1 mb-0 fs-5">Offerred By<span class="text-danger">*</span></label>
+                <input type="text" id="offby" class="form-control" formControlName="offerredBy">
+            </div>
+            <div class="mb-3">
+                <label for="offbyabout" class="form-label pb-1 mb-0 fs-5">About University</label>
+                <textarea id="offbyabout" class="form-control" formControlName="offerredByAbout" rows="3"></textarea>
+            </div>
+            <div class="row mb-3">
+                <div class="col">
+                    <label for="category" class="form-label pb-1 mb-0 fs-5">Category<span class="text-danger">*</span></label>
+                    <select id="category" class="form-select" formControlName="categoryId">
+                        <option value="" selected disabled hidden>Please select course category</option>
+                        <option *ngFor="let c of categories" [ngValue]="c.categoryId">
+                            {{ c.categoryName }}
+                        </option>
+                    </select>
+                </div>
+                <div class="col">
+                    <label for="subcategory" class="form-label pb-1 mb-0 fs-5">Subcategory<span class="text-danger">*</span></label>
+                    <select id="subcategory" class="form-select" formControlName="subCategoryId">
+                        <option value="" selected disabled hidden>Please select course subcategory</option>
+                        <option *ngFor="let s of subCategories" [ngValue]="s.subCategoryId">
+                            {{ s.subCategoryName }}
+                        </option>
+                    </select>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col">
+                    <label for="duration" class="form-label pb-1 mb-0 fs-5">Duration<span class="text-danger">*</span></label>
+                    <select id="duration" class="form-select" formControlName="durationId">
+                        <option value="" selected disabled hidden>Please select course duration</option>
+                        <option *ngFor="let d of durations" [ngValue]="d.id">
+                            {{ d.jsonData }}
+                        </option>
+                    </select>
+                </div>
+                <div class="col">
+                    <label for="language" class="form-label pb-1 mb-0 fs-5">Language<span class="text-danger">*</span></label>
+                    <select id="language" class="form-select" formControlName="languageId">
+                        <option value="" selected disabled hidden>Please select course language</option>
+                        <option *ngFor="let lang of languages" [ngValue]="lang.id">
+                            {{ lang.jsonData }}
+                        </option>
+                    </select>
+                </div>
+                <div class="col">
+                    <label for="level" class="form-label pb-1 mb-0 fs-5">Level<span class="text-danger">*</span></label>
+                    <select id="level" class="form-select" formControlName="levelId">
+                        <option value="" selected disabled hidden>Please select course level</option>
+                        <option *ngFor="let l of levels" [ngValue]="l.id">
+                            {{ l.jsonData }}
+                        </option>
+                    </select>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col d-none">
+                    <label for="courseImage" class="form-label pb-1 mb-0 fs-5">Course Image</label>
+                    <input type="file" class="form-control" id="courseImage" formControlName="courseImage" />
+                </div>
+                <div class="col">
+                    <label for="coverImage" class="form-label  pb-1 mb-0 fs-5">Cover Image</label>
+                    <input type="file" class="form-control" id="coverImage" (change)="insertImage($event)" />
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col">
+                    <label for="price" class="form-label pb-1 mb-0 fs-5 text-muted">Price</label>
+                    <input type="number" id="price" class="form-control text-muted" formControlName="price" readonly>
+                </div>
+                <div class="col">
+                    <label for="stars" class="form-label pb-1 mb-0 fs-5 text-muted">Stars</label>
+                    <input type="number" id="stars" class="form-control text-muted" formControlName="stars" readonly>
+                </div>
+                <div class="col">
+                    <label for="ratings" class="form-label pb-1 mb-0 fs-5 text-muted">Ratings</label>
+                    <input type="number" id="ratings" class="form-control text-muted" formControlName="ratings" readonly>
+                </div>
+                <div class="col">
+                    <label for="enr" class="form-label pb-1 mb-0 fs-5 text-muted">Already enrolled</label>
+                    <input type="number" id="enr" class="form-control text-muted" formControlName="alreadyEnrolled" readonly>
+                </div>
+            </div>
+
+            <div class="container border border-1 rounded-2 my-3 p-0" formArrayName="modules">
+                <h5 class="bg-light border-bottom mb-0 p-2">Add Course Module Details</h5>
+
+                <div *ngFor="let mod of getModules().controls; let i = index" class="p-3">
+                    <div [formGroupName]="i">
+                        <div class="mb-3 text-primary fs-6">Module - {{ i+1 }}</div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="moduleName" formControlName="moduleName"
+                                placeholder="Module Name" />
+                            <label for="moduleName">Module Name<span class="text-danger">*</span></label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="number" class="form-control" id="weekNo" formControlName="weekNo"
+                                placeholder="Week Number" />
+                            <label for="weekNo">Week No<span class="text-danger">*</span></label>
+                        </div>
+
+                        <div class="container border border-1 rounded-2 my-3 p-0" formArrayName="topics">
+                            <h6 class="bg-light border-bottom mb-0 p-2">Add Module - {{ i+1 }} Topics' Details</h6>
+
+                            <div *ngFor="let top of getTopics(i).controls; let j = index" class="p-3">
+                                <div [formGroupName]="j">
+                                    <div class="mb-3 text-primary fs-6">Topic - {{ j+1 }}</div>
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="topicTitle"
+                                            formControlName="topicTitle" placeholder="Topic Title" />
+                                        <label for="topicTitle">Topic Title<span class="text-danger">*</span></label>
+                                    </div>
+
+                                    <div class="form-floating mb-3">
+                                        <select id="type" class="form-select" formControlName="type">
+                                            <option value="Reading">Reading</option>
+                                            <option value="Video">Video</option>
+                                        </select>
+                                        <label for="type">Content Type<span class="text-danger">*</span></label>
+                                    </div>
+
+                                    <div class="form-floating mb-3">
+                                        <input type="number" class="form-control" id="duration"
+                                            formControlName="duration" placeholder="Duration" />
+                                        <label for="duration">Duration<span class="text-danger">*</span></label>
+                                    </div>
+
+                                    <div class="form-floating mb-3">
+                                        <angular-editor id="description" formControlName="description"
+                                            [config]="editorConfig" placeholder="Content*">
+                                        </angular-editor>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button (click)="addTopic(i)" type="button" class="btn btn-primary ms-3 my-3">Add
+                                Topic</button>
+                        </div>
+                    </div>
+                </div>
+
+                <button (click)="addModule()" type="button" class="btn btn-primary ms-3 my-3">Add
+                    Module</button>
+            </div>
+        </div>
+        <div class="row p-2">
+            <div class="col-sm-4 col-lg-3"></div>
+            <div class="col-3 d-none d-lg-block"></div>
+            <div class="col-sm-4 col-lg-3 d-grid pe-0">
+                <button type="submit" [disabled]="courseForm.invalid" class="btn btn-success d-block my-1 my-sm-0"><span
+                        class="ion-checkmark-round"></span>&nbsp;&nbsp;Add Course</button>
+            </div>
+            <div class="col-sm-4 col-lg-3 d-grid pe-1">
+                <button type="reset" class="btn btn-danger"><span class="ion-close-round"></span>&nbsp;Cancel
+                </button>
+            </div>
+        </div>
+    </form>
+</div>

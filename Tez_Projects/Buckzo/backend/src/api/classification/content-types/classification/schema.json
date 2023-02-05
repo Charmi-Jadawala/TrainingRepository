@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "classifications",
+  "info": {
+    "singularName": "classification",
+    "pluralName": "classifications",
+    "displayName": "Classifications",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

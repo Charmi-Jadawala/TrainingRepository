@@ -1,0 +1,55 @@
+{
+  "collectionName": "components_data_control_get_all_data",
+  "info": {
+    "displayName": "045 - Get All Data",
+    "icon": "server",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "CollectionType": {
+      "type": "enumeration",
+      "enum": [
+        "Blogs",
+        "BlogCategories",
+        "BlogAuthors",
+        "BlogTags",
+        "Careers",
+        "CaseStudies",
+        "CaseStudieCategories",
+        "Classifications",
+        "Guides",
+        "GuideCategories",
+        "NewsItems",
+        "NewsItemCategories",
+        "Portfolios",
+        "PortfolioDomainCategories",
+        "PortfolioIndustries",
+        "PortfolioTechnologies",
+        "Podcasts",
+        "PodcastCategories",
+        "Videos",
+        "VideoCategories",
+        "WhitePapers",
+        "WhitePaperCategories"
+      ]
+    },
+    "VueReferenceCode": {
+      "type": "string",
+      "default": "GAD",
+      "required": true
+    },
+    "GuideURL": {
+      "type": "string"
+    },
+    "Limit": {
+      "type": "string",
+      "default": "10",
+      "minLength": 1,
+      "maxLength": 1000
+    },
+    "ComponentReferencePath": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,85 @@
+﻿@using System.Data
+@using System.Data.SqlClient
+@model System.Data.DataTable
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Home</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="container px-5">
+        <h1 class="display-6 text-center">Student CRUD</h1>
+        <div class="d-flex my-3 justify-content-end">
+            @Html.ActionLink("Add New Record", "Insert", null, new { @class = "btn btn-outline-primary" })
+            @using (Html.BeginForm())
+            {
+                <div class="input-group ms-2">
+                    @Html.TextBox("SearchString", ViewBag.FilterValue as string, new { @class = "form-control", @placeholder="Search by Name" })
+                    <button class="btn btn-primary" type="submit">Search</button>
+                </div>
+            }
+        </div>
+        @{
+            if (Model.Rows.Count > 0)
+            {
+                <table class="table table-hover fs-6">
+                    <thead class="table-dark display-6 fs-4">
+                        <tr>
+                            <td>Student ID</td>
+                            <td>@Html.ActionLink("Name", "Index", new { SortBy = ViewBag.SortByName }, new { @class = "custom-link" })</td>
+                            <td>@Html.ActionLink("Age", "Index", new { SortBy = ViewBag.SortByAge }, new { @class = "custom-link" })</td>
+                            <td>Gender</td>
+                            <td></td>
+                        </tr>
+                    </thead>
+                    @foreach (DataRow dr in Model.Rows)
+                    {
+                        string modelId = "deleteConfirm" + @dr["student_id"].ToString();
+                        <tr>
+                            <td>@dr["student_id"].ToString() </td>
+                            <td>@dr["student_name"].ToString() </td>
+                            <td>@dr["student_age"].ToString() </td>
+                            <td>@dr["student_gender"].ToString() </td>
+                            <td>
+                                @Html.ActionLink("Edit ", "Edit", new { studentId = dr["student_id"].ToString() }, new { @class = "btn    btn-outline-warning" })
+                                <button type="button" class="btn btn-outline-danger ms-2" data-bs-toggle="modal" data-bs-target="#@{@modelId}">
+                                    Delete
+                                </button>
+                                <div class="modal fade" id="@{@modelId}">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-body display-6 fs-3 text-dark">
+                                                <div>
+                                                    Are you sure you want to delete the record ?
+                                                </div>
+                                                <div class="d-flex justify-content-center ms-1 mt-3">
+                                                    @Html.ActionLink("Delete", "DeleteRecord", new { studentId = dr["student_id"].ToString() }, new { @class = "btn btn-outline-success" })
+                                                    <button type="button" class="btn btn-outline-danger ms-2" data-bs-dismiss="modal">Cancel</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>                       
+                    }
+                </table>
+            }
+            else
+            {
+                <span> No records found!!</span>
+            }
+        }
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    <script src="~/Scripts/bootstrap.js"></script>
+</body>
+</html>

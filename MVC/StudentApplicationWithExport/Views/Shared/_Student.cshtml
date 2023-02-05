@@ -1,0 +1,11 @@
+﻿@model System.Data.DataTable
+
+<div class="container p-5">
+    <h1 class="display-6 text-center">Student Details</h1>
+    <div class="my-3 display-6 fs-3">
+        <p><span>Id: </span><span class="fst-italic">@Model.Rows[0]["student_id"] </span></p>
+        <p><span>Name: </span><span class="fst-italic">@Model.Rows[0]["student_name"] </span></p>
+        <p><span>Age: </span><span class="fst-italic">@Model.Rows[0]["student_age"] </span></p>
+        <p><span>Gender: </span><span class="fst-italic">@Model.Rows[0]["student_gender"] </span></p>
+    </div>
+</div>

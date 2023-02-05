@@ -1,0 +1,10 @@
+.main{
+    height: 30vh;
+    background: rgb(238,174,202);
+    background: linear-gradient(90deg, rgb(255, 204, 51), rgb(122, 0, 25));
+}
+
+.format{
+    text-transform: uppercase;
+}
+    

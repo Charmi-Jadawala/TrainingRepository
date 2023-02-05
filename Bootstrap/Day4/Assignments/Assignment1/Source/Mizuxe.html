@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mizuxe</title>
+    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Mizuxe.css">
+    <script src="../../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md bg-light navbar-light border-bottom border-3 border-primary px-5 sticky-top bg-opacity-75">
+        <div class="container px-lg-5">
+            <a href="#" class="navbar-brand fw-light fs-sm-2 h2 mb-0 py-0">
+                <img src="../../../Assets/mlogo.png" alt="mlogo" class="logo">
+                <strong>MIZUXE</strong></a>
+            <button class="navbar-toggler ms-sm-auto m-1 m-sm-0 p-1" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav text-muted ms-auto text-md-center ps-2 ps-md-0">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#authors">Meet The Authors</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="home">
+        <div class="info-overlay">
+            <div class="container text-white">
+                <div class="row mx-lg-4">
+                    <div class="col-12 col-md-6 text-center my-auto">
+                        <h1 class="display-1 text-capitalize">do what you dream of...</h1>
+                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium soluta quasi.</p>
+                        <a href="#" class="btn btn-outline-light mb-3"><span class="ion-arrow-right-c"></span>&nbsp;&nbsp;Read More</a>
+                    </div>
+                    <div class="col-md-6 text-center my-auto d-none d-md-block">
+                        <img src="../../../Assets/book.png" alt="book" class="img-fluid">
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </div>
+
+    <div class="form container-fluid bg-dark px-lg-5 py-4">
+        <div class="row row-cols-1 row-cols-sm-3 mx-lg-5 p-4">
+            <div class="col m-2 m-sm-0">
+                <input type="text" class="form-control" placeholder="Name">
+            </div>
+            <div class="col m-2 m-sm-0">
+                <input type="email" class="form-control" placeholder="Email">
+            </div>
+            <div class="col m-2 m-sm-0">
+                <button class="form-control btn btn-primary"><span class="ion-android-drafts">&nbsp;Subscribe</span></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="info container-fluid bg-white px-lg-5">
+        <div class="d-flex flex-wrap flex-lg-nowrap justify-content-between align-items-center mx-lg-4 p-4 px-lg-5">
+            <div class="border border-2 border-primary text-center m-2 p-1">
+                <h3 class="text-primary pt-3">Be Better</h3>
+                <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis similique aliquam suscipit debitis?</p>
+            </div>
+            <div class="border border-2 border-primary bg-primary text-center text-white m-2 p-1">
+                <h3 class="pt-3">Be Smarter</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis similique aliquam suscipit debitis?</p>
+            </div>
+            <div class="border border-2 border-primary text-center m-2 p-1">
+                <h3 class="text-primary pt-3">Be Faster</h3>
+                <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis similique aliquam suscipit debitis?</p>
+            </div>
+            <div class="border border-2 border-primary bg-primary text-center text-white m-2 p-1">
+                <h3 class="pt-3">Be Stronger</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis similique aliquam suscipit debitis?</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="accord bg-light" id="about">
+        <div class="container px-lg-5 text-center">
+            <div class="row p-5">
+                <div class="col-lg-6 mx-auto">
+                    <h3 class="text-primary text-capitalize">why this book ?</h3>
+                    <p class="text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam culpa velit minus unde voluptate qui ipsum</p>
+                    <hr class="text-muted m-3" />
+                </div>
+            </div>
+            <div class="row pb-5">
+                <div class="col-lg-9 mx-auto">
+                    <div id="accordion">
+                        <div class="card">
+                            <div class="card-header">
+                                <a href="#a1" class="btn" data-bs-toggle="collapse">
+                                    <span class="ion-android-arrow-dropdown-circle">&nbsp;&nbsp;Get Inspired</span>
+                                </a>
+                            </div>
+                            <div id="a1" class="collapse show" data-bs-parent="#accordion">
+                                <div class="card-body">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam odio ullam expedita delectus saepe voluptas suscipit 
+                                    velit adipisci, atque eius dicta, maiores beatae fuga fugiat nostrum dolorem repellat porro sapiente.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <a href="#a2" class="collapsed btn" data-bs-toggle="collapse">
+                                    <span class="ion-android-arrow-dropdown-circle">&nbsp;&nbsp;Gain The Knowledge</span>
+                                </a>
+                            </div>
+                            <div id="a2" class="collapse" data-bs-parent="#accordion">
+                                <div class="card-body">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam odio ullam expedita delectus saepe voluptas suscipit 
+                                    velit adipisci, atque eius dicta, maiores beatae fuga fugiat nostrum dolorem repellat porro sapiente.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <a href="#a3" class="collapsed btn" data-bs-toggle="collapse">
+                                    <span class="ion-android-arrow-dropdown-circle">&nbsp;&nbsp;Open your mind</span>
+                                </a>
+                            </div>
+                            <div id="a3" class="collapse" data-bs-parent="#accordion">
+                                <div class="card-body">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam odio ullam expedita delectus saepe voluptas suscipit 
+                                    velit adipisci, atque eius dicta, maiores beatae fuga fugiat nostrum dolorem repellat porro sapiente.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container px-lg-5 text-center" id="authors">
+        <div class="row p-5">
+            <div class="col-lg-6 mx-auto">
+                <h3 class="text-primary text-capitalize">meet the authors</h3>
+                <p class="text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam culpa velit minus unde voluptate qui ipsum</p>
+                <hr class="text-muted m-3" />
+            </div>
+        </div>
+        <div class="row p-4">
+            <div class="col-md-6 col-lg-3">
+                <div class="card text-center">
+                    <img src="../../../Assets/person1.jpg" alt="person1" class="i1 img-fluid rounded-circle w-50 mx-auto">
+                    <div class="card-body">
+                        <h4 class="card-title">Susan Williams</h4>
+                        <p class="text-muted">Lead Writer</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil aperiam culpa est minus commodi velit?</p>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <span class="ion-social-facebook text-primary fs-3 p-3"></span>
+                            <span class="ion-social-twitter text-primary fs-3 p-3"></span>
+                            <span class="ion-social-googleplus text-primary fs-3 p-3"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card text-center">
+                    <img src="../../../Assets/person2.jpg" alt="person2" class="i1 img-fluid rounded-circle w-50 mx-auto">
+                    <div class="card-body">
+                        <h4 class="card-title">Grace Smith</h4>
+                        <p class="text-muted">Co&hyphen;Writer</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil aperiam culpa est minus commodi velit?</p>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <span class="ion-social-facebook text-primary fs-3 p-3"></span>
+                            <span class="ion-social-twitter text-primary fs-3 p-3"></span>
+                            <span class="ion-social-googleplus text-primary fs-3 p-3"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card text-center">
+                    <img src="../../../Assets/person3.jpg" alt="person3" class="i1 img-fluid rounded-circle w-50 mx-auto">
+                    <div class="card-body">
+                        <h4 class="card-title">John Doe</h4>
+                        <p class="text-muted">Editor</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil aperiam culpa est minus commodi velit?</p>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <span class="ion-social-facebook text-primary fs-3 p-3"></span>
+                            <span class="ion-social-twitter text-primary fs-3 p-3"></span>
+                            <span class="ion-social-googleplus text-primary fs-3 p-3"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card text-center">
+                    <img src="../../../Assets/person4.jpg" alt="person4" class="i1 img-fluid rounded-circle w-50 mx-auto">
+                    <div class="card-body">
+                        <h4 class="card-title">Kevin Swanson</h4>
+                        <p class="text-muted">Artist</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil aperiam culpa est minus commodi velit?</p>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <span class="ion-social-facebook text-primary fs-3 p-3"></span>
+                            <span class="ion-social-twitter text-primary fs-3 p-3"></span>
+                            <span class="ion-social-googleplus text-primary fs-3 p-3"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-light" id="contact">
+        <div class="container px-lg-5">
+            <div class="row p-5">
+                <div class="col-md-8">
+                    <h3>Get In Touch</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe ad harum voluptatum aliquid!</p>
+                    <form action="">
+                        <div class="input-group pb-2">
+                            <span class="input-group-text ion-android-person"></span>
+                            <input type="text" id="name" placeholder="Name" class="form-control">
+                        </div>
+                        <div class="input-group pb-2">
+                            <span class="input-group-text ion-android-mail"></span>
+                            <input type="email" id="email" placeholder="Email" class="form-control">
+                        </div>
+                        <div class="input-group pb-2">
+                            <span class="input-group-text ion-android-create"></span>
+                            <textarea name="msg" id="msg" cols="30" rows="4" placeholder="Message" class="form-control"></textarea>
+                        </div>
+                        <div class="d-grid">
+                            <input type="submit" name="submit" id="submit" class="btn btn-primary d-block">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-4 my-auto d-none d-md-block">
+                    <img src="../../../Assets/mlogo.png" alt="mlogo" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-primary">
+        <div class="container clearfix p-5">
+            <p class="float-md-end text-center text-white py-auto m-0">Copyright &copy; 2022 Mizuxe</p>
+        </div>
+   </div>
+</body>
+</html>

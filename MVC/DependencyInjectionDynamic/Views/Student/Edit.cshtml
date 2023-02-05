@@ -1,0 +1,65 @@
+﻿@using System.Data
+@using System.Data.SqlClient
+@model System.Data.DataTable
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Edit</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container px-5">
+        <h1 class="display-6 text-center">Edit record</h1>
+        <form id="StudentDetail" method="post" action="@Url.Action("UpdateRecord")" class="mx-5 px-5 my-5">
+            <div class="form-floating mb-3 mt-3">
+                <input type="text" class="form-control" id="sName" value="@Model.Rows[0]["student_name"]" name="sName">
+                <label for="sname">Name</label>
+            </div>
+
+            <div class="form-floating mt-3 mb-3">
+                <input type="number" class="form-control" id="sAge" value="@Model.Rows[0]["student_age"]" name="sAge">
+                <label for="sAge">Age</label>
+            </div>
+
+            <div class="form-floating mt-3 mb-3 d-none">
+                <input type="hidden" class="form-control" id="sId" value="@Model.Rows[0]["student_id"]" name="sId">
+                <label for="sId">Id</label>
+            </div>
+            <span>Select Gender: &nbsp;&nbsp;</span>
+            @if (Model.Rows[0]["student_gender"].ToString().ToLower() == "male")
+            {
+                <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input" id="male" name="sGender" value="Male" checked>@Html.Raw("Male")
+                    <label class="form-check-label" for="male"></label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input" id="female" name="sGender" value="Female">@Html.Raw("Female")
+                    <label class="form-check-label" for="female"></label>
+                </div>
+            }
+            else
+            {
+                <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input" id="male" name="sGender" value="Male">@Html.Raw("Male")
+                    <label class="form-check-label" for="male"></label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input" id="female" name="sGender" value="Female" checked>@Html.Raw("Female")
+                    <label class="form-check-label" for="female"></label>
+                </div>
+            }
+            <div class="mt-4">
+                <button type="submit" class="btn btn-success" value="Submit" name="action">Submit</button>
+                <button type="reset" class="btn btn-warning ms-2" value="Reset" name="action">Cancel</button>
+            </div>
+        </form>
+    </div>
+    <script src="~/Scripts/bootstrap.js"></script>
+</body>
+</html>

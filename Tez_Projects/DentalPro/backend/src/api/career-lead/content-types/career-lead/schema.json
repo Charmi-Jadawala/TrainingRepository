@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "career_leads",
+  "info": {
+    "singularName": "career-lead",
+    "pluralName": "career-leads",
+    "displayName": "CareerLeads",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "JobCode": {
+      "type": "string",
+      "required": true
+    },
+    "FullName": {
+      "type": "string",
+      "required": true
+    },
+    "Email": {
+      "type": "email",
+      "required": true
+    },
+    "ContactNo": {
+      "type": "integer",
+      "required": true
+    },
+    "State": {
+      "type": "string"
+    },
+    "City": {
+      "type": "string"
+    },
+    "CV": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "files"
+      ]
+    },
+    "JobTitle": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

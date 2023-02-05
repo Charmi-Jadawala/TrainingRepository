@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+      *{
+        box-sizing: border-box;
+        padding: 0px;
+        margin: 0px;
+      }
+      
+      /*------MAIN NAVBAR------*/
+      
+      .main-nav{
+        display: flex;
+        background-color: #0d6efd;
+        height: 100px;
+      }
+      
+      .main-nav p{
+        flex: 20%;
+        text-align: center;
+      }
+      
+      .main-nav img{
+        height: 100px;
+        width: auto;
+        padding: 10px;
+      }
+      
+      .main-nav ul{
+        flex: 80%;
+        display: flex;
+        justify-content: space-evenly; 
+      }
+      
+      .main-nav li{
+        list-style-type: none;
+        display: inline-block;
+        padding-top: 36px;
+      }
+      
+      .main-nav a{
+        text-decoration: none;
+        color: #ffffff;
+      } 
+      
+      /*------MAIN NAVBAR------*/
+    
+      /*------SIDEBAR------*/
+    
+    .main{
+        display: flex;
+    }
+    
+    .sidebar{
+        flex: 20%;
+        background-color: #0dcaf0;
+        padding: 20px;
+    }
+    
+    .sidebar li{
+        list-style-position: inside;
+        padding-left: 20px;
+    }
+    
+    .sidebar ol ul a{
+        text-decoration: none;
+        color: #ffffff;
+    }
+    .sidebar ol ul ol a{
+        color: #000000;
+    }
+    
+     /*------SIDEBAR------*/
+    
+    .content{
+        flex: 80%;
+        overflow: auto;
+        padding: 20px;
+        border: 2px solid #000000;
+        box-shadow: 0px 0px 22px #000000;
+        background-color: #ffffff;
+        margin: 20px;
+        height: 80vh;
+    }
+
+    .content li{
+        list-style-position: outside;
+        margin-left: 20px;
+    }
+    </style>
+    </head>
+    <body>
+      <div>
+        <nav class="main-nav">
+          <p><img src="../../../Assets/radix.png" alt="Radix Logo"></p>
+          <ul>
+            <li><a href="../../../index.html">HOME</a></li>
+            <li><a href="../../HTML.html">HTML</a></li>
+            <li><a href="../../../CSS/CSS.html">CSS</a></li>
+          </ul>
+        </nav>
+      </div>
+      <main class="main">
+          <div class="sidebar">
+              <ol>
+                  <li>Day&hyphen;1
+                      <ul>
+                          <li><a href="#">Assignments</a>
+                              <ol>
+                                  <li><a href="../../Day_1/Assignment/Employee_Form.html">Employee Details Form</a></li>
+                              </ol>
+                          </li>
+                          <li><a href="#">Practicals</a>
+                              <ol>
+                                  <li><a href="../../Day_1/Practical/Report_Card.html">Report Card</a></li>
+                                  <li><a href="../../Day_1/Practical/Dept_Hier.html">Department Heirarchy</a></li>
+                                  <li><a href="../../Day_1/Practical/Login_Form.html">Login Form</a></li>
+                                  <li><a href="../../Day_1/Practical/Article.html">Article</a></li>
+                                  <li><a href="../../Day_1/Practical/Hori_Menu.html">Horizontal Menu</a></li>
+                              </ol> 
+                          </li>
+                      </ul>
+                  </li><br />
+                  <li>Day&hyphen;2
+                      <ul>
+                          <li><a href="#">Assignments</a>
+                              <ol>
+                                  <li><a href="#">Resume</a></li>
+                              </ol> 
+                          </li>
+                          <li><a href="#">Practicals</a>
+                              <ol>
+                                  <li><a href="../Practical/Basic_Form.html">Basic Form</a></li>
+                              </ol>
+                          </li>
+                      </ul>
+                  </li>
+              </ol>
+            </div>
+            <div class="content">
+              <div>
+                <h1 style="text-align: center;">Assignment-2</h1>
+                <h2 style="text-align: center;">RESUME</h2>   
+                <h1 style="text-align: center;">CHARMI JADAWALA</h1>
+                <article>
+                    <h1>OBJECTIVE:</h1>
+                    <p>
+                        An IT engineering fresher seeking an opportunity in an
+                        organization where my technical skills and knowledge will
+                        be enhanced and fully utilized along with contributing the
+                        growth of the organization. Improved my web development
+                        skills with the help of graduation in IT Engineering and
+                        looking forward to work in an environment that can boost
+                        my overall learning.
+                    </p>
+                </article>
+        
+                <article>
+                  <h1>PERSONAL DETAILS:</h1>
+                  <ul>
+                    <li>Date of Birth:<br />16&hyphen;September,2000</li>
+                    <li>Gender:<br />Female</li>
+                    <li>Hobbies:<br />Discover new music,Watching movies and series, Learn new things.</li>
+                    <li>Languages known:<br />English, Hindi and Gujarati.</li>
+                    <li>Strengths:<br />Quick Learner, Enthusiastic, Analytical 
+                      Skills, Creative Thinking, Leadership, Honesty, Punctuality, 
+                      Cooperative, Team work.</li>        
+                  </ul>
+                </article>
+        
+                <article>
+                    <h1>EDUCATION:</h1>
+                    <ul>
+                        <li>B-TECH</li>
+                            <ul>
+                                <li>IT</li>
+                                <li>2018-2022</li>
+                                <li>L.J. Institute of Engineering and Technology</li>
+                                <li>CPI: 9.40</li>
+                                <li>CGPA: 9.52</li>
+                            </ul>
+                        <li>HSC</li>
+                            <ul>
+                                <li>2017-2018</li>
+                                <li>Shree Narayana Guru Vidyalaya (GSHSEB)</li>
+                                <li>Percentage: 80.92&percnt;</li>
+                            </ul>
+                        <li>SSC</li>
+                            <ul>
+                                <li>2015-2016</li>
+                                <li>Shree Narayana Guru Vidyalaya (GSEB)</li>
+                                <li>Percentage: 88.33&percnt;</li>
+                            </ul>
+                    </ul>
+                </article>
+        
+                <article>
+                    <h1>PROJECTS:</h1>
+                    <ul>
+                        <li>Foodtyme &hyphen; A Food Delivery Website
+                          <br />It is a static fully responsive food delivery website
+                              divided into 8 different sections made using
+                              technologies like HTML5, CSS3 and a little bit of
+                              Jquery which describes the facilities and services
+                              provided by Foodtyme.
+                        </li>
+                        <br /> &nbsp <br />
+                        <li>Credit Card Fraud Detection System
+                          <br />It is a project that recognizes the credit card frauds
+                            and the main idea behind this project was to increase
+                            the security of online transactions by detecting fraudulent
+                            transactions by making the use of Machine Learning
+                            Concepts and training a Machine Learning Model.
+                        </li>
+                    </ul>
+                    <p style="text-align: center;"><video src="../../../Assets/mov_bbb.mp4" controls poster="../../../Assets/img_chania.jpg" height="200" width="260">
+                      <track src="fgsubtitles_en.vtt" kind="subtitles" srclang="en" label="English">
+                    </video></p>
+                    <br />
+                </article>
+        
+                <article>
+                    <h1>CERTIFICATIONS:</h1>
+                    <ol>
+                        <li>
+                            Web Design for Web Developers: Build Beautiful
+                            Websites&excl; &hyphen; Jonas Schmedtmann
+                            <br /> &nbsp; <br />
+                        </li>
+                        <li>
+                            Build Responsive Real World Websites with HTML5
+                            and CSS3 &hyphen; Jonas Schmedtmann 
+                            <br /> &nbsp; <br />
+                        </li>
+                        <li>
+                            The Complete Node.JS &verbar; Express with NodeJS For
+                            Beginners &hyphen; Oak Academy
+                            <br /> &nbsp; <br />
+                        </li>
+                        <li>
+                            Google AI &vert; Explore ML Workshop &hyphen; Beginner and
+                            Intermediate Track &hyphen; Nirma University
+                            <br /> &nbsp; <br />
+                        </li>
+                        <li>
+                            Codegeek 2K19 Python Programming Workshop &hyphen; LJIET
+                            <br /> &nbsp; <br />
+                        </li>
+                        <li>
+                            Graphic Design Masterclass &hyphen; Learn GREAT Design &hyphen; Lindsay Marsh
+                            <br /> &nbsp; <br />
+                        </li>
+                    </ol>
+                </article>
+        
+                <article>
+                  <h1>CONTACT:</h1>
+                  <ul>
+                    <li>+91&hyphen;7434966248</li>
+                    <li>charmijadawala1690@gmail.com</li>
+                    <li>
+                      <address>
+                        B-94 Sarthi Bungalows,<br />
+                        Behind Skylights,<br />
+                        Bopal,<br />
+                        Ahmedabad-380058,<br />
+                        Gujarat.         
+                      </address>
+                    </li>
+                  </ul>
+                </article>
+        
+                <article>
+                  <h1>SKILLS:</h1>
+                  <ul>
+                    <li>C (Programming Language)</li>
+                    <li>Java (Programming Language)</li>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>SQL (Database Language)</li>
+                    <li>NodeJs</li>
+                    <li>ExpressJs</li>
+                    <li>Adobe Photoshop</li>
+                  </ul>
+                </article>
+        
+                <article>
+                  <h1>DECLARATION:</h1>
+                  <p>I hereby declare that all the facts given above are genuine
+                    to the best of my knowledge and belief. I assure you that I’ll
+                    work with my full dedication and honesty. <br /></p>
+                  <p style="text-align: right;">&hyphen;<em ali>CHARMI JADAWALA</em></p>
+                </article>  
+              </div>
+            </div>
+      </main>  
+  </body>
+</html>
+

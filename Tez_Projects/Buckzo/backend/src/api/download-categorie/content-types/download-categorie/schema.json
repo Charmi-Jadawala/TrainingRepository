@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "download_categories",
+  "info": {
+    "singularName": "download-categorie",
+    "pluralName": "download-categories",
+    "displayName": "DownloadCategories",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "NavURL": {
+      "type": "string"
+    },
+    "Title": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Practice-1</title>
+</head>
+<body class="ms-3 mt-3">
+    <div>
+        <h1 class="display-6 text-black fs-2 pb-3">Changing the HTML Content</h1>
+        <p id="demo1" class="fs-4">This is the paragraph which is to be changed using javascript...</p>
+    </div> 
+ 
+    <div>
+         <h1 class="display-6 text-black fs-2 pb-3">Changing the HTML Content on Button Click</h1>
+         <p id="demo2" class="fs-4">This is the paragraph which is to be changed using javascript...</p>
+         <button type="button" class="btn btn-primary" onclick="fun1()">Click Me</button>
+    </div> 
+ 
+    <div>
+         <h1 class="display-6 text-black fs-2 mb-0 mt-4">Changing the Image on Button Click</h1>
+         <img  id="demo3" src="../../../Assets/html.png" alt="Logo" class="my-4"><br />
+         <button type="button" class="btn btn-primary" onclick="document.getElementById('demo3').src='../../../Assets/javascript.png'">JAVASCRIPT</button>
+         <button type="button" class="btn btn-primary" onclick="document.getElementById('demo3').src='../../../Assets/html.png'">HTML</button>
+    </div> 
+ 
+    <div>
+         <h1 class="display-6 text-black fs-2 pb-3 mt-4">Changing the Font-Size on Button Click</h1>
+         <p id="demo-4">Let's increase the font-size</p>
+         <button type="button" class="btn btn-primary" onclick="fun2()">Click Me</button>
+    </div> 
+ 
+    <div>
+         <p id="demo-5" class="fs-4"></p>
+         <button type="button" class="btn btn-primary" onclick='alert(mul)'>Alert</button>
+         <p id="demo-6" class="fs-4"></p>
+    </div>
+ 
+    <script>
+        document.getElementById("demo1").innerHTML="Paragraph Changed !!!"
+ 
+        function fun1(){
+         document.getElementById("demo2").innerHTML="Paragraph Changed on button click !!!";
+        }
+    </script>
+    <script src="Practice-1.js"></script>
+</body>
+</html>
+
+    
+

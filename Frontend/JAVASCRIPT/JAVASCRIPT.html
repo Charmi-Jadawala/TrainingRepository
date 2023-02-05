@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT</title>
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../JQUERY/jquery.min.js"></script>
+    <style>
+       @media only screen and (min-width: 576px){
+        .sidebar{
+            height: 82vh;
+        }
+        .content-main{
+            height: 76vh;
+        }
+        .content-main img{
+            width: 320px;
+            height: auto;
+            margin-top: 110px;
+        }
+       }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("#d1a1").click(function(){
+                $(".content-main").load("./Day_1/Assignment/Math_Operations.html");
+            });
+            $("#d2a1").click(function(){
+                $(".content-main").load("./Day_2/Assignment/Date.html");
+            });
+            $("#d2p1").click(function(){
+                $(".content-main").load("./Day_2/Practical/Practice_Ex_1.html");
+            });
+            $("#d2p2").click(function(){
+                $(".content-main").load("./Day_2/Practical/Practice_Ex_2.html");
+            });
+            $("#d2p3").click(function(){
+                $(".content-main").load("./Day_2/Practical/Practice_Ex_3.html");
+            });
+            $("#d2p4").click(function(){
+                $(".content-main").load("./Day_2/Practical/Practice_Ex_4_5.html");
+            });
+            $("#d3a1").click(function(){
+                $(".content-main").load("./Day_3/Assignment/JS_Form.html");
+            });
+            $("#d3p1").click(function(){
+                $(".content-main").load("./Day_3/Practical/Location.html");
+            });
+            $("#d3p2").click(function(){
+                $(".content-main").load("./Day_3/Practical/History.html");
+            });
+            $("#d3p3").click(function(){
+                $(".content-main").load("./Day_3/Practical/Resize_Window.html");
+            });
+            $("#d4a1").click(function(){
+                $(".content-main").load("./Day_4/Assignment/Timer.html");
+            });
+            $("#d4p1").click(function(){
+                $(".content-main").load("./Day_4/Practical/Callback.html");
+            });
+            $("#d4p2").click(function(){
+                $(".content-main").load("./Day_4/Practical/Var_Let.html");
+            });
+            $("#d4p3").click(function(){
+                $(".content-main").load("./Day_4/Practical/Promise.html");
+            });
+            $("#d5p1").click(function(){
+                $(".content-main").load("./Day_5/Practical/Functions.html");
+            });
+            $("#d5p2").click(function(){
+                $(".content-main").load("./Day_5/Practical/Function_Call.html");
+            });
+            $("#d5p3").click(function(){
+                $(".content-main").load("./Day_5/Practical/Function_Closure.html");
+            });
+            $("#d6p1").click(function(){
+                $(".content-main").load("./Day_6/Practical/Table_data.html");
+            });
+            $("#d6p2").click(function(){
+                $(".content-main").load("./Day_6/Practical/LocalStrorage.html");
+            });
+            $("#d6p3").click(function(){
+                $(".content-main").load("./Day_6/Practical/Fetch.html");
+            });
+            $("#d7p1").click(function(){
+                $(".content-main").load("./Day_7/Practical/JS_ES_6_Practice.html");
+            });
+            $("#jq_d1a1").click(function(){
+                $(".content-main").load("../JQUERY/Day_1/Assignment/Dropdown.html");
+            });
+            $("#jq_d1p1").click(function(){
+                $(".content-main").load("../JQUERY/Day_1/Practical/Practice-1.html");
+            });
+            $("#jq_d2a1").click(function(){
+                $(".content-main").load("../JQUERY/Day_2/Assignment/getJSON.html");
+            });
+        });
+    </script>
+</head> 
+<body>
+    <nav class="navbar navbar-expand-sm bg-primary sticky-top" aria-label="navtop">
+        <div class="container-fluid px-5">
+            <a href="#" class="navbar-brand">
+                <img src="../../../Assets/radix.png" alt="Radix Logo" class="img-fluid d-block d-sm-none">
+            </a>
+            <button type="button" class="navbar-toggler bg-white" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="ion-navicon-round text-primary"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <img src="../../../Assets/radix.png" alt="Radix Logo" class="img-fluid d-none d-sm-block">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item p-md-3"><a href="../index.html" class="nav-link text-white"><span class="ion-android-home"></span>&nbsp;&nbsp;Home</a></li>
+                    <li class="nav-item p-md-3"><a href="../HTML/HTML.html" class="nav-link text-white"><span class="ion-social-html5"></span>&nbsp;&nbsp;HTML</a></li>
+                    <li class="nav-item p-md-3"><a href="../CSS/CSS.html" class="nav-link text-white"><span class="ion-social-css3"></span>&nbsp;&nbsp;CSS</a></li>
+                    <li class="nav-item p-md-3"><a href="../BOOTSTRAP/Bootstrap.html" class="nav-link active text-white"><span class="ion-code-working"></span>&nbsp;&nbsp;BOOTSTRAP</a></li>
+                    <li class="nav-item p-md-3"><a href="../TAILWIND/Tailwind.html" class="nav-link active text-white"><span class="ion-code"></span>&nbsp;&nbsp;TAILWIND</a></li>
+                    <li class="nav-item p-md-3"><a href="#" class="nav-link active text-white"><span class="ion-social-javascript"></span>&nbsp;&nbsp;JAVASCRIPT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid text-white">
+        <div class="row">
+            <div class="sidebar col-sm-5 col-md-4 col-lg-3 bg-info overflow-auto p-2">
+                <nav class="navbar mx-auto justify-content-sm-center ps-4 ps-sm-0 mt-0" aria-label="sidebar">
+                    <ul class="navbar-nav">
+                        <h1 class="display-5 text-center text-black">JavaScript</h1>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link h4 pb-0 text-black">Day&hyphen;1</a>
+                            <ul>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle text-white" role="button" data-bs-toggle="dropdown">Assignments</a>
+                                    <ul class="dropdown-menu bg-info">
+                                        <li><a class="dropdown-item" id="d1a1">Arithmetic Operations</a></li>  
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle text-white" role="button" data-bs-toggle="dropdown">Practicals</a>
+                                    <ul class="dropdown-menu bg-info">
+                                        <li><a class="dropdown-item" href="./Day_1/Practical/Practice-1.html" target="_blank">Basic JS Practice</a></li>  
+                                        <li><a class="dropdown-item" href="./Day_1/Practical/Practice.html" target="_blank">Practice Ex&hyphen;1</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link h4 pb-0 text-black">Day&hyphen;2</a>
+                            <ul>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle text-white" role="button" data-bs-toggle="dropdown">Assignments</a>
+                                    <ul class="dropdown-menu bg-info">
+                                        <li><a class="dropdown-item" id="d2a1">Date Constraints</a></li>    
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle text-white" role="button" data-bs-toggle="dropdown">Practicals</a>
+                                    <ul class="dropdown-menu bg-info">
+                                        <li><a class="dropdown-item" id="d2p1">Practice Ex&hyphen;1</a></li>   
+                                        <li><a class="dropdown-item" id="d2p2">Practice Ex&hyphen;2</a></li>   
+                                        <li><a class="dropdown-item" id="d2p3">Practice Ex&hyphen;3</a></li>   
+                                        <li><a class="dropdown-item" id="d2p4">Practice Ex&hyphen;4 &amp; Ex&hyphen;5</a></li>   
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link h4 pb-0 text-black">Day&hyphen;3</a>
+                            <ul>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle text-white" role="button" data-bs-toggle="dropdown">Assignments</a>
+                                    <ul class="dropdown-menu bg-info">
+                                        <li><a class="dropdown-item" id="d3a1">Employee Form</a></li>    
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle text-white" role="button" data-bs-toggle="dropdown">Practicals</a>
+                                    <ul class="dropdown-menu bg-info">
+                                        <li><a class="dropdown-item" id="d3p1">JS Location</a></li>   
+                                        <li><a class="dropdown-item" id="d3p2">JS History</a></li>   
+                                        <li><a class="dropdown-item" id="d3p3">Resize Window</a></li>   
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link h4 pb-0 text-black">Day&hyphen;4</a>
+                            <ul>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle text-white" role="button" data-bs-toggle="dropdown">Assignments</a>
+                                    <ul class="dropdown-menu bg-info">
+                                        <li><a class="dropdown-item" id="d4a1">Exam Timer</a></li>    
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle text-white" role="button" data-bs-toggle="dropdown">Practicals</a>
+                                    <ul class="dropdown-menu bg-info">
+                                        <li><a class="dropdown-item" id="d4p1">Callback Function</a></li>   
+                                        <li><a class="dropdown-item" id="d4p2">Var &amp; Let</a></li>   
+                                        <li><a class="dropdown-item" id="d4p3">JS Promise</a></li>   
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link h4 pb-0 text-black">Day&hyphen;5</a>
+                            <ul>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle text-white" role="button" data-bs-toggle="dropdown">Practicals</a>
+                                    <ul class="dropdown-menu bg-info">
+                                        <li><a class="dropdown-item" id="d5p1">JS Functions</a></li>   
+                                        <li><a class="dropdown-item" id="d5p2">Function Call</a></li>   
+                                        <li><a class="dropdown-item" id="d5p3">Function Closure</a></li>   
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link h4 pb-0 text-black">Day&hyphen;6</a>
+                            <ul>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle text-white" role="button" data-bs-toggle="dropdown">Assignments</a>
+                                    <ul class="dropdown-menu bg-info">
+                                        <li><a class="dropdown-item" href="./Day_6/Assignment/Products.html" target="_blank">Products</a></li>    
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle text-white" role="button" data-bs-toggle="dropdown">Practicals</a>
+                                    <ul class="dropdown-menu bg-info">
+                                        <li><a class="dropdown-item" id="d6p1">Table Data</a></li>   
+                                        <li><a class="dropdown-item" id="d6p2">Practice-1</a></li>   
+                                        <li><a class="dropdown-item" id="d6p3">Practice-2</a></li>   
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link h4 pb-0 text-black">Day&hyphen;7</a>
+                            <ul>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle text-white" role="button" data-bs-toggle="dropdown">Practicals</a>
+                                    <ul class="dropdown-menu bg-info">
+                                        <li><a class="dropdown-item" id="d7p1">JS ES-6 Practice</a></li>   
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <h1 class="display-5 text-center text-black my-3">jQuery</h1>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link h4 pb-0 text-black">Day&hyphen;1</a>
+                            <ul>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle text-white" role="button" data-bs-toggle="dropdown">Assignments</a>
+                                    <ul class="dropdown-menu bg-info">
+                                        <li><a class="dropdown-item" id="jq_d1a1">Dropdown List</a></li>    
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle text-white" role="button" data-bs-toggle="dropdown">Practicals</a>
+                                    <ul class="dropdown-menu bg-info">
+                                        <li><a class="dropdown-item" id="jq_d1p1">Practice Ex&hyphen;1</a></li>   
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link h4 pb-0 text-black">Day&hyphen;2</a>
+                            <ul>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle text-white" role="button" data-bs-toggle="dropdown">Assignments</a>
+                                    <ul class="dropdown-menu bg-info">
+                                        <li><a class="dropdown-item" id="jq_d2a1">getJSON Example</a></li>    
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>  
+                </nav>
+            </div>
+            <div class="col-sm-7 col-md-8 col-lg-9">
+                <div class="content-main container border border-2 border-dark my-3 shadow-lg overflow-auto text-black">
+                    <img src="../Assets/javascript.png" alt="JAVASCRIPT Logo" class="img-fluid mx-auto d-block">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

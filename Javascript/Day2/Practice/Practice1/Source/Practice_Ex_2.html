@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Exercise-2</title>
+</head>
+<body>
+    <div>
+        <h1 class="display-6 text-black fs-2 pb-3">JavaScript function to split a string and convert it into an array of words.</h1>
+        <form action="" id="myForm2">
+            <label for="strtxt" class="form-label fs-5">Please enter a string or sentence :</label>
+            <input type="text" id="strtxt" class="form-control-sm mx-1" name="strtxt"><br />
+            <button type="button" class="btn btn-outline-primary my-3 mx-1" onclick="strArr()">Check</button>
+            <button type="button" class="btn btn-outline-primary my-3" onclick="Reset()">Reset</button>
+            <p id="p2" class="text-primary fs-5"></p>
+        </form>
+    </div>
+
+    <script>
+        function strArr(){
+            let text = document.getElementById("strtxt").value;
+            const arr = text.split(" ");
+            var result = "";
+            for(let i=0; i < arr.length; i++){
+                result += arr[i] + "<br />"
+            } 
+            document.getElementById("p2").style.display = "block";
+            document.getElementById("p2").innerHTML = result; 
+        }
+        function Reset(){
+        document.getElementById("myForm2").reset();
+        document.getElementById("p2").style.display = "none";
+        }
+    </script>
+</body>
+</html>
+
+    
+
+
+
+
+
+
+
+
+
+

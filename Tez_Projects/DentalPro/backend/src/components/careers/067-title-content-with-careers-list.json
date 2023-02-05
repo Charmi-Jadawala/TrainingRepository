@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_careers_067_title_content_with_careers_lists",
+  "info": {
+    "displayName": "067 - Title Content With Careers List",
+    "icon": "user-graduate"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "richtext",
+      "required": true
+    },
+    "SubTitle": {
+      "type": "richtext"
+    },
+    "LongText": {
+      "type": "richtext"
+    },
+    "Careers": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::career.career"
+    },
+    "VueReferenceCode": {
+      "type": "string",
+      "required": true
+    },
+    "GuideURL": {
+      "type": "string"
+    }
+  }
+}

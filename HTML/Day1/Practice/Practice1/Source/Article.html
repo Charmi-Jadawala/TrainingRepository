@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article</title>
+    <style>
+        *{
+          box-sizing: border-box;
+          padding: 0px;
+          margin: 0px;
+        }
+        
+        /*------MAIN NAVBAR------*/
+        
+        .main-nav{
+          display: flex;
+          background-color: #0d6efd;
+          height: 100px;
+        }
+        
+        .main-nav p{
+          flex: 20%;
+          text-align: center;
+        }
+        
+        .main-nav img{
+          height: 100px;
+          width: auto;
+          padding: 10px;
+        }
+        
+        .main-nav ul{
+          flex: 80%;
+          display: flex;
+          justify-content: space-evenly; 
+        }
+        
+        .main-nav li{
+          list-style-type: none;
+          display: inline-block;
+          padding-top: 36px;
+        }
+        
+        .main-nav a{
+          text-decoration: none;
+          color: #ffffff;
+        } 
+        
+        /*------MAIN NAVBAR------*/
+      
+        /*------SIDEBAR------*/
+      
+      .main{
+          display: flex;
+      }
+      
+      .sidebar{
+          flex: 20%;
+          background-color: #0dcaf0;
+          padding: 20px;
+      }
+      
+      .sidebar li{
+          list-style-position: inside;
+          padding-left: 20px;
+      }
+      
+      .sidebar ol ul a{
+          text-decoration: none;
+          color: #ffffff;
+      }
+      .sidebar ol ul ol a{
+          color: #000000;
+      }
+      
+       /*------SIDEBAR------*/
+      
+      .content{
+          flex: 80%;
+          overflow: auto;
+          padding: 20px;
+          border: 2px solid #000000;
+          box-shadow: 0px 0px 22px #000000;
+          background-color: #ffffff;
+          margin: 20px;
+          height: 80vh;
+      }
+
+      .content li{
+          list-style-position: inside;
+      }
+      </style>
+      </head>
+      <body>
+        <div>
+          <nav class="main-nav">
+            <p><img src="../../../Assets/radix.png" alt="Radix Logo"></p>
+            <ul>
+                <li><a href="../../../index.html">HOME</a></li>
+              <li><a href="../../HTML.html">HTML</a></li>
+              <li><a href="../../../CSS/CSS.html">CSS</a></li>
+            </ul>
+          </nav>
+        </div>
+        <main class="main">
+            <div class="sidebar">
+                <ol>
+                    <li>Day&hyphen;1
+                        <ul>
+                            <li><a href="#">Assignments</a>
+                                <ol>
+                                    <li><a href="../Assignment/Employee_Form.html">Employee Details Form</a></li>
+                                </ol>
+                            </li>
+                            <li><a href="#">Practicals</a>
+                                <ol>
+                                    <li><a href="Report_Card.html">Report Card</a></li>
+                                    <li><a href="Dept_Hier.html">Department Heirarchy</a></li>
+                                    <li><a href="Login_Form.html">Login Form</a></li>
+                                    <li><a href="#">Article</a></li>
+                                    <li><a href="Hori_Menu.html">Horizontal Menu</a></li>
+                                </ol> 
+                            </li>
+                        </ul>
+                    </li><br />
+                    <li>Day&hyphen;2
+                        <ul>
+                            <li><a href="#">Assignments</a>
+                                <ol>
+                                    <li><a href="../../Day_2/Assignment/Resume.html">Resume</a></li>
+                                </ol> 
+                            </li>
+                            <li><a href="#">Practicals</a>
+                                <ol>
+                                    <li><a href="../../Day_2/Practical/Basic_Form.html">Basic Form</a></li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+              </div>
+              <div class="content">
+                <section id="Article">
+                    <header>
+                        <h1>Practice Exercise 4</h1>
+                        <h2>ARTICLE WITH LATEST NEWS!</h2>
+                    </header>    
+                    <article>
+                        <h1>Latest News Article</h1>
+                        <section>
+                            <h3>What is Lorem Ipsum?</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and 
+                            typesetting industry. Lorem Ipsum has been the industry's standard 
+                            dummy text ever since the 1500s, when an unknown printer took a galley 
+                            of type and scrambled it to make a type specimen book. It has survived 
+                            not only five centuries, but also the leap into electronic typesetting, 
+                            remaining essentially unchanged. It was popularised in the 1960s with 
+                            the release of Letraset sheets containing Lorem Ipsum passages, and more 
+                            recently with desktop publishing software like Aldus PageMaker including 
+                            versions of Lorem Ipsum.
+                            </p>
+                        </section>
+                        <section>
+                            <aside>
+                                <p>
+                                    Lorem Ipsum
+                                    <br />
+                                    "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, 
+                                    consectetur, adipisci velit..."
+                                    "There is no one who loves pain itself, who seeks after it and wants 
+                                    to have it, simply because it is pain..."
+                                </p>
+                            </aside>
+                        </section>      
+                        <section>
+                            <h3>Where does it come from?</h3>
+                            <p>
+                                Contrary to popular belief, Lorem Ipsum is not simply random text. It has 
+                                roots in a piece of classical Latin literature from 45 BC, making it over 
+                                2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College 
+                                in Virginia, looked up one of the more obscure Latin words, consectetur, 
+                                from a Lorem Ipsum passage, and going through the cites of the word in classical 
+                                literature, discovered the undoubtable source. Lorem Ipsum comes from sections 
+                                1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and 
+                                Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, 
+                                very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum 
+                                dolor sit amet..", comes from a line in section 1.10.32.
+                                <br />
+                                The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for 
+                                those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" 
+                                by Cicero are also reproduced in their exact original form, accompanied by English 
+                                versions from the 1914 translation by H. Rackham.
+                            </p>
+                        </section>
+                        <section>
+                            <h3>Why do we use it?</h3>
+                            <p>
+                                It is a long established fact that a reader will be distracted by the readable content 
+                                of a page when looking at its layout. The point of using Lorem Ipsum is that it has a 
+                                more-or-less normal distribution of letters, as opposed to using 'Content here, content here', 
+                                making it look like readable English. Many desktop publishing packages and web page editors 
+                                now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover 
+                                many web sites still in their infancy. Various versions have evolved over the years, 
+                                sometimes by accident, sometimes on purpose (injected humour and the like).
+                            </p>
+                        </section>
+                        <section>
+                            <h3>Where can I get some?</h3>
+                            <p>
+                                There are many variations of passages of Lorem Ipsum available, but the majority have 
+                                suffered alteration in some form, by injected humour, or randomised words which don't 
+                                look even slightly believable. If you are going to use a passage of Lorem Ipsum, 
+                                you need to be sure there isn't anything embarrassing hidden in the middle of text. 
+                                All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, 
+                                making this the first true generator on the Internet. It uses a dictionary of over 200 Latin 
+                                words, combined with a handful of model sentence structures, to generate Lorem Ipsum which 
+                                looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, 
+                                injected humour, or non-characteristic words etc.
+                            </p>
+                        </section>
+                    </article>
+                </section> 
+              </div>  
+          </main>        
+        </body>
+    </html>
+    

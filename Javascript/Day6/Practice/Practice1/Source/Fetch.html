@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch</title>
+</head>
+<body>
+    <div>
+        <h1 class="display-6 text-black fs-2 pb-4">Keep above JSON Data into a file, using Web Fetch API read that data.</h1>
+        <p class="fs-4 text-success">See the console for output</p>
+    </div>
+    
+    <script type="text/javascript">
+       async function getdata(){
+            const response = await fetch("./Day_6/Practical/Data.json");
+            const data = await response.json();
+            console.log(data);
+        }
+
+        getdata();     
+    </script>
+</body>
+</html>

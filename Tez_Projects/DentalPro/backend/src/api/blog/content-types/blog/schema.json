@@ -1,0 +1,113 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blogs",
+  "info": {
+    "singularName": "blog",
+    "pluralName": "blogs",
+    "displayName": "Blogs",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "LongText": {
+      "type": "richtext",
+      "pluginOptions": {}
+    },
+    "NavURL": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "Classification": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::classification.classification"
+    },
+    "Category": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blog-category.blog-category"
+    },
+    "BlogTags": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blog-tag.blog-tag"
+    },
+    "BlogAuthor": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::blog-author.blog-author"
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "pluginOptions": {}
+    },
+    "CreatedDate": {
+      "type": "date",
+      "pluginOptions": {}
+    },
+    "PublishedDate": {
+      "type": "date",
+      "pluginOptions": {}
+    },
+    "Featured": {
+      "type": "boolean",
+      "pluginOptions": {}
+    },
+    "IsHighlighted": {
+      "type": "boolean",
+      "pluginOptions": {}
+    },
+    "IsAvailableOnInsights": {
+      "type": "boolean",
+      "pluginOptions": {}
+    },
+    "ComponentOrder": {
+      "type": "integer",
+      "default": 0,
+      "pluginOptions": {}
+    },
+    "LastModifiedDate": {
+      "type": "date",
+      "pluginOptions": {}
+    },
+    "FAQs": {
+      "type": "component",
+      "repeatable": false,
+      "component": "faq.title-with-faq-list",
+      "pluginOptions": {}
+    },
+    "ViewCount": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "RelatedBlogs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blog.blog"
+    },
+    "RelatedFeaturedBlogs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blog.blog"
+    },
+    "VueReferenceCode": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "Title": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

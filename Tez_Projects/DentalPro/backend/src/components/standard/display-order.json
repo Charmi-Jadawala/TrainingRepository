@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_standard_display_orders",
+  "info": {
+    "displayName": "displayOrder",
+    "icon": "anchor"
+  },
+  "options": {},
+  "attributes": {
+    "orderNumber": {
+      "type": "biginteger"
+    }
+  }
+}

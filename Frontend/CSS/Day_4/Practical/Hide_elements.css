@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    padding: 12px;
+    margin: 6px;
+}
+
+h1, h2, p{
+    border: 3px solid red;
+}
+
+@media only screen and (max-width: 992px){
+    .p1{
+        display: none;
+    }
+    h1, h2, p{
+        border: 3px solid greenyellow;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .p1, .p2{
+        display: none;
+    }
+    h1, h2, p{
+        border: 3px solid palevioletred;
+    }
+}
+
+@media only screen and (max-width:640px){
+    .p1, .p2, .p3{
+        display: none;
+    }
+    h1, h2, p{
+        border: 3px solid cyan;
+    }
+}
+
+@media only screen and (max-width:400px){
+    .p1, .p2, .p3, .p4{
+        display: none;
+    }
+    h1, h2, p{
+        border: 3px solid brown;
+    }
+}

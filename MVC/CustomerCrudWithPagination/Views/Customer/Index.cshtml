@@ -1,0 +1,68 @@
+﻿@model PagedList.IPagedList<CustomerMvcCrud.Models.CustomerModel>
+@using PagedList.Mvc
+@{
+    Layout = null;
+}
+@{
+    ViewBag.Title = "Index";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Home</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+
+<body>
+    <div class="container px-5">
+        <h1 class="display-6 text-center">Customer CRUD</h1>
+        <div class="d-flex my-3 justify-content-end">
+            @using (Html.BeginForm("Index", "Customer", FormMethod.Get))
+            {
+                <div class="input-group ms-2">
+                    @Html.TextBox("searchString", ViewBag.CurrentFilter as string, new { @class = "form-control", @placeholder = "Search by Name" })
+                    <button class="btn btn-primary" type="submit">Search</button>
+                </div>
+            }
+        </div>
+        @{
+            if (Model.Count() > 0)
+            {
+                <table class="table table-hover fs-6">
+                    <thead class="table-dark display-6 fs-4">
+                        <tr>
+                            <td>Customer ID</td>
+                            <td>@Html.ActionLink("Customer Name", "Index", new { Sorting_Order = ViewBag.SortingName }, new { @class = "custom-link" })</td>
+                            <td>@Html.ActionLink("Country", "Index", new { Sorting_Order = ViewBag.SortingCountry }, new { @class = "custom-link" })</td>
+                            <td></td>
+                        </tr>
+                    </thead>
+                    @foreach (CustomerMvcCrud.Models.CustomerModel customer in Model)
+                    {
+                        <tr>
+                            <td>@customer.CustomerId</td>
+                            <td>@customer.Name</td>
+                            <td>@customer.Country</td>
+                            <td></td>
+                        </tr>
+                    }
+                </table>
+
+            }
+            else
+            {
+                <span> No records found!!</span>
+            }
+        }
+    <div class="container d-flex flex-column align-items-center">
+        <p>Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount</p>
+
+        <div class="p-2 bg-dark text-white">
+            @Html.PagedListPager(Model, page => Url.Action("Index", new { page, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter }))
+        </div>
+    </div>
+    </div>
+</body>
+</html>

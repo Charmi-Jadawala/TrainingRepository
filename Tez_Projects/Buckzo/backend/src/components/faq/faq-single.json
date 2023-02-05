@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_faq_faqsingle",
+  "info": {
+    "displayName": "042 - FAQ Single",
+    "icon": "arrow-circle-left",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "LongText": {
+      "type": "richtext"
+    },
+    "VueReferenceCode": {
+      "type": "string",
+      "default": "FAQ",
+      "required": true
+    },
+    "GuideURL": {
+      "type": "string"
+    },
+    "Title": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

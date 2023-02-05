@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_standard_tcsingle",
+  "info": {
+    "displayName": "012 - Title Content Single",
+    "icon": "arrow-alt-circle-up",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "LongText": {
+      "type": "richtext"
+    },
+    "VueReferenceCode": {
+      "type": "string",
+      "default": "TC",
+      "required": true
+    },
+    "GuideURL": {
+      "type": "string"
+    },
+    "NavURL": {
+      "type": "string"
+    },
+    "CTA": {
+      "type": "richtext"
+    },
+    "SubTitle": {
+      "type": "richtext"
+    },
+    "ShortText": {
+      "type": "richtext"
+    },
+    "Title": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

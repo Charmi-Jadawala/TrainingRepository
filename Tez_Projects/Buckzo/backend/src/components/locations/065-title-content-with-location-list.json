@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_locations_065_title_content_with_location_lists",
+  "info": {
+    "displayName": "065 - Title Content With Location List",
+    "icon": "hand-pointer"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "richtext",
+      "required": true
+    },
+    "SubTitle": {
+      "type": "richtext"
+    },
+    "LongText": {
+      "type": "richtext"
+    },
+    "Locations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::location.location"
+    },
+    "VueReferenceCode": {
+      "type": "string",
+      "required": true
+    },
+    "GuideURL": {
+      "type": "string"
+    }
+  }
+}

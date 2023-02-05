@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="~/Content/font-awesome.css" rel="stylesheet" />
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 py-2">
+                    <a class="navbar-brand" href="/Home/Index">
+                        <img src="~/Content/assets/images/logo.png" alt="Haunt Logo" class="w-50">
+                    </a>
+            </div>
+            <div class="col-sm-8  d-none d-lg-block">
+                <div class="row text-lg-end mt-4 fs-6">
+                    <div class="col-sm-7"></div>
+                    <div class="col">
+                        @Html.ActionLink("Login", "Login", "Home", null, new { @class = "link-style" })
+                    </div>
+                    <div class="col">
+                        @Html.ActionLink("Register", "Register", "Home", null, new { @class = "link-style" })
+                    </div>
+                    <div class="col">
+                        @Html.ActionLink("My Cart (0)", "Cart", "Home", null, new { @class = "link-style" })
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-sm custom-navbar navbar-dark">
+        <div class="container">
+            <button class="navbar-toggler my-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav text-uppercase fw-bold">
+                    <li class="nav-item">
+                        @Html.ActionLink("Home", "Index", "Home", null, new { @class = "nav-link text-white p-3" })
+                    </li>
+                    <li class="nav-item">
+                        @Html.ActionLink("Shop", "Shop", "Home", null, new { @class = "nav-link text-white p-3" })
+                    </li>
+                    <li class="nav-item">
+                        @Html.ActionLink("Blog", "Blog", "Home", null, new { @class = "nav-link text-white p-3" })
+                    </li>
+                    <li class="nav-item">
+                        @Html.ActionLink("About Us", "AboutUs", "Home", null, new { @class = "nav-link text-white p-3" })
+                    </li>
+                    <li class="nav-item">
+                        @Html.ActionLink("Contact Us", "ContactUs", "Home", null, new { @class = "nav-link text-white p-3" })
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid p-0">
+        @RenderBody()
+    </div>
+
+    <section class="footer-middle">
+        <div class="container">
+            <div class="row fs-6">
+                <div class="col-md-3 col-sm-6 col-xs-12 py-2">
+                    <h4 class="fw-bold pb-3">Contact Us</h4>
+                    <p class=""><i class="fa fa-envelope me-2"></i> support@themetidy.com</p>
+                    <p class=""><i class="fa fa-phone me-2"></i> Mon - Sun 8.00 - 15.00</p>
+                    <p class=""><i class="fa fa-map-marker me-2"></i> PO Box 16122 Collins Street</p>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <ul class="list-unstyled footer-list-style">
+                        <li class="py-2"><a href="/pages/about-us">Terms &amp; Conditions</a></li>
+                        <li class="py-2"><a href="/pages/about-us">Our credit slips</a></li>
+                        <li class="py-2"><a href="/pages/about-us">Shipping &amp; Refund</a></li>
+                        <li class="py-2"><a href="/pages/about-us">Delivery Information</a></li>
+                        <li class="py-2"><a href="/pages/about-us">Our personal info</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-sm-6 col-xs-12">
+                    <ul class="list-unstyled footer-list-style">
+                        <li class="py-2">@Html.ActionLink("Search", "Search", "Home")</li>
+                        <li class="py-2">@Html.ActionLink("About Us", "AboutUs", "Home")</li>
+                        <li class="py-2">@Html.ActionLink("Contact Us", "ContactUs", "Home")</li>
+                        <li class="py-2">@Html.ActionLink("Returns", "AboutUs", "Home")</li>
+                        <li class="py-2">@Html.ActionLink("Shipping", "AboutUs", "Home")</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <p class="lh-lg">Paira is a modern, user-friendly, highly customizable and easy to integrate solution to build your next Shopify website based on your idea. Paira is a highly functional and advance theme option shopify framework.</p>
+
+                    <div class="d-inline-flex gap-2">
+                        <a class="px-3 border border-1 border-dark py-2 footer-icons" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook"><i class="fa fa-facebook fs-5"></i></a>
+                        <a class="px-2 border border-1 border-dark py-2 footer-icons" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter"><i class="fa fa-twitter fs-5"></i></a>
+                        <a class="px-2 border border-1 border-dark py-2 footer-icons" data-bs-toggle="tooltip" data-bs-placement="top" title="Google Plus"><i class="fa fa-google-plus fs-5"></i></a>
+                        <a class="px-2 border border-1 border-dark py-2 footer-icons" data-bs-toggle="tooltip" data-bs-placement="top" title="Instagram"><i class="fa fa-instagram fs-5"></i></a>
+                        <a class="px-2 border border-1 border-dark py-2 footer-icons" data-bs-toggle="tooltip" data-bs-placement="top" title="LinkedIn"><i class="fa fa-linkedin fs-5"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer-bottom footer-border">
+        <div class="container">
+            <div class="row fs-6">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <p class="text-center my-4">© Haunt. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+    <script src="~/Scripts/bootstrap.js"></script>
+</body>
+</html>
+

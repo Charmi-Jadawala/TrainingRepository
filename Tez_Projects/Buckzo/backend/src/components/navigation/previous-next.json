@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_navigation_previousnext",
+  "info": {
+    "displayName": "056 - PreviousNext",
+    "icon": "greater-than-equal",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "PreviousNavURL": {
+      "type": "string"
+    },
+    "NextNavURL": {
+      "type": "string"
+    },
+    "VueReferenceCode": {
+      "type": "string",
+      "required": true,
+      "default": "PreviousNext"
+    },
+    "GuideURL": {
+      "type": "string"
+    }
+  }
+}

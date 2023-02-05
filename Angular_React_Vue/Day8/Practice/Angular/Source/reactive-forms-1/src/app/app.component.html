@@ -1,0 +1,9 @@
+<div class="container text-center">
+    <h1 class="display-4 mb-3">Angular Reactive Forms</h1>
+    <button type="button" (click)="profileForm()" class="btn btn-outline-dark mb-4 me-3">Profile Form</button>
+    <button type="button" (click)="updateForm()" class="btn btn-outline-dark mb-4 me-3">Update Form</button>
+    <button type="button" (click)="validateForm()" class="btn btn-outline-dark mb-4 me-3">Validate Form</button>
+</div>
+<app-profile-form *ngIf="showProfileForm"></app-profile-form>
+<app-update-form *ngIf="showUpdateForm"></app-update-form>
+<app-validation-form *ngIf="showValidatateForm"></app-validation-form>

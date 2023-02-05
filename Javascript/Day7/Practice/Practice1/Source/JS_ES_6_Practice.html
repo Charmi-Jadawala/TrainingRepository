@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS ES-6 Practice</title>
+</head>
+<body>
+    <h1 class="display-4 text-black text-center p-3">JavaScript ES-6 Concepts</h1>
+    <div class="container-fluid px-5 my-2">
+        <h1 class="display-6 text-black fs-2 pb-2">1. Using Dynamic Template String & Map().</h1> 
+
+        <p id="result1" class="fs-5 text-black pb-4"></p>
+    </div>
+
+    <div class="container-fluid px-5 my-2">
+        <h1 class="display-6 text-black fs-2 pb-2">2. Using Tagged Template String & Rest Operator.</h1> 
+
+        <p id="result2" class="fs-5 pb-4 text-black"></p>
+    </div>
+
+    <div class="container-fluid px-5 my-2">
+        <h1 class="display-6 text-black fs-2 pb-4">3. Arrow Function with 0 parameters & only single line functionality.</h1> 
+
+        <h1 class="display-6 text-black fs-2 pb-4">4. Arrow Function with 1 parameter & only single line functionality.</h1> 
+
+        <h1 class="display-6 text-black fs-2 pb-4">5. Arrow Function with 2 or more parameters & multi-line functionality.</h1> 
+
+        <h1 class="display-6 text-black fs-2 pb-2">6. Regular Function & THIS Keyword.</h1>
+        <p class="fs-5 pb-4 text-black">Here, "THIS" refers to parent --> left of the dot.</p> 
+
+        <h1 class="display-6 text-black fs-2 pb-2">7. Arrow Function & THIS Keyword.</h1>
+        <p class="fs-5 pb-4 text-black">Here, "THIS" refers to its current surrounding scope.</p>  
+
+        <h1 class="display-6 text-black fs-2 pb-4">8. Default Parameters in Functions.</h1>
+
+        <h1 class="display-6 text-black fs-2 pb-2">9. Destructuring.</h1>
+        <p class="fs-5 pb-4 text-black">Faster & easier way to access the array or object values.</p> 
+
+        <h1 class="display-6 text-black fs-2 pb-4">10. For Of Loop.</h1>
+
+        <h1 class="display-6 text-black fs-2 pb-4">11. Spread Operator.</h1>
+
+        <h1 class="display-6 text-black fs-2 pb-4">12. Rest Operator.</h1>
+
+        <h1 class="display-6 text-black fs-2 pb-2">13. Array Methods.</h1>
+        <p>
+            <ul class="fs-5 pb-4 text-black">
+                <li>Array.of --> Creates a new Array Instance from a variable number of arguments.</li>
+                <li>Array.from --> Returns Array Object from any object with a length property or an iterable object.</li>
+                <li>Array.from --> Turns Array-like or Array-ish into Array (string, nodeList, etc...).</li>
+            </ul>
+        </p>
+    </div>
+
+    <script type="text/javascript">
+        //------------------------------Dynamic String Template---------------------------------
+        const person = {
+            name: "Charmi",
+            job: "Developer",
+            languages: ["English", "Hindi", "Gujarati"]
+        };
+        document.getElementById("result1").innerHTML = `
+        <h4>${person.name}</h4>
+        <h6>${person.job}</h6>
+        <p>Languages known :</p>
+        <ul>${person.languages.map(lang => {
+            return `<li>${lang}</li>`;
+        }).join("")}
+        </ul>`;
+
+        //------------------------------Tagged String Template---------------------------------
+        var name = "Charmi";
+        var surname = "Jadawala";
+        var age = 21;
+
+        const output = myFun`Hello my name is ${name} ${surname} and I'm ${age} years old...`;
+
+        /*normal data will always have one value more than variable data i.e an empty string if the varible data is at the end.
+        const output = myFun`Hello my name is ${name} ${surname} and I'm ${age} years old...${name}`;*/
+
+        function myFun(normaldata, ...variabledata){
+            //return "hii";
+            //console.log({normaldata, variabledata});
+            const newText = normaldata.map((item, index) => {
+                return `${item} <em>${variabledata[index] || ""}</em>`;
+            });
+            //console.log(normaldata);
+            return newText.join("");
+        }
+        document.getElementById("result2").innerHTML = output;
+
+        //------------------------------Arrow Funtions---------------------------------
+        // 0 Parameters and only single line functionality
+        const hello = () => console.log("Hello");
+        hello();
+
+        // 1 Parameter and only single line functionality
+        const hii = name => console.log(`Hii ${name}`);
+        hii("Charmi");
+
+        // 2 or more Parameters and more than single line functionality
+        const addition = (num1, num2) => {
+            var sum = num1 + num2;
+            return sum;
+        }
+        const res = addition(6, 7);
+        console.log(res);
+
+        //Function returning an object
+        const obj = () => ({name: "Charmi", surname: "Jadawala", age: 21});
+        const myObj = obj();
+        console.log(myObj);
+
+        //------------------------------Arrow Funtions : THIS Keyword---------------------------------
+        //Regular Function
+        const person1 = {
+            fname: "Charmi",
+            lname: "Jadawala",
+            fullname: function(){
+                console.log(this);
+                console.log(`Regular Function : ${this.fname} ${this.lname}`);
+            }
+        };
+        person1.fullname();
+
+        //Arrow Function
+        const person2 = {
+            fname: "John",
+            lname: "Doe",
+            fullname: () => {
+                console.log(this);
+                console.log(`Arrow Function : ${this.fname} ${this.lname}`);
+            }
+        };
+        person2.fullname();
+
+        //Error Solved
+        const person3 = {
+            fname: "John",
+            lname: "Doe",
+            fullname: function(){
+                console.log(this);
+                const p3 = this;
+                setTimeout(function(){
+                    console.log(this);
+                    console.log(p3);
+                    console.log(`Regular Function : ${p3.fname} ${p3.lname}`);
+                },1000);   
+            }
+        };
+        person3.fullname();
+
+        const person4 = {
+            fname: "John",
+            lname: "Doe",
+            fullname: function(){
+                console.log(this);
+                setTimeout(() => {
+                    console.log(this);
+                    console.log(`Arrow Function : ${this.fname} ${this.lname}`);
+                },1000);   
+            }
+        };
+        person4.fullname();
+
+        //------------------------------Funtions : Default Parameters---------------------------------
+        regfun(6);
+        function regfun(value = 1){
+            console.log("You passed value :" + " " + value);
+        }
+        
+        //const arrfunCall = arrfun();    
+        const arrfun = (value = 0) => "You passed value :" + " " + value;
+        const arrfunCall = arrfun();
+        console.log(arrfunCall);
+
+        //------------------------------Destructuring : Arrays---------------------------------
+        const cities = ["Ahmedabad", "Kolkata", "Varanasi", "Meghalaya"];
+        const fruits = ["Strawberry", "Cherry", "Pineapple", "Lichi", "Apple", "Grapes"];
+
+        //const [Ahmedabad, Kolkata] = cities;
+        //console.log(Ahmedabad, Kolkata);
+
+        //const [Ahmedabad, Kolkata, Varanasi, Meghalaya] = cities;
+        //console.log(Ahmedabad, Kolkata, Varanasi, Meghalaya);
+
+        //const [Ahmedabad, Kolkata, Varanasi, Meghalaya, Delhi] = cities;
+        //console.log(Ahmedabad, Kolkata, Varanasi, Meghalaya, Delhi);
+
+        //const [fruit1, fruit2, fruit3, fruit4, fruit5, fruit6] = fruits;
+        //console.log(fruit1, fruit2, fruit3, fruit4, fruit5, fruit6);
+
+        //const [fruit1, , fruit3, , fruit5] = fruits;
+        //console.log(fruit1, fruit3, fruit5);
+
+        //Swapping of 2 variables
+        let first = 1;
+        let second = 2;
+
+        [second, first] = [first, second];
+        console.log(first, second);
+
+        //------------------------------Destructuring : Objects---------------------------------
+        const destObj = {
+            fname: "Charmi",
+            job: "Developer",
+            languages: {MotherTongue: "Gujarati"}
+        };
+
+        //Basic
+        const {fname: firstName, job, extra, languages: {MotherTongue}} = destObj;
+        console.log(firstName, job, extra, MotherTongue);
+
+        //------------------------------Destructuring : Functions---------------------------------
+        //Inside Function
+        function print(obj){
+            const {fname, job} = obj;
+            console.log(fname, job);
+        }
+        print(destObj);
+
+        //Inside Function Parameters
+        function printFull({fname: firstName, job, languages: {MotherTongue: lang}}){
+            console.log(firstName, job, lang);
+        }
+        printFull(destObj);
+
+        //------------------------------For of Loop---------------------------------
+        const forOfStr = "I'm iterated using for of loop";
+        var newStr = "";
+
+        //Continue
+        for(let i of forOfStr){
+            //console.log(i);
+            if(i == " "){
+                continue;
+            }
+            else{
+                newStr += i;
+            }
+        }
+        console.log(newStr);
+
+        //Break
+        for(items of fruits){
+            if(items == "Lichi"){
+                break;
+                //continue;
+            }
+            console.log(items)
+        }
+
+        //------------------------------Spread Operator---------------------------------
+        //Spread Operator for Strings
+        const spreadStr = "Good Morning";
+        const resArr = [...spreadStr];
+        console.log(resArr);
+
+
+        //Spread Operator for Arrays
+        const odd = [1, 3, 5, 7];
+        const even = [0, 2, 4, 6, 8];
+        const bdate = 16;
+
+        //const numbers = [odd, even, bdate];
+        const numbers = [...odd, ...even, bdate];
+        console.log(numbers);
+
+        //Spread Operater creates the copy
+        //const myNums = numbers;
+        const myNums = [...numbers];
+        myNums[2] = 13;
+        console.log(numbers);
+        console.log(myNums);
+
+
+        //Spread Operator for Objects
+        const spreadObj = {
+            Name: "Charmi Jadawala",
+            Age: 21
+        };
+
+        //Create a Copy
+        // const spreadObjCopy = {...spreadObj};
+        // console.log(spreadObjCopy);
+
+        //Add a Property
+        // const spreadObjCopy = {...spreadObj, city: "Ahmedabad"};
+        // console.log(spreadObj);
+        // console.log(spreadObjCopy);
+
+        //Override a Property Value
+        const spreadObjCopy = {...spreadObj, city: "Ahmedabad", Name: "John Doe"};
+        console.log(spreadObj);
+        console.log(spreadObjCopy);
+
+
+        //Spread Operator in Inbuilt Functions
+        console.log(Math.max(10, 60, 70, 20, 40, 30));
+
+        console.log(numbers);
+
+        //Error
+        //console.log(Math.max(numbers));
+
+        //No Error
+        console.log(Math.max(...numbers));
+
+        //Spread Operator in Arrow Functions
+        const myName = ["Charmi", "Jadawala"];
+
+        const greet = (firstName, lastName) => {
+            console.log(`Hey Welcome ${firstName} ${lastName}`);
+        }
+
+        greet(myName[0], myName[1]);
+        greet(...myName);
+
+
+        //------------------------------Rest Operator---------------------------------
+        //Rest Operator for Arrays
+        const restArr = [10, 20, 30, 40, 50, 60];
+        const [firstItem, ...remaining] = restArr;
+        console.log(firstItem, remaining);
+
+        //Rest Operator for Objects
+        const capital = {
+            Gujarat: "Gandhinagar", 
+            Maharashtra: "Mumbai", 
+            Rajasthan: "Jaipur"
+        };
+        const {Maharashtra, ...rest} = capital;
+        console.log(Maharashtra, rest);
+
+        //Rest Operator in Function Parameters
+        const average = (name, ...scores) => {                      //Rest Operator -> Parameters
+            console.log(name);
+            console.log(scores);
+            var sum = 0;
+            for(let j of scores){
+                sum += j;
+            }
+            console.log(`${name} : ${sum / scores.length}`);
+        }
+        average(capital.Gujarat, ...restArr);                        //Spread Operator -> Arguments
+
+
+        //------------------------------Array Methods---------------------------------
+        //Array.of
+        const arrOf = Array.of(1, 2, 3, 4, 5, 6);
+        console.log(arrOf);
+
+        //Array.from
+        const fromStr = "CHARMI";
+        console.log(Array.from(fromStr));
+
+
+        //------------------------------Array Methods: index no. of 3rd L---------------------------------
+        var str = "Hello World";
+
+        var index1 = str.indexOf("l");
+        var index2 = str.indexOf("l", index1 + 1);
+
+        var position = str.indexOf("l", index2 + 1);
+        console.log(position);
+    </script>
+</body>
+</html>

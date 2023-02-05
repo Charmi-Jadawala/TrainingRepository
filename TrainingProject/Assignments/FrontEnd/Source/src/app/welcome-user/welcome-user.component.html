@@ -1,0 +1,36 @@
+<app-navbar></app-navbar>
+<div class="main container-fluid mt-5 pt-5 px-0">
+    <h1 class="text-white text-center m-5 p-5">Welcome back {{ userName }} !</h1>
+</div>
+<div class="container p-5">
+    <div *ngIf="condition; then block1; else block2">
+    </div>
+
+    <ng-template #block1>
+        <div class="card mb-5 mx-auto" style="max-width: 900px; max-height: 400px;" *ngFor="let courses of userCourses">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="{{ courses.CoverImage }} " class="img-fluid rounded-start h-100" alt="course-image">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body pe-5 pb-0">
+                        <p class="format text-muted"><small>Course | OFFERED BY &nbsp;<strong>{{ courses.OfferredBy }}</strong></small></p>
+                        <a class="card-title text-decoration-none text-black display-6 fs-2" [routerLink]="['/layout', courses.CourseId]"> {{ courses.CourseName }}</a>
+                        <div class="card-text text-secondary pt-4 d-flex justify-content-between">
+                            <p>{{ courses.Status }}</p>
+                            <p>Purchased Date: {{courses.PurchasedDate }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ng-template>
+    <ng-template #block2>
+        <h3 class="text-center mt-5 pt-5"><span class="ion-alert"></span> No courses purchased...</h3>
+        <div class="text-center my-4">
+            <a [routerLink]="['/searchCourse']" class="h5 text-decoration-none s3-a"><strong>Explore Free
+                    Courses&nbsp;&nbsp;<span class="ion-arrow-right-a"></span></strong></a>
+        </div>
+    </ng-template>
+</div>
+<app-footer></app-footer>

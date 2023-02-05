@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Var and Let</title>
+</head>
+<body>
+    <div>
+        <h1 class="display-6 text-black fs-2 pb-4">Explain difference between var and let keyword using example.</h1>
+
+        <h3 class="text-success fs-3">Var Keyword</h3>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+
+        <h3 class="text-success fs-3">Let Keyword</h3>
+        <p id="demo4"></p>
+        <p id="demo5"></p>
+        <p id="demo6"></p>
+    </div>
+
+    <script>
+        var str1 = "VAR Keyword";
+        document.getElementById("demo1").innerHTML = "Value of var str1 outside (before) the block :" + " " + str1;
+
+        {
+            var str1 = "Inside Block";
+            document.getElementById("demo2").innerHTML = "Value of var str1 inside the block :" + " " + str1;
+        }
+
+        document.getElementById("demo3").innerHTML = "Value of var str1 outside (after) the block :" + " " + str1;
+
+        let str2 = "LET Keyword";
+        document.getElementById("demo4").innerHTML = "Value of let str2 outside (before) the block :" + " " + str2;
+
+        {
+            let str2 = "Inside Block";
+            document.getElementById("demo5").innerHTML = "Value of var str1 inside the block :" + " " + str2;
+        }
+
+        document.getElementById("demo6").innerHTML = "Value of var str1 outside (after) the block :" + " " + str2;
+    </script>
+</body>
+</html>

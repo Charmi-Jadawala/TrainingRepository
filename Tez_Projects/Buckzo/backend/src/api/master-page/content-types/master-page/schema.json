@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "master_pages",
+  "info": {
+    "singularName": "master-page",
+    "pluralName": "master-pages",
+    "displayName": "MasterPages",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "Seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "search-engine-optimization.seo",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Title": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "GenericCollections": {
+      "type": "dynamiczone",
+      "components": [
+        "components.component-only",
+        "components.dynamic-page-data"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "LayoutName": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    }
+  }
+}

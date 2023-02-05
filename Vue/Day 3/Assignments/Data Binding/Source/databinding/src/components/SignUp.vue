@@ -1,0 +1,40 @@
+<template lang="en">
+    <div>
+        <h1 class="display-5 text-primary text-center">Sign Up</h1>
+        <div class="container mx-auto mt-2 mb-5 pb-5">
+            <form action="">
+                <label for="Name" class="form-label fs-5">Enter your Name: </label>
+                <input type="text" v-model="Name" name="Name" id="Name" class="form-control-sm mx-2 text-primary mb-3" /><br />
+                <label for="Address" class="form-label fs-5">Enter your Address:</label>
+                <input type="text" v-model="Address" name="Address" id="Address" class="form-control-sm mx-2 text-primary mb-3" /><br />
+                <label for="PanNumber" class="form-label fs-5">Enter your PAN Number:</label>
+                <input type="text" v-model="PanNumber" name="PanNumber" id="PanNumber" class="form-control-sm mx-2 text-primary mb-4" /><br />
+                <button @click="clear" class="btn btn-outline-primary ms-0 mx-2">Sign Up</button>
+            </form>
+            <p class="display-6 mt-3 mb-3 fs-3">Name: {{ Name }} &nbsp;&nbsp;&nbsp;&nbsp; 
+                Address: {{ Address }} &nbsp;&nbsp;&nbsp;&nbsp; 
+                PAN Number: {{ PanNumber }}
+            </p>
+        </div>
+    </div>
+</template>
+<script>
+export default {
+    name: 'SignUp',
+    data() {
+        return {
+            Name: "",
+            Address: "",
+            PanNumber: ""
+        }
+    },
+    methods: {
+        clear(){
+            this.Name = "";
+            this.Address = "";
+            this.PanNumber = "";
+        }
+    },
+}
+</script>
+<style scoped></style>

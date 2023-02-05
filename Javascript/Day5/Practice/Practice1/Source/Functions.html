@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Functions</title>
+</head>
+<body>
+    <!------------------------------------------- PRACTICE - 1 ------------------------------------------->
+    <div>
+        <h1 class="display-6 text-black fs-2 pb-4 mt-2">1. Using Function Expression, find the area of circle.</h1>
+
+        <form action="" id="myForm1">
+            <label class="form-label fs-5" for="radius">Please enter the Radius :</label>
+            <input class="form-control-sm mx-1" type="number" name="radius" id="radius"><br /><br />
+            <button class="btn btn-outline-primary" type="button" onclick="cir_area()">Area of Circle</button>
+            <button class="btn btn-outline-primary" type="button" onclick="Reset1()">Clear</button>
+        </form>
+        
+        <p class="my-2 fs-4 text-primary" id="circle"></p>
+    </div> 
+
+    <!------------------------------------------- PRACTICE - 2 ------------------------------------------->
+    <div>
+        <h1 class="display-6 text-black fs-2 pb-4">2. Using Function Constructor, find the area of rectangle.</h1>
+
+        <form action="" id="myForm2">
+            <label class="form-label fs-5" for="length">Please enter the Length :</label>
+            <input class="form-control-sm mx-1" type="number" name="length" id="length"><br /><br />
+            <label class="form-label fs-5" for="breadth">Please enter the Breadth :</label>
+            <input class="form-control-sm mx-1" type="number" name="breadth" id="breadth"><br /><br />
+            <button class="btn btn-outline-primary" type="button" onclick="rec_area()">Area of Rectangle</button>
+            <button class="btn btn-outline-primary" type="button" onclick="Reset2()">Clear</button>
+        </form>    
+            
+        <p class="my-2 fs-4 text-primary" id="rectangle"></p>    
+    </div> 
+
+    <!------------------------------------------- PRACTICE - 3 ------------------------------------------->
+    <div>
+        <h1 class="display-6 text-black fs-2 pb-4">3. Explain usage of Function Hosing using example.</h1>
+
+        <p class="my-2 fs-4 text-primary" id="hoisting"></p>
+    </div>
+   <script>
+       //------------------------------------------ PRACTICE - 1 -------------------------------------------//
+        function cir_area(){
+            var r = document.getElementById("radius").value;
+
+            const circle_area = function(r){const pi = 3.14; return (pi * r * r).toFixed(2);};
+
+            document.getElementById("circle").style.display = "block";
+            document.getElementById("circle").innerHTML = circle_area(r);
+        }
+
+        function Reset1(){
+            document.getElementById("myForm1").reset();
+            document.getElementById("circle").style.display = "none";
+        }
+
+        //------------------------------------------ PRACTICE - 2 -------------------------------------------//
+       function rec_area(){
+            var l = document.getElementById("length").value;
+            var b = document.getElementById("breadth").value;
+
+            const rect_area = new Function("l", "b", "return l * b")
+
+            document.getElementById("rectangle").style.display = "block";
+            document.getElementById("rectangle").innerHTML = rect_area(l, b);
+        }
+
+        function Reset2(){
+            document.getElementById("myForm2").reset();
+            document.getElementById("rectangle").style.display = "none";
+        }
+       
+        //------------------------------------------ PRACTICE - 3 -------------------------------------------//
+        document.getElementById("hoisting").innerHTML = hoist("Important !");
+
+        function hoist(text){
+            return text + " " + "This function is first called and then declared...";
+        }
+   </script>
+</body>
+</html>

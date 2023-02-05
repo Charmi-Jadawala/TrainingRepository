@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_faq_categorywisefaqs",
+  "info": {
+    "displayName": "044 - Categorywise FAQs",
+    "icon": "arrow-alt-circle-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "FAQs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "faq.faq-single"
+    },
+    "VueReferenceCode": {
+      "type": "string",
+      "default": "CFAQ",
+      "required": true
+    },
+    "GuideURL": {
+      "type": "string"
+    },
+    "SubTitle": {
+      "type": "richtext"
+    },
+    "Title": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

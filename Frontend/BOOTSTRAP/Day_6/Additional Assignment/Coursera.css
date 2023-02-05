@@ -1,0 +1,473 @@
+/* <!-- ------------------------------------------------NAVBAR---------------------------------------------- --> */
+.logo-main{
+    width: 60%!important;
+    height: auto;
+}
+
+.b1:hover{
+    background-color: #ffffff;
+    color: #1266f1 !important;
+}
+
+.dropdown-menu{
+    height: 86vh;
+    overflow-y: auto;
+}
+
+.dropdown-item:hover{
+    background-color: #ffffff;
+    color: #1266F1;
+}
+
+.l1:hover{
+    text-decoration: underline;
+    color: #1266F1 !important;
+}
+
+.l2:hover{
+    text-decoration: underline;
+}
+
+/* <!-- ------------------------------------------------SECTION:1 HEADER---------------------------------------------- --> */
+.cs-1{
+    margin-top: 10%;
+    margin-bottom: 4%;
+}
+
+.cs-1 h1{
+    text-align: left;
+    font-size: 450%;
+    font-weight: 648;
+}
+
+.cs-1 p{
+    font-size: 150%;
+}
+
+.s-1-b:hover{
+    background-color: #ebf1fc !important;
+    color: #1266F1 !important;
+}
+
+.s1-img{
+    width: 80%;
+}
+
+/* <!-- ------------------------------------------------SECTION:2 COLLABORATION---------------------------------------------- --> */
+.cs-2{
+    background-color: #f5f5f5;
+    padding-top: 5%;
+    padding-bottom: 7%;    
+}
+
+.link-dark{
+    font-size: 200%;
+    font-weight: 644;
+}
+
+.link-dark span:hover{
+    text-decoration: underline !important;
+    text-decoration-color: #1266f1 !important;
+}
+
+/* <!-- ------------------------------------------------SECTION:3 CERTIFICATES---------------------------------------------- --> */
+.cs-3{
+    padding-top: 6%;
+    padding-bottom: 7%;
+}
+
+.s3-h2{
+    font-size: 260%;
+    font-weight: 400;
+}
+
+.s3-p{
+    font-size: 140%;
+    font-weight: 380;
+    margin-bottom: 0;
+}
+
+.card:hover{
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.cs-3 .card-body{
+    height: 320px;
+}
+
+.cs-3 .card-img-top{
+    height: 240px;
+}
+
+.cs-3 .card-title{
+    margin-bottom: 4px !important;
+}
+
+.cs-3 .cf{
+    font-weight: 350;
+    margin-top: 48%;  
+}
+
+.cs-3 .cf2{
+    font-weight: 350;
+    margin-top: 38%;  
+}
+
+.cs-3 .cf4{
+    font-weight: 350;
+    margin-top: 27%;  
+}
+
+.s3-a:hover{
+    text-decoration: underline !important;
+}
+
+/* <!-- ------------------------------------------------SECTION:4 DEGREES---------------------------------------------- --> */
+.cs-4{
+    padding-top: 10%;
+    padding-bottom: 7%;
+}
+
+.cs-4 .card-title{
+    color: #1266F1;
+    font-size: 117%;
+    font-weight: 400;
+    margin-bottom: 3px !important;
+}
+
+.cs-4 .card-text{
+    font-weight: 320;
+}
+
+.cs-4 .card-body{
+    height: 240px;
+    background-color: #ffffff;
+}
+
+.cs-4 .card-img-top{
+    height: 148px;
+}
+
+.cs-4 .cf{
+    font-weight: 350;
+    margin-top: 32%;  
+}
+
+.cs-4 .cf2{
+    font-weight: 350;
+    margin-top: 24%;  
+}
+
+.cs-4 .cf3{
+    font-weight: 350;
+    margin-top: 14%;  
+}
+
+/* <!-- ------------------------------------------------SECTION:5 SKILLS---------------------------------------------- --> */
+.cs-5{
+    padding-top: 10%;
+    padding-bottom: 7%;
+}
+
+.cs-5 .s5-cb1{
+    background-color: #842df7;
+    height: 320px;
+}
+
+.cs-5 .s5-cb2{
+    background-color: #ffffff;
+    color: #1266f1 !important;
+    height: 320px;
+}
+
+.cs-5 .card-img-top{
+    height: 240px;
+}
+
+.cs-5 .card-title{
+    font-size: 160%;
+    font-weight: 460;
+    margin-bottom: 5px !important;
+}
+
+.cs-5 .card-text{
+    font-size: 120%;
+    font-weight: 360;
+}
+
+.cs-5 .cf{
+    font-weight: 350;
+    margin-top: 48%;  
+}
+
+.cs-5 .cf2{
+    font-weight: 350;
+    margin-top: 37%;  
+}
+
+.cs-5 .cf3{
+    font-weight: 350;
+    margin-top: 25%;  
+}
+
+/* <!-- ------------------------------------------------SECTION:6 FREE COURSES---------------------------------------------- --> */
+.cs-6{
+    padding-top: 10%;
+    padding-bottom: 7%;
+}
+
+.cs-6 .card-body{
+    background-color: #ffffff;
+    color: #1266f1 !important;
+    height: 320px;
+}
+
+.cs-6 .card-img-top{
+    height: 240px;
+}
+
+.cs-6 .card-title{
+    font-size: 160%;
+    font-weight: 460;
+    margin-bottom: 5px !important;
+}
+
+.cs-6 .card-text{
+    font-size: 120%;
+    font-weight: 360;
+}
+
+.cs-6 .cf{
+    font-weight: 350;
+    margin-top: 48%;  
+}
+
+.cs-6 .cf2{
+    font-weight: 350;
+    margin-top: 37%;  
+}
+
+.cs-6 .cf3{
+    font-weight: 350;
+    margin-top: 25%;  
+}
+
+/* <!-- ------------------------------------------------SECTION:7 EXPLORE COURSES---------------------------------------------- --> */
+.cs-7{
+    padding-top: 10%;
+    padding-bottom: 7%;
+}
+
+.cs-7 col{
+    height: 200px;
+}
+
+.mycard:hover{
+    box-shadow: 5px 10px 18px #888888 !important;
+}
+
+.cs-7 img{
+    display: inline-block;
+    height: 120px;
+    width: 120px;
+}
+
+.cs-7 p{
+    display: inline-block;
+    font-weight: 700;
+}
+
+/* <!-- ------------------------------------------------SECTION:8 WORLD-CLASS LEARNING---------------------------------------------- --> */
+.cs-8{
+    margin-top: 8%; 
+    margin-bottom: 7%;
+}
+
+.cs-8 img{
+    margin-top: -5%;
+    margin-bottom: -1%;
+    padding: 0;
+}
+
+.s8-col2{
+    padding-top: 8%;
+    padding-left: 4%;
+    padding-right: 3%;
+}
+
+.cs-8 .display-6{
+    font-size: 270%;
+    font-weight: 480;
+}
+
+.cs-8 p{
+    padding-top: 5%;
+    font-size: 150%;
+}
+
+.cs-8 h6{
+    font-size: 124%;
+    padding-top: 6%;
+    padding-bottom: 4%;
+}
+
+/* <!-- ------------------------------------------------SECTION:9 COURSERA COMMUNITY---------------------------------------------- --> */
+.cs-9{
+    margin-top: 12%; 
+    margin-bottom: 7%;
+}
+
+.cs-9 .display-1{
+    font-size: 467%;
+    font-weight: 500;
+}
+
+.cs-9 h4{
+    padding-top: 2%;
+    padding-bottom: 6%;
+    font-weight: 400;
+}
+
+.cs-9 img{
+    height: 300px;
+}
+
+#carousel-5 .carousel-item .row{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#carousel-5 .carousel-item h1{
+    padding-top: 5%;
+    font-size: 200%;
+    margin-bottom: 0;
+}
+
+#carousel-5 .carousel-item h3{
+    padding-top: 1%;
+    font-size: 135%;
+}
+
+#carousel-5 .carousel-item h6{
+    padding-top: 0;
+    font-size: 120%;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+#carousel-5 .carousel-item hr{
+    padding: 0.2%;
+    margin: 8%;
+}
+
+#carousel-5 .carousel-item p{
+    font-size: 150%;
+    font-weight: 420;
+}
+
+/* <!-- ------------------------------------------------SECTION:10 COURSERA FOR BUSINESS---------------------------------------------- --> */
+ .cs-10{
+    margin-top: 10%; 
+    margin-bottom: 7%;
+    padding: 10% 6% 13%;
+    background-color: rgba(234, 220, 224, 0.3);
+}
+
+.cs-10 .display-5{
+    font-size: 320%;
+    font-weight: 600;
+    padding-bottom: 5%;
+}
+
+.s10-div1{
+    margin-right: 7%;
+}
+
+.cs-10 p{
+    font-size: 150%;
+    padding-right: 4%;
+    padding-bottom: 1%;
+}
+
+.cs-10-b1{
+    margin-right: 2.6%;
+}
+
+.cs-10 h6{
+    font-size: 154%;
+    padding-top: 4%;
+    padding-bottom: 6%;
+    font-weight: 620;
+}
+
+/* <!-- ------------------------------------------------SECTION:11 JOIN FOR FREE---------------------------------------------- --> */
+.cs-11{
+    margin-top: 8%; 
+    margin-bottom: 7%;
+}
+
+.cs-11 img{
+    width: 54%;
+    margin-bottom: 4%;
+}
+
+.cs-11-div2{
+    padding-left: 6.6%;
+}
+
+.cs-11-div2 h1{
+    font-weight: 620 !important;
+    margin-bottom: 3%;
+}
+
+.cs-11-div2 p{
+    font-size: 114%;
+}
+
+.cs-11-b{
+    width: 19%;
+    margin-top: 3.4%;
+}
+
+/* <!-- ------------------------------------------------SECTION:12 FOOTER---------------------------------------------- -->  */
+.footer-12{
+    background-color: #f5f5f5;
+    margin-top: 8%; 
+    padding: 8% 9% 6%;
+}
+
+.footer-12 h6{
+    font-size: 140%;
+    font-weight: 648;
+    margin-bottom: 10%;
+}
+
+.footer-12 .link-dark{
+    display: block;
+    font-size: 99%;
+    text-decoration: none;
+    padding-bottom: 6%;
+    padding-right: 2%;
+    font-weight: 400;
+}
+
+.footer-12 .link-dark:hover{
+    text-decoration: underline;
+}
+
+.footer-r2{
+    margin-top: 9%;
+}
+
+.footer-flex1{
+    padding-top: 6%;
+}
+
+.footer-12 img{
+    height: 76%;
+    padding-right: 14%;
+}
+
+.footer-flex2{
+    margin-right: 8%;
+}

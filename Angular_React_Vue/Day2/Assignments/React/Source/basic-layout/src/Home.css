@@ -1,0 +1,17 @@
+.my-home{
+    background-color: #FBFBFB;
+    padding: 0 24px;
+    height: 70vh;
+}
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: #dc3545;
+    padding: 36px 0;
+    font-size: 46px;
+}
+
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+}   

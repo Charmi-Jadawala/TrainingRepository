@@ -1,0 +1,23 @@
+<h1 class="my-3 text-center display-4">Posts</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-4 mb-3" *ngFor="let post of posts">
+      <div class="card m-2" style="width: 400px">
+        <div class="card-header text-center display-6 text-primary fs-2">
+          Post ID: {{ post.id }}
+        </div>
+        <div class="card-body">
+          <p class="card-text text-secondary display-6 fs-3">
+            <em>User ID: {{ post.user_id }}</em>
+          </p>
+          <h4 class="card-title">{{ post.title }}</h4>
+          <p class="card-text">{{ post.body }}</p>
+        </div>
+        <div class="card-footer text-center">
+          <button class="btn btn-primary mx-2" (click)="updatePost(post)">Edit Post</button>
+          <button class="btn btn-primary mx-2" (click)="deletePost(post.id)">Delete Post</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

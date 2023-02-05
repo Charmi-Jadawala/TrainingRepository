@@ -1,0 +1,23 @@
+﻿@{ 
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>NotFound</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="container px-5 text-center">
+        <h1 class="display-5 pb-1 text-danger">Application Error</h1>
+        <div class="my-3 display-6 fs-2 text-secondary fst-italic">
+            <p>Sorry, an error occurred while processing your request.</p>
+        </div>
+        @Html.ActionLink("Back to Home Page", "Index", "CRUD", null, new { @class = "text-info text-decoration-none display-6 fs-3" })
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    <script src="~/Scripts/bootstrap.js"></script>
+</body>
+</html>

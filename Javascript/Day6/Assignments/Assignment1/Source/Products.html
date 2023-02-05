@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Products</title>
+</head>
+<body>
+    <div class="container mt-3">
+        <h2 class="text-center display-5">Products</h2>
+        <p class="p-2 ps-0 h6 fs-5 fw-normal">Product information :</p>            
+        <table class="table table-bordered">
+            <caption></caption>
+            <thead class="table-dark">
+            <tr>
+                <th>Product ID</th>
+                <th>Product Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody id="tdata">
+            </tbody>
+        </table>
+
+        <p id="demo" class="btn text-start container mt-3 border border-2 p-2 fs-5" onclick="cart()">Cart Summary</p>
+    </div>
+  
+    <script>
+        var data = "";
+        async function getdata(){
+            const response = await fetch("Product_data.json");
+            data = await response.json();
+            //console.log(data.length);
+            var print = "";
+            for(let i = 0; i < data.length; i++){
+                print += `<tr class="border border-end">
+                    <td> ${data[i].ProductID} </td>
+                    <td> ${data[i].ProductName} </td>
+                    <td> ${data[i].Price} </td>
+                    <td> ${data[i].Quantity} </td>
+                    <td class="btn" onclick="add${data[i].ProductName}()">Add to Cart</td>
+                    </tr>`;
+            }
+            document.getElementById("tdata").innerHTML = print;
+        }
+        getdata();  
+
+        var initialStats = {cheese: 0, pen: 0, butter: 0, pencil: 0};
+
+        var jsonData = JSON.stringify(initialStats);
+        localStorage.setItem("products", jsonData);
+
+        var myData = localStorage.getItem("products");
+        var jsData = JSON.parse(myData);
+
+        var cheeseData = jsData.cheese;
+        function addCheese(){
+        cheeseData += 1;
+        }
+
+        var penData = jsData.pen;
+        function addPen(){
+        penData += 1;
+        }
+
+        var butterData = jsData.butter;
+        function addButter(){
+        butterData += 1;
+        }
+
+        var pencilData = jsData.pencil;
+        function addPencil(){
+        pencilData += 1;
+        }
+
+        function cart(){
+            var finalStats = `Cheese: ${cheeseData}  Pen: ${penData}  Butter: ${butterData}  Pencil: ${pencilData}`;
+            console.log(finalStats);
+            localStorage.setItem("products", finalStats);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<div class="my-4">
+  <div class="container w-50 mx-auto bg-light p-3">
+    <h1 class="display-6 text-primary text-center mb-4">Post Form</h1>
+    <form [formGroup]="PostForm">
+      <div class="input-group m-2">
+        <span class="input-group-text text-primary">ID:</span>
+        <input
+          type="text"
+          name="Name"
+          formControlName="id"
+          class="form-control"
+          placeholder="Post Id"
+          readonly
+        />
+      </div>
+
+      <div class="input-group m-2">
+        <span class="input-group-text text-primary">User ID:</span>
+        <input
+          type="text"
+          name="Name"
+          formControlName="user_id"
+          class="form-control"
+          placeholder="User Id"
+        />
+      </div>
+
+      <div class="input-group m-2">
+        <span class="input-group-text text-primary">Title:</span>
+        <input
+          type="text"
+          name="Name"
+          formControlName="title"
+          class="form-control"
+          placeholder="Post Title"
+        />
+      </div>
+
+      <div class="input-group m-2">
+        <span class="input-group-text text-primary">Body:</span>
+        <textarea
+          name="body"
+          id="body"
+          rows="3"
+          formControlName="body"
+          class="form-control"
+          placeholder="Post Body"
+        ></textarea>
+      </div>
+
+      <div class="m-2 ml-2 mt-3 text-center">
+        <button type="submit" class="btn btn-primary mx-2" (click)="addPost()">Create Post</button>
+        <button type="button" class="btn btn-primary mx-2" (click)="editPost()">Update Post</button>
+        <button type="reset" class="btn btn-primary mx-2">Clear</button>
+      </div>
+    </form>
+  </div>
+  <div>
+      <app-post-list [postForm]="PostForm"></app-post-list>
+  </div>
+</div>

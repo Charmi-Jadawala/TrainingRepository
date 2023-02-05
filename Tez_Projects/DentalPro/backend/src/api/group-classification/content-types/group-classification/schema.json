@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "group_classifications",
+  "info": {
+    "singularName": "group-classification",
+    "pluralName": "group-classifications",
+    "displayName": "Group Classifications",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "richtext",
+      "required": false
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "NavURL": {
+      "type": "string"
+    }
+  }
+}

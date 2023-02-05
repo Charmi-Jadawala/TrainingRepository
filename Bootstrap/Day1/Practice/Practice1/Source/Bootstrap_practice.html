@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Practice</title>
+    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <style>
+       @media only screen and (min-width: 576px){
+        .sidebar{
+            height: 82vh;
+        }
+        .content-main{
+            height: 76vh;
+        }
+        .content-main img{
+            width: 320px;
+            height: auto;
+            margin-top: 110px;
+        }
+       }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-primary sticky-top" aria-label="navtop">
+        <div class="container-fluid px-5">
+            <a href="#" class="navbar-brand">
+                <img src="../../../Assets/radix.png" alt="Radix Logo" class="img-fluid">
+            </a>
+            <button type="button" class="navbar-toggler bg-white" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="ion-navicon-round text-primary"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item p-md-3"><a href="../../../index.html" class="nav-link text-white"><span class="ion-android-home"></span>&nbsp;&nbsp;Home</a></li>
+                    <li class="nav-item p-md-3"><a href="../../../HTML/HTML.html" class="nav-link text-white"><span class="ion-social-html5"></span>&nbsp;&nbsp;HTML</a></li>
+                    <li class="nav-item p-md-3"><a href="../../../CSS/CSS.html" class="nav-link text-white"><span class="ion-social-css3"></span>&nbsp;&nbsp;CSS</a></li>
+                    <li class="nav-item p-md-3"><a href="#" class="nav-link active text-white"><span class="ion-code-working"></span>&nbsp;&nbsp;BOOTSTRAP</a></li>
+                    <li class="nav-item p-md-3"><a href="../../../TAILWIND/Tailwind.html" class="nav-link active text-white"><span class="ion-code"></span>&nbsp;&nbsp;TAILWIND</a></li>
+                    <li class="nav-item p-md-3"><a href="../../../JAVASCRIPT/JAVASCRIPT.html" class="nav-link active text-white"><span class="ion-social-javascript"></span>&nbsp;&nbsp;JAVASCRIPT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid text-white">
+        <div class="row">
+            <div class="sidebar col-sm-5 col-md-4 col-lg-3 bg-info overflow-auto">
+                <nav class="navbar ps-4 mt-0" aria-label="sidebar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link h4 pb-0 text-black">Day&hyphen;1</a>
+                            <ul>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle text-white" role="button" data-bs-toggle="dropdown">Practicals</a>
+                                    <ul class="dropdown-menu bg-info">
+                                        <li><a class="dropdown-item" href="#">Bootstrap Practice</a></li>  
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link h4 pb-0 text-black">Day&hyphen;2</a>
+                            <ul>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle text-white" role="button" data-bs-toggle="dropdown">Assignments</a>
+                                    <ul class="dropdown-menu bg-info">
+                                        <li><a class="dropdown-item" href="../../Day_2/Assignment/Resume_bootstrap.html" target="_blank">Resume with Bootstrap</a></li>  
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link h4 pb-0 text-black">Day&hyphen;3</a>
+                            <ul>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle text-white" role="button" data-bs-toggle="dropdown">Assignments</a>
+                                    <ul class="dropdown-menu bg-info">
+                                        <li><a class="dropdown-item" href="../../Day_3/Assignment/LoopLab.html" target="_blank">Project&hyphen;1 &colon; LoopLAB</a></li>  
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle text-white" role="button" data-bs-toggle="dropdown">Practicals</a>
+                                    <ul class="dropdown-menu bg-info">
+                                        <li><a class="dropdown-item" href="../../Day_3/Practical/Album.html" target="_blank">Album Example</a></li>  
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link h4 pb-0 text-black">Day&hyphen;4</a>
+                            <ul>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle text-white" role="button" data-bs-toggle="dropdown">Assignments</a>
+                                    <ul class="dropdown-menu bg-info">
+                                        <li><a class="dropdown-item" href="../../Day_4/Assignment/Mizuxe.html" target="_blank">Project&hyphen;2 &colon; Mizuxe</a></li>  
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link h4 pb-0 text-black">Day&hyphen;5</a>
+                            <ul>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle text-white" role="button" data-bs-toggle="dropdown">Assignments</a>
+                                    <ul class="dropdown-menu bg-info">
+                                        <li><a class="dropdown-item" href="../../Day_5/Assignment/Admin_panel.html" target="_blank">Project&hyphen;3 &colon; Admin Panel</a></li>  
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link h4 pb-0 text-black">Day&hyphen;6</a>
+                            <ul>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle text-white" role="button" data-bs-toggle="dropdown">Additional Assignment</a>
+                                    <ul class="dropdown-menu bg-info">
+                                        <li><a class="dropdown-item" href="../../Day_6/Additional Assignment/Coursera.html" target="_blank">Project&hyphen;4 &colon; Coursera Clone</a></li>  
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>  
+                </nav>
+            </div>
+            <div class="col-sm-7 col-md-8 col-lg-9">
+                <div class="content-main container border border-2 border-dark my-3 shadow-lg overflow-auto">
+                  <div class="container">
+                    <h1 class="bg-primary text-light text-center mt-4 mb-0 p-2">Container Class Example</h1>
+                    <p class="bg-info p-3 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est doloremque neque aspernatur 
+                        quo laudantium aut maxime in quis molestias iure voluptatem nostrum labore nemo aperiam, 
+                        tempora tenetur! Deleniti, repellat aliquam.
+                    </p>
+                    <p class="bg-info text-white p-3">Properties applied over here are: <br />
+                        div: class container <br />
+                        Heading 1: bg-primary <br />
+                        Heading 1: text-light <br />
+                        Heading 1: text-center <br />
+                        Heading 1: mt-4 means margin top 4 rem <br />
+                        Heading 1: mb-0 means margin bottom 0 rem <br />
+                        Heading 1: p-2 means padding 2 rem all sides <br />
+                        Paragraph 1: bg-info <br />
+                        Paragraph 1: p-3 means padding 2 rem all sides <br />
+                        Paragraph 1: mb-0 means margin bottom 0 rem <br />
+                        Paragraph 2: bg-info <br />
+                        Paragraph 2: text-white <br />
+                        Paragraph 2: p-3 means padding 2 rem all sides <br />
+                    </p>
+                </div>
+            
+                <div class="container-fluid mt-5">
+                    <h1 class="bg-success text-center text-uppercase mb-0 p-3 text-warning">Container-Fluid Class Example</h1>
+                    <p class="bg-danger text-light mb-0 p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est doloremque neque aspernatur 
+                        quo laudantium aut maxime in quis molestias iure voluptatem nostrum labore nemo aperiam, 
+                        tempora tenetur! Deleniti, repellat aliquam.
+                    </p>
+                    <p class="bg-warning p-3">
+                        This container fluid property occupies full 100% width. <br />
+                        Properties applied over here are: <br />
+                        div: class container <br />
+                        Container: mt-6 means margin top 6 rem <br />
+                        Heading 1: bg-success <br />
+                        Heading 1: text-uppercase <br />
+                        Heading 1: text-center <br />
+                        Heading 1: mb-0 means margin bottom 0 rem <br />
+                        Heading 1: p-3 means padding 3 rem all sides <br />
+                        Heading 1: text-warning <br />
+                        Paragraph 1: bg-danger <br />
+                        Paragraph 1: text-light <br />
+                        Paragraph 1: p-3 means padding 2 rem all sides <br />
+                        Paragraph 1: mb-0 means margin bottom 0 rem <br />
+                        Paragraph 2: bg-warning <br />
+                        Paragraph 2: p-3 means padding 2 rem all sides <br />
+                    </p>
+                </div>
+            
+                <div class="container text-center bg-primary mt-5">
+                    <div class="row">
+                        <div class="col m-2 p-2 text-light text-decoration-underline"><h1>Bootstrap Grid</h1></div>
+                    </div>
+                    <div class="row p-3 m-3 text-white">
+                        <div class="col bg-info p-3 m-3">Item &hyphen; 1</div>
+                        <div class="col bg-info p-3 m-3">Item &hyphen; 2</div>
+                        <div class="col bg-info p-3 m-3">Item &hyphen; 3</div>
+                        <div class="col bg-info p-3 m-3">Item &hyphen; 4</div>
+                    </div>
+                    <div class="row p-3 m-3">
+                        <div class="col-md-6 col-lg-3 col-xl-2 bg-light p-3 border border-danger border-2">Item &hyphen; 1</div>
+                        <div class="col-md-6 col-lg-3 col-xl-2 bg-light p-3 border border-danger border-2">Item &hyphen; 2</div>
+                        <div class="col-md-6 col-lg-3 col-xl-2 bg-light p-3 border border-danger border-2">Item &hyphen; 3</div>
+                        <div class="col-md-6 col-lg-3 col-xl-2 bg-light p-3 border border-danger border-2">Item &hyphen; 4</div>
+                        <div class="col-md-6 col-lg-3 col-xl-2 bg-light p-3 border border-danger border-2">Item &hyphen; 5</div>
+                        <div class="col-md-6 col-lg-3 col-xl-2 bg-light p-3 border border-danger border-2">Item &hyphen; 6</div>
+                    </div>
+                    <div class="row p-3 m-3 text-success">
+                        <div class="col-sm-6 col-md-4 col-lg-2 bg-warning p-3">Item &hyphen; 1</div>
+                        <div class="col-sm-6 col-md-4 col-lg-2 bg-warning p-3">Item &hyphen; 2</div>
+                        <div class="col-sm-6 col-md-4 col-lg-2 bg-warning p-3">Item &hyphen; 3</div>
+                        <div class="col-sm-6 col-md-4 col-lg-2 bg-warning p-3">Item &hyphen; 4</div>
+                    </div>
+                </div>
+            
+                <div class="container mt-5">
+                    <p class="display-3">This text uses Bootstrap Display Property &excl; &excl; &excl;</p>
+                    <p class="display-6">Bootstrap Table Property &hyphen; Default Table</p>            
+                    <table class="table">
+                      <caption>Practice Table &hyphen; 1</caption>
+                      <thead>
+                        <tr>
+                          <th>Firstname</th>
+                          <th>Lastname</th>
+                          <th>Age</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Charmi</td>
+                          <td>Jadawala</td>
+                          <td>charmijadawala@gmail.com</td>
+                        </tr>
+                        <tr>
+                          <td>Gopi</td>
+                          <td>Jadawala</td>
+                          <td>gopijadawala@gmail.com</td>
+                        </tr>
+                        <tr>
+                          <td>Disha</td>
+                          <td>Bhatt</td>
+                          <td>dishabhatt@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Charmi</td>
+                            <td>Jadawala</td>
+                            <td>charmijadawala@gmail.com</td>
+                          </tr>
+                      </tbody>
+                    </table>
+                  </div>
+            
+                  <div class="container mt-5">
+                    <p class="display-6">Bootstrap Table Property &hyphen; Hover Table</p>            
+                    <table class="table table-dark table-striped table-hover">
+                      <caption>Practice Table &hyphen; 2</caption>
+                      <thead>
+                        <tr class="table-primary">
+                          <th>Firstname</th>
+                          <th>Lastname</th>
+                          <th>Age</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Charmi</td>
+                          <td>Jadawala</td>
+                          <td>charmijadawala@gmail.com</td>
+                        </tr>
+                        <tr>
+                          <td>Gopi</td>
+                          <td>Jadawala</td>
+                          <td>gopijadawala@gmail.com</td>
+                        </tr>
+                        <tr>
+                          <td>Disha</td>
+                          <td>Bhatt</td>
+                          <td>dishabhatt@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Charmi</td>
+                            <td>Jadawala</td>
+                            <td>charmijadawala@gmail.com</td>
+                          </tr>
+                          <tr>
+                            <td>Gopi</td>
+                            <td>Jadawala</td>
+                            <td>gopijadawala@gmail.com</td>
+                          </tr>
+                          <tr>
+                            <td>Disha</td>
+                            <td>Bhatt</td>
+                            <td>dishabhatt@gmail.com</td>
+                          </tr>
+                      </tbody>
+                      <tfoot>
+                          <tr>
+                              <td colspan="3" class="text-capitalize text-center table-danger">table footer</td>
+                          </tr>
+                      </tfoot>
+                    </table>
+                  </div>
+                  
+                  <div class="container display-6 mt-4">
+                    <div class="alert">This is a <strong>Normal&excl;</strong> Alert.</div>
+                    <div class="alert alert-primary">This is a <strong>Primary&excl;</strong> Alert.</div>
+                    <div class="alert alert-secondary">This is a <strong>Secondary&excl;</strong> Alert.</div>
+                    <div class="alert alert-info">This is an <strong>Information&excl;</strong> Alert.</div>
+                    <div class="alert alert-success">This is a <strong>Success&excl;</strong> Alert.</div>
+                    <div class="alert alert-warning">This is a <strong>Warning&excl;</strong> Alert.</div>
+                    <div class="alert alert-light text-light bg-black">This is a <strong>Light&excl;</strong> Alert.</div>
+                    <div class="alert alert-dark">This is a <strong>Dark&excl;</strong> Alert.</div>
+                    <div class="alert alert-danger">This is a <strong>Danger&excl;</strong> Alert.</div>
+                  </div>
+            
+                  <div class="container mt-5">
+                    <p class="display-5 text-capitalize">different types of bootstrap buttons &excl; &excl; &excl;</p>
+                    <button type="button" class="btn btn-primary m-3 p-2">Primary Button</button>
+                    <button type="button" class="btn btn-outline-primary m-3 p-2">Outline Primary Button</button>
+                    <button type="button" class="btn btn-secondary m-3 p-2">Secondary Button</button>
+                    <button type="button" class="btn btn-outline-secondary m-3 p-2">Outline Secondary Button</button>
+                    <button type="button" class="btn btn-success m-3 p-2">Success Button</button>
+                    <button type="button" class="btn btn-outline-success m-3 p-2">Outline Success Button</button>
+                    <button type="button" class="btn btn-info m-3 p-2">Info Button</button>
+                    <button type="button" class="btn btn-outline-info m-3 p-2">Outline Info Button</button>
+                    <button type="button" class="btn btn-warning m-3 p-2">Warning Button</button>
+                    <button type="button" class="btn btn-outline-warning m-3 p-2">Outline Warning Button</button>
+                    <button type="button" class="btn btn-danger m-3 p-2">Danger Button</button>
+                    <button type="button" class="btn btn-outline-danger m-3 p-2">Outline Danger Button</button>
+                    <button type="button" class="btn btn-dark m-3 p-2">Dark Button</button>
+                    <button type="button" class="btn btn-outline-dark m-3 p-2">Outline Dark Button</button>
+                    <button type="button" class="btn btn-light m-3 p-2">Light Button</button>
+                    <button type="button" class="btn btn-outline-light m-3 p-2">Outline Light Button</button>
+                    <button type="button" class="btn btn-link m-3 p-2">Link Button</button>
+                    <button type="button" class="btn btn-outline-link m-3 p-2">Outline Link Button</button>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

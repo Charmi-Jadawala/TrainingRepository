@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Exercise-4 & 5</title>
+</head>
+<body>
+    <div>
+        <h1 class="display-6 text-black fs-2">JavaScript function to get the current date</h1>
+        <button type="button" class="btn btn-outline-primary my-3" onclick="myFun()">Date</button>
+        <p id="d-default" class="text-primary fs-5"></p>
+        <p id="d-utc" class="text-primary fs-5"></p>
+        <p id="d-iso" class="text-primary fs-5"></p>
+    </div>
+
+    <div class="mt-1">
+        <h1 class="display-6 text-black fs-2">Some operations with list like push, pop, shifting &amp; deleting element.</h1>
+        <button type="button" class="btn btn-outline-primary my-3" onclick="arrFun()">Array Operations</button>
+        <p id="ori1" class="text-primary fs-5"></p>
+        <p id="push" class="text-primary fs-5"></p>
+        <p id="unshift" class="text-primary fs-5"></p>
+        <p id="pop" class="text-primary fs-5"></p>
+        <p id="shift" class="text-primary fs-5"></p>
+    </div>
+
+    <script>
+
+        function myFun(){
+            const date = new Date();
+            document.getElementById("d-default").innerHTML = "Default date format :" + " " + date;
+            document.getElementById("d-utc").innerHTML = "UTC date format :" + " " + date.toUTCString();
+            document.getElementById("d-iso").innerHTML = "ISO date format :" + " " + date.toISOString(); 
+        }
+
+        function arrFun(){
+            const city = ["Ahmedabad", "Baroda", "Surat", "Rajkot", "Kutch"];
+            document.getElementById("ori1").innerHTML = "Original List:" + " " + city;
+            city.push("Bhuj");
+            document.getElementById("push").innerHTML = "City added at the end of the List:" + " " + city;
+            city.unshift("Somnath");
+            document.getElementById("unshift").innerHTML = "City added at the start of the List:" + " " + city;
+            city.pop();
+            document.getElementById("pop").innerHTML = "City deleted from the end of the List:" + " " + city;
+            city.shift();
+            document.getElementById("shift").innerHTML = "City deleted from the start of the List:" + " " + city;
+        }
+    </script>
+</body>
+</html>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+

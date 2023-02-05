@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="Admin_panel.css">
+    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark p-0">
+        <div class="container">
+            <a href="#" class="navbar-brand h3 mb-0">Blogen</a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="Admin_panel.html" class="nav-link">Dashboard</a></li>
+                    <li class="nav-item"><a href="ap_posts.html" class="nav-link">Posts</a></li>
+                    <li class="nav-item"><a href="ap_catogories.html" class="nav-link">Categories</a></li>
+                    <li class="nav-item"><a href="ap_users.html" class="nav-link">Users</a></li>
+                </ul>
+                <ul class="navbar-nav ms-lg-auto">
+                    <li class="nav-item dropdown my-auto">
+                        <a href="#" class="nav-link dropdown-toggle active" role="button" data-bs-toggle="dropdown">
+                        <span class="ion-android-contact"></span>&nbsp;Welcome Charmi</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="ap_profile.html" class="dropdown-item"><span class="ion-person"></span>&nbsp;&nbsp;Profile</a></li>
+                                <li><a href="#" class="dropdown-item"><span class="ion-ios-gear"></span>&nbsp;&nbsp;Settings</a></li>
+                            </ul>
+                    </li>
+                    <li class="nav-item"><a href="ap_login.html" class="nav-link my-auto">
+                        <span class="ion-log-out"></span>&nbsp;Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid bg-primary text-white">
+        <div class="container ps-1">
+            <h2 class="p-2 m-0"><span class="ion-ios-gear"></span>&nbsp;Settings</h2>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-light">
+        <div class="container p-3">
+            <div class="row">
+                <div class="col-sm-4 col-lg-3 text-center">
+                    <a href="Admin_panel.html" class="text-black text-decoration-none mb-1 mb-sm-0 fs-5"><span class="ion-arrow-left-c"></span>&nbsp;Back To Dashboard</a>
+                </div>
+                <div class="col-4 col-lg-3 d-none d-sm-block"></div>
+                <div class="col-3 d-none d-lg-block"></div>
+                <div class="col-sm-4 col-lg-3 d-grid pe-0">
+                    <button class="btn btn-success d-block my-1 my-sm-0"><span class="ion-checkmark-round"></span>&nbsp;&nbsp;Save Changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container border border-1 my-3 p-0">
+        <h4 class="bg-light border-bottom mb-0 p-2">Edit Settings</h4>
+        <form action="" class="p-4"> 
+            <h5 class="fw-normal">Allow User Registrations</h5>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="yes1" name="r1" value="" checked>
+                <label class="form-check-label" for="yes1">Yes</label>
+                <br />
+                <input type="radio" class="form-check-input" id="no1" name="r1" value="">
+                <label class="form-check-label" for="no1">No</label>
+              </div>
+              <h5 class="fw-normal pt-3">Homepage Format</h5>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="yes2" name="r2" value="" checked>
+                <label class="form-check-label" for="yes2">Post Index</label>
+                <br />
+                <input type="radio" class="form-check-input" id="no2" name="r2" value="">
+                <label class="form-check-label" for="no2">Single Page</label>
+            </div>
+        </form>
+    </div>
+                
+    <footer class="bg-secondary mt-2">
+        <p class="text-center mb-0 p-5">Copyright &copy; 2022 Blogen</p>
+    </footer>
+
+
+  
+     
+    </body>
+    </html>
+
+    

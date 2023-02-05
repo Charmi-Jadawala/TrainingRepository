@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_faq_faqlist",
+  "info": {
+    "displayName": "043 - FAQ List",
+    "icon": "arrow-circle-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "FAQs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "faq.faq-single"
+    },
+    "VueReferenceCode": {
+      "type": "string",
+      "default": "FAQL",
+      "required": true
+    },
+    "GuideURL": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_portfolio_050_title_content_with_portfolio_lists",
+  "info": {
+    "displayName": "050 - Title Content With Portfolio List",
+    "icon": "caret-up",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "LongText": {
+      "type": "richtext"
+    },
+    "Portfolios": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::portfolio.portfolio"
+    },
+    "VueReferenceCode": {
+      "type": "string",
+      "required": true
+    },
+    "GuideURL": {
+      "type": "string"
+    },
+    "SubTitle": {
+      "type": "richtext"
+    },
+    "Title": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

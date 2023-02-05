@@ -1,0 +1,2 @@
+Bike No.: 1234, Phone No.: 134567890, Name: Charmi, No. of days: 10, Charge: 4500
+Bike No.: 4567, Phone No.: 1234567890, Name: Gopi, No. of days: 12, Charge: 4900

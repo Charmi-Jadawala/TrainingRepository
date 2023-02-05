@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_advanced_keyvaluelist",
+  "info": {
+    "displayName": "015 - Key Value List",
+    "icon": "angle-double-up",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "KeyValueList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "standard.key-value",
+      "required": true
+    },
+    "VueReferenceCode": {
+      "type": "string",
+      "default": "KVL",
+      "required": true
+    },
+    "GuideURL": {
+      "type": "string"
+    }
+  }
+}

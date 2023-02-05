@@ -1,0 +1,126 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pages",
+  "info": {
+    "singularName": "page",
+    "pluralName": "pages",
+    "displayName": "Pages",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "ReferencePages": {
+      "type": "enumeration",
+      "enum": [
+        "Articles",
+        "Authors",
+        "Categories"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Slug": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "GenericCollections": {
+      "type": "dynamiczone",
+      "components": [
+        "advanced.key-value-list",
+        "advanced.title-content-list",
+        "advanced.title-content-media-list",
+        "architecture.059-dc-code",
+        "banner.advanced-content-banner",
+        "banner.content-banner",
+        "blog.048-title-content-with-blog-list",
+        "call-to-action.call-to-action",
+        "call-to-action.call-to-action-list",
+        "call-to-action.choose-call-to-actions",
+        "careers.067-title-content-with-careers-list",
+        "case-studies.060-case-study",
+        "components.component-only",
+        "components.dynamic-page-data",
+        "download.066-title-content-with-download-list",
+        "faq.faq-list",
+        "faq.faq-single",
+        "faq.title-with-faq-list",
+        "hierarchical.028-title-content-media-with-title-content-media-list",
+        "hierarchical.058-title-media-with-title-media-list",
+        "hierarchical.title-content-with-key-value-list",
+        "hierarchical.title-content-with-title-content-list",
+        "locations.065-title-content-with-location-list",
+        "navigation.breadcrumb",
+        "navigation.previous-next",
+        "news.061-title-content-with-news-list",
+        "news.062-title-content-with-news-blog-list",
+        "portfolio.050-title-content-with-portfolio-list",
+        "search-engine-optimization.meta-tags",
+        "search-engine-optimization.redirect-routes",
+        "search-engine-optimization.seo",
+        "search-engine-optimization.site-map",
+        "slider.advanced-content-slider",
+        "slider.content-slider",
+        "slider.simple-slider",
+        "standard.key-value",
+        "standard.title-content-media-single",
+        "standard.title-content-single",
+        "standard.title-media-single",
+        "standard.title-single",
+        "teams.title-content-with-team-list",
+        "testimonials.064-title-content-with-testimonial-list",
+        "data-control.get-all-data"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "search-engine-optimization.seo",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "MasterPage": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::master-page.master-page"
+    },
+    "DisplayOrder": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "biginteger",
+      "min": "0"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+<div class="mt-3 mb-5">
+    <div class="container w-50 mx-auto bg-light p-3">
+        <form [formGroup]="UpdateForm" (ngSubmit)="onSubmit()">
+            <h1 class="display-6 text-center text-primary">Update Form</h1>
+            <div formGroupName="Name" class="mt-2 mb-3">
+                <h2 class="display-6 fs-3 text-black">Name</h2>
+
+                <label for="fname" class="form-label fs-5 text-primary">First Name:</label>
+                <input type="text" class="form-control" id="fname" formControlName="FirstName" />
+
+                <label for="lname" class="form-label fs-5 text-primary">Last Name:</label>
+                <input type="text" class="form-control" id="lname" formControlName="LastName" />
+            </div>
+
+            <label for="age" class="form-label fs-5 text-primary">Age:</label>
+            <input type="number" class="form-control mb-4" id="age" formControlName="Age" />
+
+            <button type="button" class="btn btn-primary" (click)="updateFirstName()">Update First Name</button>
+            <button type="submit" class="btn btn-primary ms-3">Submit</button>
+            <button type="reset" class="btn btn-primary ms-3">Clear</button>
+        </form>  
+
+        <h1 class="display-6 fs-3 my-4 text-center text-black">Form Data:  {{ UpdateForm.value | json }} {{ name }}</h1>
+    </div>
+</div>

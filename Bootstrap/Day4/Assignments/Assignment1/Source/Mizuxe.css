@@ -1,0 +1,24 @@
+.logo{
+    width: 90px;
+}
+
+.home{
+    background-image: url('../../../Assets/mountains.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 700px;
+}
+
+.home .info-overlay{
+    background-color: rgba(91, 192, 222,0.7);
+}
+
+.i1{
+    margin-top: -50px!important;
+}
+
+@media only screen and (max-width: 576px){
+    .logo{
+       width: 56px;
+    }
+}

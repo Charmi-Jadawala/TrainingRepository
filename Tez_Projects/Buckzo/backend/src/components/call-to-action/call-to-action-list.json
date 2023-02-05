@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_call_to_action_calltoactionlist",
+  "info": {
+    "displayName": "040 - Call To Action List",
+    "icon": "align-center",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "CallToActionList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "call-to-action.call-to-action",
+      "required": true
+    },
+    "VueReferenceCode": {
+      "type": "string",
+      "default": "CTAL",
+      "required": true
+    },
+    "GuideURL": {
+      "type": "string"
+    }
+  }
+}

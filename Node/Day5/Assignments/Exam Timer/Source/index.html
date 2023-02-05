@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Timer</title>
+</head>
+<body>
+    <h1>Exam Timer</h1>
+    <h1 id="timer"></h1>
+</body>
+<script>
+    const time = new Date().getTime() + 10800000;
+    const examTimer = setInterval(() => {
+        const currentTime = new Date().getTime();
+        const actualTime = time - currentTime;
+        var hours = Math.floor((actualTime / (1000 * 60 * 60)) % 24);
+        var mins = Math.floor((actualTime / (1000 * 60)) % 60);
+        var secs = Math.floor((actualTime / (1000)) % 60);
+        document.getElementById('timer').innerHTML = `${hours} : ${mins} : ${secs}`;
+        if(actualTime < 1) {
+            clearInterval(examTimer);
+            fetch('http://localhost:3001/ExamOver');
+        }
+    }, 1000);
+</script>
+</html>

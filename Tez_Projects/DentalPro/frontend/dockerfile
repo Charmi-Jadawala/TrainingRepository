@@ -1,0 +1,4 @@
+FROM node:16.15.1
+WORKDIR /app
+CMD npm install && chmod 777 node_modules && npm run dev
+EXPOSE 3000

@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_standard_keyvalue",
+  "info": {
+    "displayName": "010 - Key Value",
+    "icon": "grip-lines",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Key": {
+      "type": "string",
+      "required": true
+    },
+    "Value": {
+      "type": "string",
+      "required": true
+    },
+    "VueReferenceCode": {
+      "type": "string",
+      "default": "KV",
+      "required": true
+    },
+    "GuideURL": {
+      "type": "string"
+    }
+  }
+}

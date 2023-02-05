@@ -1,0 +1,24 @@
+<!-- ------------------------------------------------SECTION:6 FREE COURSES---------------------------------------------- -->
+<div class="container-fluid cs-6 px-5" id="freeCourses">
+    <h3 class="text-primary ps-5 ms-4">100% Free</h3>
+    <h2 class="ps-5 s3-h2 ms-4">Start Learning with Free Courses</h2>
+    <p class="ps-5 s3-p ms-4">Free online courses from the world's top universities and companies.</p>
+
+    <div class="row p-5 m-5 mb-0">
+        <div class="col-sm-6 col-lg-4" *ngFor="let course of courses; let i=index">
+            <div class="card m-5 mb-2" *ngIf="i<3">
+                <img src="{{ course.coverImage }}" alt="course-image" class="card-img-top">
+                <div class="card-body shadow-lg">
+                    <a [routerLink]="['/course', course.courseId]" class="card-title h4 text-decoration-none">{{ course.courseName }}</a>
+                    <p class="card-text text-muted">{{ course.offerredBy }}</p>
+                    <p class="text-uppercase mb-0 mt-4"><strong>Course</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center my-4">
+        <a [routerLink]="['/searchCourse']" class="h5 text-decoration-none s3-a"><strong>Explore Free
+                Courses&nbsp;&nbsp;<span class="ion-arrow-right-a"></span></strong></a>
+    </div>
+</div>

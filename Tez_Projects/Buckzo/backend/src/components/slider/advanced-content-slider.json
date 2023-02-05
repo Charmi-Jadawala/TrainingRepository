@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_slider_advancedcontentslider",
+  "info": {
+    "displayName": "008 - Advanced Content Slider",
+    "icon": "stream",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "AdvancedContentBanner": {
+      "type": "component",
+      "repeatable": true,
+      "component": "banner.advanced-content-banner"
+    },
+    "VueReferenceCode": {
+      "type": "string",
+      "default": "ACS",
+      "required": true
+    },
+    "GuideURL": {
+      "type": "string"
+    }
+  }
+}

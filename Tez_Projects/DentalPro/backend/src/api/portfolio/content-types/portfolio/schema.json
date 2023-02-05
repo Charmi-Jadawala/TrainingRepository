@@ -1,0 +1,80 @@
+{
+  "kind": "collectionType",
+  "collectionName": "portfolios",
+  "info": {
+    "singularName": "portfolio",
+    "pluralName": "portfolios",
+    "displayName": "Portfolios",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "LongText": {
+      "type": "richtext"
+    },
+    "Icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "ShortVideo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "videos"
+      ]
+    },
+    "Video": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "videos"
+      ]
+    },
+    "PortfolioDomains": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::portfolio-domain.portfolio-domain"
+    },
+    "PortfolioIndustries": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::portfolio-industry.portfolio-industry"
+    },
+    "PortfolioTechnologies": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::portfolio-technology.portfolio-technology"
+    },
+    "RelatedPortfolios": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::portfolio.portfolio"
+    },
+    "NavURL": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Title": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_hierarchical_tcwithkeyvaluelist",
+  "info": {
+    "displayName": "018 - Title Content With Key Value List",
+    "icon": "chevron-left",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "KeyValueList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "standard.key-value"
+    },
+    "VueReferenceCode": {
+      "type": "string",
+      "required": true,
+      "default": "TWithKVL"
+    },
+    "GuideURL": {
+      "type": "string"
+    },
+    "LongText": {
+      "type": "richtext"
+    },
+    "SubTitle": {
+      "type": "richtext"
+    },
+    "Title": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

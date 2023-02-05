@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise</title>
+</head>
+<body>
+    <div>
+        <h1 class="display-6 text-black fs-2 pb-4">Make a function that takes in a single parameter and returns a new promise.</h1>
+
+        <form action="" id="myForm">
+            <label class="form-label fs-5" for="text">Please enter a String :</label>
+            <input class="form-control-sm mx-1" type="text" name="text" id="text"><br /><br />
+            <button class="btn btn-outline-primary" type="button" onclick="myFun()">Promise</button>
+            <button class="btn btn-outline-primary" type="button" onclick="Reset()">Clear</button>
+        </form>
+        
+        <p class="my-2 fs-4 text-primary" id="result"></p>
+    </div>
+    
+    <script>
+        function myFun(){
+            var input = document.getElementById("text").value;
+
+            function promise(input){
+                return new Promise(function(myResolve, myReject){
+                    setTimeout(function(){
+                        document.getElementById("result").style.display = "block";
+                        var success = "Success";
+                        var error = "Error";
+                        if(input == "string"){
+                            myResolve(success);
+                        }
+                        else{
+                            myReject(error);
+                        }
+                    },500);
+                });
+            }
+
+            promise(input).then(
+                (success) => {return document.getElementById("result").innerHTML = input.split("").reverse().join("")}, 
+                (error) => {return document.getElementById("result").innerHTML = "Wrong Input"}
+            );
+        }
+
+        function Reset(){
+            document.getElementById("myForm").reset();
+            document.getElementById("result").style.display = "none";
+        }
+    </script>
+</body>
+</html>

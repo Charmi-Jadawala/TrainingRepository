@@ -1,0 +1,17 @@
+﻿using System;
+using System.Collections.Generic;
+
+#nullable disable
+
+namespace CustomMiddleware2.Models
+{
+    public partial class AssignmentLink
+    {
+        public int Id { get; set; }
+        public int? AssignmentId { get; set; }
+        public int? LinkId { get; set; }
+
+        public virtual Assignment Assignment { get; set; }
+        public virtual Link Link { get; set; }
+    }
+}

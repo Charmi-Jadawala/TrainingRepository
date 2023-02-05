@@ -1,0 +1,341 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+    grid-template-areas: 'header' 'nav' 'main1' 'info1' 'main2' 'info2' 'main3' 'footer';
+}
+
+.item{
+    padding: 0px 16%;
+}
+
+.header{
+    grid-area: header;  
+    height: 14vh;
+}
+
+.header p{
+    display: inline-block;
+    padding: 10px;
+}
+
+#search{
+    float: right;
+}
+
+.nav{
+    grid-area: nav;
+    height: 10vh;
+    padding-top: 18px;
+    border-top: 2px dashed #000000;
+    border-bottom: 2px dashed #000000;
+    background-color: #fbff0e;
+    text-align: center;
+}
+
+.nav ul li{
+    list-style-type: none;
+    display: inline;
+    padding: 6px;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.main1{
+    grid-area: main1;
+    height: 76vh;
+    background-image: url('./images/Lyle-apparel_homepage_v3-copy_02.jpg');
+    background-size: contain;
+    color: #ffffff;
+}
+
+.main1 div{
+    display: inline-block;  
+    width: 50%;
+}
+
+.m1d1 h1{
+    font-size: 120px;
+    padding: 30px;
+    color: #c0c0c0;
+    text-shadow: 20px 20px 20px #000000;
+}
+
+.m1d1 p{
+    font-size: 20px;
+    padding: 0px 0px 30px 30px;
+}
+
+#m1b{
+    border-radius: 40px;
+    margin: 30px;
+    padding: 16px;
+    background-color: #fbff0e;
+    text-decoration: none;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.m1d2{
+    float: right;
+    padding-top: 80px;
+}
+
+.m1d2 img{
+    width: 560px;
+    height: auto;
+    padding-top: 40px;
+}
+
+.info1{
+    grid-area: info1;
+}
+
+.info1 div{
+    display: inline-block;
+    width: 48%; 
+    text-align: justify;
+    font-size: 16px; 
+    padding: 10px;
+    border: 1px dashed #000000;
+    margin: 60px 0px 80px 0px;
+}
+
+.i1d2{
+    float: right;
+}
+
+.i1d1 img, .i1d2 img{
+    padding: 10px;
+    width: 180px;
+    height: auto;
+}
+
+.main2{
+    grid-area: main2;
+    background-image: url("./images/live_system_thank_you_02.jpg");
+    background-size: contain;
+    height: 70vh;
+    color: #ffffff;
+}
+
+.main2 div{
+    padding: 20px;
+    padding-bottom: 0px;
+}
+
+.m2d1{
+    margin-top: 34px;
+}
+
+.m2d1 ul li{
+    display: inline-block;
+    list-style-type: none;
+    padding: 10px;
+    background-color: #c0c0c0;
+    text-transform: uppercase;
+}
+
+.m2d2{
+   border: 2px dashed #ffffff; 
+   margin: 3px;
+}
+
+.m2d2container{
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23%;
+    grid-template-rows: auto;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.m2d2item{
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.i1{
+    flex: 20%;
+    font-size: 24px;
+}
+
+.i2{
+    flex: 60%;
+}
+
+.i3{
+    flex: 20%;
+}
+
+.m2d2b{
+    flex: 20%;
+    background-color: #fbff0e;
+    border: 1px solid #000000;
+    text-align: center;
+    padding: 3px;
+    margin: 3px;
+}
+
+.m2d2item img{
+    width: 120px;
+    height: auto;
+}
+
+.m2d2 p{
+    float: right;
+    padding: 8px;
+    background-color: #fbff0e;
+    margin: 18px 1px 18px 0px;
+    color: #000000;
+}
+
+.info2{
+    grid-area: info2;
+    padding-bottom: 30px;
+}
+
+.info2 div{
+    display: inline-block;
+    width: 50%;
+    padding-top: 30px;
+    text-align: justify;
+}
+
+.info2 h1{
+    padding: 6px;
+    border-bottom: 2px dashed #000000;
+    text-align: left;
+    margin: 0px 30px 16px 0px;
+}
+
+.i2d1 img{
+    width: 486px;
+    height: auto;
+}
+
+.i2d2{
+    float: right;
+}
+
+.i2d2 article{
+    background-color: #c0c0c0;
+    padding: 10px;
+    width: 486px;
+    height: 318px;
+    position: relative;
+}
+
+.i2d2 article h4, .i2d2 article h5{
+    display: inline-block;
+    width: 60%;
+}
+
+.i2d2 article img{
+    float: right;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.i2d2 article p{
+    float: left;
+    margin-top: 40px;
+}
+
+#i2b{
+    float: right;
+    background-color: #000000;
+    color: #fbff0e;
+    padding: 6px;
+    margin-top: 12px;
+    margin-right: 8px;
+}
+
+.main3{
+    grid-area: main3;
+    display: grid;
+    grid-template-columns: 16.66% 16.66% 16.66% 32% 18%;
+    grid-template-rows: auto;
+    background-image: url("./images/footer_bg.jpg");
+    background-size: contain;
+    padding: 30px 16% 30px 16%;
+    color: #c0c0c0;
+}
+
+.main3 li{
+    list-style-type: none;
+}
+
+.form{
+    background-color: #c0c0c0;
+    color: #414040;
+    padding: 20px;
+    padding-top: 10px;
+    margin-left: 16px;
+}
+
+.form p{
+    padding-bottom: 10px;
+}
+
+#fname, #lname, #email{
+    width: 272px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+#submit{
+    float: right;
+    color: #fbff0e;
+    background-color: #000000;
+    padding: 7px;
+    margin-right: 4px;
+    margin-top: 10px;
+}
+
+.m3img{
+    padding: 20px;
+    padding-top: 0px;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: #fbff0e;
+    height: 40px;
+    font-size: 16px;
+    padding-top: 8px;
+}
+
+.footer li{
+    display: inline-block;
+    list-style-type: none;
+}
+
+.fd1{
+    float: left;
+    width: 30%;
+}
+
+.fd2{
+    float: right;
+    width: 40%;
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}

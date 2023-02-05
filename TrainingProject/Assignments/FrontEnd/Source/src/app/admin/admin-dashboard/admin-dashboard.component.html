@@ -1,0 +1,161 @@
+<div class="container-fluid bg-primary text-white">
+    <div class="container ps-1">
+        <h2 class="p-2 m-0"><span class="ion-ios-gear"></span>&nbsp;Dashboard</h2>
+    </div>
+</div>
+
+<!-- Modals -->
+<div class="container">
+    <div class="row">
+        <!-- Category Modal -->
+        <div class="col-sm-4 col-md-3 my-2 my-sm-4 d-grid">
+            <button type="button" class="btn btn-warning btn-lg d-block" data-bs-toggle="modal"
+                data-bs-target="#categoryModal"><span class="ion-plus-round"></span>&nbsp;Add Category</button>
+            <div class="modal fade" id="categoryModal">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header bg-warning py-1">
+                            <h4 class="modal-title text-white">Add Category</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <form [formGroup]="categoryForm" (ngSubmit)="onCategorySubmit()">
+                            <div class="modal-body">
+                                <div class="mb-3">
+                                    <label for="cname" class="form-label pb-1 mb-0 fs-5">Category<span
+                                            class="text-danger">*</span></label>
+                                    <input type="text" id="cname" class="form-control" formControlName="categoryName">
+                                </div>
+                                <div class="mb-3 d-none">
+                                    <label for="ccount" class="form-label pb-1 mb-0 fs-5">Course Count</label>
+                                    <input type="number" id="ccount" class="form-control" formControlName="courseCount">
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="submit" [disabled]="categoryForm.invalid" class="btn btn-warning"
+                                    data-bs-dismiss="modal"><span class="ion-checkmark-round"></span>&nbsp;&nbsp;Add
+                                    Category</button>
+                                <button type="reset" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Subcategory Modal -->
+        <div class="col-sm-4 col-md-3 my-2 my-sm-4 d-grid">
+            <button type="button" class="btn btn-success btn-lg d-block" data-bs-toggle="modal"
+                data-bs-target="#subCategoryModal"><span class="ion-plus-round"></span>&nbsp;Add Subcategory</button>
+            <div class="modal fade" id="subCategoryModal">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header bg-success py-1">
+                            <h4 class="modal-title text-white">Add Subcategory</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <form [formGroup]="subCategoryForm" (ngSubmit)="onSubCategorySubmit()">
+                            <div class="modal-body">
+                                <div class="mb-3">
+                                    <label for="category" class="form-label pb-1 mb-0 fs-5">Category<span
+                                            class="text-danger">*</span></label>
+                                    <select id="category" class="form-select" formControlName="categoryId">
+                                        <option value="" selected disabled hidden>Please select category</option>
+                                        <option *ngFor="let c of categories" [ngValue]="c.categoryId">
+                                            {{ c.categoryName }}
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="subcatname" class="form-label pb-1 mb-0 fs-5">Subcategory<span
+                                            class="text-danger">*</span></label>
+                                    <input type="text" id="subcatname" class="form-control"
+                                        formControlName="subCategoryName">
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="submit" [disabled]="subCategoryForm.invalid" class="btn btn-success"
+                                    data-bs-dismiss="modal"><span class="ion-checkmark-round"></span>&nbsp;&nbsp;Add
+                                    Subcategory</button>
+                                <button type="reset" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Course -->
+        <div class="col-sm-4 col-md-3 my-2 my-sm-4 d-grid">
+            <button type="button" class="btn btn-primary btn-lg d-block" data-bs-toggle="modal"
+                data-bs-target="#modal3"><a [routerLink]="['/adminHome/addCourse']" routerLinkActive="active"
+                    class="nav-link fs-5"><span class="ion-plus-round"></span>&nbsp;Add Course</a></button>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <!-- Course Table -->
+        <div class="col-md-9">
+            <h3 class="bg-light border border-1 rounded-top mb-0 p-2">Courses</h3>
+            <div class="table-responsive">
+                <table class="table table-striped table-hover text-center">
+                    <caption></caption>
+                    <thead>
+                        <tr class="table-dark">
+                            <th>&num;</th>
+                            <th>Course Name</th>
+                            <th>Offerred By</th>
+                            <th>Date Modified</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr
+                            *ngFor="let course of courses | paginate: { itemsPerPage: 5, currentPage: p, totalItems: total }; let i=index">
+                            <td>{{ i+1 }}</td>
+                            <td>{{ course.courseName }}</td>
+                            <td>{{ course.offerredBy }}</td>
+                            <td>{{ course.modifiedDate | date:'dd-MM-yyyy'}}</td>
+                            <td>
+                                <a [routerLink]="['/adminHome/editCourse', course.courseId]" class="btn btn-dark"><span
+                                        class="ion-edit"></span>&nbsp;Edit</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <pagination-controls (pageChange)="pageChangeEvent($event)"></pagination-controls>
+        </div>
+
+        <!-- Cards -->
+        <div class="col-md-3">
+            <div class="card bg-warning text-white text-center">
+                <div class="card-body p-2 pb-3">
+                    <h3 class="card-title m-0">Categories</h3>
+                    <p class="display-4 pb-1 m-0"><span class="ion-android-create"></span>&nbsp;{{ categories.length }}
+                    </p>
+                    <a [routerLink]="['/adminHome/category']" routerLinkActive="active"
+                        class="btn btn-outline-light">View</a>
+                </div>
+            </div>
+            <div class="card bg-success text-white text-center mt-3">
+                <div class="card-body p-2 pb-3">
+                    <h3 class="card-title m-0">Subcategories</h3>
+                    <p class="display-4 pb-1 m-0"><span class="ion-android-create"></span>&nbsp;{{ subCategories.length
+                        }}</p>
+                    <a [routerLink]="['/adminHome/subcategory']" routerLinkActive="active"
+                        class="btn btn-outline-light">View</a>
+                </div>
+            </div>
+            <div class="card bg-primary text-white text-center my-3">
+                <div class="card-body p-2 pb-3">
+                    <h3 class="card-title m-0">Courses</h3>
+                    <p class="display-4 pb-1 m-0"><span class="ion-compose"></span>&nbsp;{{ courses.length }}</p>
+                    <a [routerLink]="['/adminHome/course']" routerLinkActive="active"
+                        class="btn btn-outline-light">View</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

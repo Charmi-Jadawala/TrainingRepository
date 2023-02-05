@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "guide_categories",
+  "info": {
+    "singularName": "guide-categorie",
+    "pluralName": "guide-categories",
+    "displayName": "GuideCategories"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "richtext",
+      "required": true
+    },
+    "Image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "NavURL": {
+      "type": "string"
+    }
+  }
+}

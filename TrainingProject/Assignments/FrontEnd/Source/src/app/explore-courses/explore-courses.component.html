@@ -1,0 +1,13 @@
+<!------------------------------------------------SECTION:7 EXPLORE COURSES---------------------------------------------->
+<div class="container-fluid cs-7 px-5">
+    <h2 class="ps-2 s3-h2">Explore Coursera</h2>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 mt-4">
+        <div class="col" *ngFor="let category of categories">
+            <div class="mycard shadow m-2 mt-3 rounded-2">
+                <img src="../../assets/s7-1.jpeg" alt="s7-1" class="rounded-start">
+                <p class="p-2 fs-4">{{category.categoryName}} <br />
+                    <span class="pt-2 text-muted fs-5">{{category.courseCount}}</span></p>
+            </div>
+        </div>
+    </div>
+</div>

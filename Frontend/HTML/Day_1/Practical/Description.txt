@@ -1,0 +1,53 @@
+--> Today's Work
+
+
+1. SVN (Practical Implementation):
+	-->Add, delete, rename, revert, properties
+	-->Update, conflict resolving during svn update
+	-->Diff while committing
+	-->Blame
+	-->Check for modifications option
+	-->Add and Remove ignored file/folder
+	-->Branch, Switch, Merge
+	-->Show log option, commit monitor
+	-->Conflict resolving while merging
+
+2. HTML:
+	-->What is HTML5
+	-->Empty Tags
+	-->Common HTML Tags
+	-->What is Attribute
+	-->HTML Tables
+	-->Ordered List & Unordered List
+	-->Naming Convention
+	-->HTML Layout
+	-->Semantic Markup
+	-->Header& Footer
+	-->Section, Nav, aside
+	-->Forms
+	-->Validation
+	-->Referred ppts:
+		-PPT1
+		-PPT2
+		-PPT4
+	-->Referred Videos:
+		-Introduction(01)
+		-Semantic Markup(01 to 04)
+		-Forms(01 to 13)
+		-Audio and Video(01 to 04)
+	-->Practice Exercise
+		-Display Student Report Card, Which contains field like Name, RollNo, Year Of Passing. Different subject marks should be displayed with its grade
+
+		-You are working in some company as HR. you have been assigned a task to arrange department hierarchy example: employee working under some manager.
+
+		-Create Login Form with field UserName and Password field.		
+	-->Assignment
+		Design a form for storing employee details. (Employee name, age, Gender, designation, salary, location, Email ID, Date of Joining and contact number)
+			- Validation required
+			- Age should be a number
+			- Each field should contain value
+			- Email ID should be in proper format
+			- Date of joining should be in date format
+			- Location should be in the drop down list
+			- Use radio buttons for Gender
+

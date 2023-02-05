@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coursera Clone</title>
+    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="Coursera.css">
+    <script src="../../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <!-- ------------------------------------------------NAVBAR---------------------------------------------- -->
+
+    <nav class="navbar navbar-expand-lg bg-white navbar-light border-bottom border-2 py-0 fixed-top">
+        <div class="container-fluid p-0">
+            <a href="#" class="text-center">
+                <img src="../../../Assets/coursera/coursera_logo.png" alt="Coursera Logo" class="logo-main img-fluid">
+            </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown text-center p-2 ps-0">
+                        <a href="#" class="nav-link dropdown-toggle btn btn-primary text-white fs-5 h3 my-auto border border-3 border-dark b1" role="button" data-bs-toggle="dropdown">
+                        <strong>Explore</strong></a>
+                        <ul class="dropdown-menu dropdown-menu-start overflow-scroll bg-light px-4">
+                            <li><h6 class="dropdown-header text-black fw-bold fs-4 pb-4">Goals</h6></li>
+                            <li><a href="#" class="dropdown-item py-2">Take a free course</a></li>
+                            <li><a href="#" class="dropdown-item py-2">Earn a Degree</a></li>
+                            <li><a href="#" class="dropdown-item py-2">Earn a Certificate</a></li>
+                            <li><a href="#" class="dropdown-item py-2">Advance your career</a></li>
+                            <li><a href="#" class="dropdown-item py-2">Train your team</a></li>
+                            <li><h6 class="dropdown-header text-black fw-bold fs-4 pt-5 pb-4">Subjects</h6></li>
+                            <li><a href="#" class="dropdown-item py-2">Data Science</a></li>
+                            <li><a href="#" class="dropdown-item py-2">Business</a></li>
+                            <li><a href="#" class="dropdown-item py-2">Computer Science</a></li>
+                            <li><a href="#" class="dropdown-item py-2">Information Technology</a></li>
+                            <li><a href="#" class="dropdown-item py-2">Language Learning</a></li>
+                            <li><a href="#" class="dropdown-item py-2">Health</a></li>
+                            <li><a href="#" class="dropdown-item py-2">Personal Development</a></li>
+                            <li><a href="#" class="dropdown-item py-2">Physical Science and Engineering</a></li>
+                            <li><a href="#" class="dropdown-item py-2">Social Sciences</a></li>
+                            <li><a href="#" class="dropdown-item py-2">Arts and Humanities</a></li>
+                            <li><a href="#" class="dropdown-item py-2">Math and Logic</a></li>
+                            <li><a href="#" class="dropdown-item btn btn-outline-primary h6" role="button">Browse all subjects</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item text-center my-auto">
+                        <form action="">
+                            <div class="input-group">
+                                <input type="search" name="search" id="search" class="form-control-lg px-1 fw-light py-0" placeholder="What do you want to learn?">
+                                <span class="input-group-text ion-ios-search-strong bg-primary text-white py-0 border border-1 border-dark"></span>
+                            </div>
+                        </form>
+                    </li>
+                    <li class="nav-item text-center my-auto"><a href="#" class="nav-link p-0 px-1 text-black l1">Degrees</a></li>
+                    <li class="nav-item text-center my-auto"><a href="#" class="nav-link p-0 px-1 text-black l1">Find your New Career</a></li>
+                    <li class="nav-item text-center my-auto"><a href="#" class="nav-link p-0 px-1 text-black l1">Enterprise</a></li>
+                    <li class="nav-item text-center my-auto"><a href="#" class="nav-link p-0 px-1 text-black l1">Universities</a></li>
+                    <li class="nav-item text-center my-auto ps-2"><a href="#" class="nav-link text-primary p-0 px-1 l2">Log in</a></li>
+                    <li class="nav-item text-center my-auto ps-1"><a href="#" class="nav-link btn btn-primary text-white fs-5 h3 p-2 px-1 my-auto">
+                        <strong>Join for Free</strong></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- ------------------------------------------------SECTION:1 HEADER---------------------------------------------- -->
+    <div class="container cs-1">
+        <div class="row ms-5">
+            <div class="col-md-6">
+                <h1 class="py-4">Learn Without Limits</h1>
+                <p class="">Open your door to more with world-class Professional Certificates and degrees.</p>
+                <div class="row">
+                    <div class="col-md-4 d-grid pe-0">
+                        <button class="btn btn-primary text-white h3 d-block p-3 mb-0"><strong>Join for Free</strong></button>
+                    </div>
+                    <div class="col-md-8 d-grid pe-0">
+                        <button class="btn btn-outline-primary h3 d-block p-3 mb-0 border border-4 border-primary s-1-b"><strong>Try Coursera for Business</strong></button>
+                    </div>
+                </div>               
+            </div>
+            <div class="col-md-6 d-none d-md-block">
+                <img src="../../../Assets/coursera/2_female.png" alt="hero-img" class="img-fluid ms-auto d-block my-auto s1-img">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ------------------------------------------------SECTION:2 COLLABORATION---------------------------------------------- -->
+    <div class="container-fluid cs-2">
+        <div class="row text-center">
+            <div class="col">
+                <a href="#" class="link-dark text-decoration-none">We collaborate with <span class="text-primary">200+ leading universities and companies</span></a>
+            </div>
+        </div>
+        <div class="row py-5 px-3">
+            <div class="col justify-content-center my-auto">
+                <img src="../../../Assets/coursera/IIT_Bombay.png" alt="IIT_Bombay" class="img-fluid mx-auto d-block">
+            </div>
+            <div class="col justify-content-center my-auto p-0">
+                <img src="../../../Assets/coursera/IIT_Roorkee.png" alt="IIT_Roorkee" class="img-fluid mx-auto d-block">
+            </div>
+            <div class="col justify-content-center my-auto p-0">
+                <img src="../../../Assets/coursera/IIM_Calcutta.png" alt="IIM_Calcutta" class="img-fluid mx-auto d-block">
+            </div>
+            <div class="col justify-content-center my-auto">
+                <img src="../../../Assets/coursera/google.png" alt="google" class="img-fluid mx-auto d-block">
+            </div>
+            <div class="col justify-content-center my-auto">
+                <img src="../../../Assets/coursera/ISB.png" alt="ISB" class="img-fluid mx-auto d-block">
+            </div>
+            <div class="col justify-content-center my-auto">
+                <img src="../../../Assets/coursera/stanford.png" alt="stanford" class="img-fluid mx-auto d-block">
+            </div>
+            <div class="col justify-content-center my-auto p-0">
+                <img src="../../../Assets/coursera/meta.png" alt="meta" class="img-fluid mx-auto d-block">
+            </div>
+            <div class="col justify-content-center my-auto">
+                <img src="../../../Assets/coursera/umich.jpg" alt="umich" class="img-fluid mx-auto d-block">
+            </div>
+            <div class="col justify-content-center my-auto">
+                <img src="../../../Assets/coursera/aws.png" alt="aws" class="img-fluid mx-auto d-block">
+            </div>
+            <div class="col justify-content-center my-auto">
+                <img src="../../../Assets/coursera/ibm.png" alt="ibm" class="img-fluid mx-auto d-block">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ------------------------------------------------SECTION:3 CERTIFICATES---------------------------------------------- -->
+    <div class="container-fluid cs-3">
+        <h3 class="text-primary ps-4">Professional Certificates</h3>
+        <h2 class="ps-4 s3-h2">Get job-ready for an in-demand career</h2>
+        <p class="ps-4 s3-p">Break into a new field like information technology or data science. No prior experience necessary to get started.</p>
+        <div id="carousel-1" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="0" class="bg-black active"></button>
+                <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="1" class="bg-black"></button>
+                <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="2" class="bg-black"></button>
+                <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="3" class="bg-black"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container p-5">
+                        <div class="row">
+                            <div class="col-sm-6 col-lg-4">
+                                <div class="card">
+                                    <img src="../../../Assets/coursera/s2-1.jpeg" alt="s2-1" class="card-img-top">
+                                    <div class="card-body bg-primary shadow-lg text-white">
+                                        <h4 class="card-title">Google UX Design</h4>
+                                        <p class="card-text fs-5">Google</p> 
+                                        <p class="text-uppercase mb-0 cf"><strong>Professional Certificate</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 d-none d-sm-block">
+                                <div class="card">
+                                    <img src="../../../Assets/coursera/s2-2.jpeg" alt="s2-2" class="card-img-top">
+                                    <div class="card-body bg-primary shadow-lg text-white">
+                                        <h4 class="card-title">Facebook Marketing Analytics</h4>
+                                        <p class="card-text fs-5">Meta</p>
+                                        <p class="text-uppercase mb-0 cf2"><strong>Professional Certificate</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 d-none d-lg-block">
+                                <div class="card">
+                                    <img src="../../../Assets/coursera/s3-3.jpeg" alt="s3-3" class="card-img-top">
+                                    <div class="card-body bg-primary shadow-lg text-white">
+                                        <h4 class="card-title">IBM Data Engineering</h4>
+                                        <p class="card-text fs-5">IBM</p>
+                                        <p class="text-uppercase mb-0 cf"><strong>Professional Certificate</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="container p-5">
+                        <div class="row">
+                            <div class="col-sm-6 col-lg-4">
+                                <div class="card">
+                                    <img src="../../../Assets/coursera/s3-4.jpeg" alt="s3-4" class="card-img-top">
+                                    <div class="card-body bg-primary shadow-lg text-white">
+                                        <h4 class="card-title">Intuit Bookkeeping</h4>
+                                        <p class="card-text fs-5">Intuit</p>
+                                        <p class="text-uppercase mb-0 cf"><strong>Professional Certificate</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 d-none d-sm-block">
+                                <div class="card">
+                                    <img src="../../../Assets/coursera/s3-5.jpeg" alt="s3-5" class="card-img-top">
+                                    <div class="card-body bg-primary shadow-lg text-white">
+                                        <h4 class="card-title">Google Data Analytics</h4>
+                                        <p class="card-text fs-5">Google</p>
+                                        <p class="text-uppercase mb-0 cf"><strong>Professional Certificate</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 d-none d-lg-block">
+                                <div class="card">
+                                    <img src="../../../Assets/coursera/s3-6.jpeg" alt="s3-6" class="card-img-top">
+                                    <div class="card-body bg-primary shadow-lg text-white">
+                                        <h4 class="card-title">Facebook Social Media Marketing</h4>
+                                        <p class="card-text fs-5">Meta</p>
+                                        <p class="text-uppercase mb-0 cf2"><strong>Professional Certificate</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="container p-5">
+                        <div class="row">
+                            <div class="col-sm-6 col-lg-4">
+                                <div class="card">
+                                    <img src="../../../Assets/coursera/s3-7.jpeg" alt="s2-7" class="card-img-top">
+                                    <div class="card-body bg-primary shadow-lg text-white">
+                                        <h4 class="card-title">IBM Data Science</h4>
+                                        <p class="card-text fs-5">IBM</p>
+                                        <p class="text-uppercase mb-0 cf"><strong>Professional Certificate</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 d-none d-sm-block">
+                                <div class="card">
+                                    <img src="../../../Assets/coursera/s3-8.jpeg" alt="s3-8" class="card-img-top">
+                                    <div class="card-body bg-primary shadow-lg text-white">
+                                        <h4 class="card-title">Google Project Management&colon;</h4>
+                                        <p class="card-text fs-5">Google</p>
+                                        <p class="text-uppercase mb-0 cf2"><strong>Professional Certificate</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 d-none d-lg-block">
+                                <div class="card">
+                                    <img src="../../../Assets/coursera/s3-9.jpeg" alt="s3-9" class="card-img-top">
+                                    <div class="card-body bg-primary shadow-lg text-white">
+                                        <h4 class="card-title">Salesforce Sales Operations</h4>
+                                        <p class="card-text fs-5">Salesforce</p>
+                                        <p class="text-uppercase mb-0 cf2"><strong>Professional Certificate</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="container p-5">
+                        <div class="row">
+                            <div class="col-sm-6 col-lg-4">
+                                <div class="card">
+                                    <img src="../../../Assets/coursera/s3-10.jpeg" alt="s3-10" class="card-img-top">
+                                    <div class="card-body bg-primary shadow-lg text-white">
+                                        <h4 class="card-title">Google IT Support</h4>
+                                        <p class="card-text fs-5">Google</p>
+                                        <p class="text-uppercase mb-0 cf"><strong>Professional Certificate</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 d-none d-sm-block">
+                                <div class="card">
+                                    <img src="../../../Assets/coursera/s3-11.jpeg" alt="s3-11" class="card-img-top">
+                                    <div class="card-body bg-primary shadow-lg text-white">
+                                        <h4 class="card-title">IBM Cybersecurity Analyst</h4>
+                                        <p class="card-text fs-5">IBM</p>
+                                        <p class="text-uppercase mb-0 cf2"><strong>Professional Certificate</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 d-none d-lg-block">
+                                <div class="card">
+                                    <img src="../../../Assets/coursera/s3-12.jpeg" alt="s3-12" class="card-img-top">
+                                    <div class="card-body bg-primary shadow-lg text-white">
+                                        <h4 class="card-title">Salesforce Sales Development Representative</h4>
+                                        <p class="card-text fs-5">Salesforce</p>
+                                        <p class="text-uppercase mb-0 cf4"><strong>Professional Certificate</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-1" data-bs-slide="prev">
+                    <span class="ion-chevron-left text-black fs-1"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel-1" data-bs-slide="next">
+                    <span class="ion-chevron-right text-black fs-1"></span>
+                </button>
+            </div>
+        </div>
+        
+        <div class="text-center my-4">
+            <a href="#" class="h5 text-decoration-none s3-a"><strong>Explore Certificates&nbsp;&nbsp;<span class="ion-arrow-right-a"></span></strong></a>
+        </div>
+    </div>
+
+
+<!-- ------------------------------------------------SECTION:4 DEGREES---------------------------------------------- -->
+<div class="container-fluid cs-4">
+    <h3 class="text-primary ps-4">Master's and Bachelor's Degrees</h3>
+    <h2 class="ps-4 s3-h2">Find a top degree that fits your life</h2>
+    <p class="ps-4 s3-p">Breakthrough pricing on 100% online degrees from top universities.</p>
+    <div id="carousel-2" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel-2" data-bs-slide-to="0" class="bg-black active"></button>
+            <button type="button" data-bs-target="#carousel-2" data-bs-slide-to="1" class="bg-black"></button>
+            <button type="button" data-bs-target="#carousel-2" data-bs-slide-to="2" class="bg-black"></button>
+            <button type="button" data-bs-target="#carousel-2" data-bs-slide-to="3" class="bg-black"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="container p-5">
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="card">
+                                <img src="../../../Assets/coursera/c1_bscs-uol.jpg" alt="c1_bscs-uol" class="card-img-top">
+                                <div class="card-body shadow-lg">
+                                    <h6 class="card-title">Bachelor of Science in Computer Science</h6>
+                                    <p class="card-text">from the University of London</p> 
+                                    <p class="text-uppercase mb-0 cf2"><strong>100% online</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 d-none d-sm-block">
+                            <div class="card">
+                                <img src="../../../Assets/coursera/c2_mads-umich.jpg" alt="c2_mads-umich" class="card-img-top">
+                                <div class="card-body shadow-lg">
+                                    <h6 class="card-title">Master of Applied Data Science</h6>
+                                    <p class="card-text">from the University of Michigan</p>
+                                    <p class="text-uppercase mb-0 cf"><strong>100% online</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 d-none d-lg-block">
+                            <div class="card">
+                                <img src="../../../Assets/coursera/c3_banner.jpg" alt="c3_banner" class="card-img-top">
+                                <div class="card-body shadow-lg">
+                                    <h6 class="card-title">Bachelor of Applied Arts and Sciences</h6>
+                                    <p class="card-text">from the University of North Texas</p>
+                                    <p class="text-uppercase mb-0 cf2"><strong>100% online</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="container p-5">
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="card">
+                                <img src="../../../Assets/coursera/c4_mba.jpg" alt="c4_mba" class="card-img-top">
+                                <div class="card-body shadow-lg">
+                                    <h6 class="card-title">MBA in Business Analytics</h6>
+                                    <p class="card-text">from O.P. Jinadal Global University</p>
+                                    <p class="text-uppercase mb-0 cf"><strong>100% online</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 d-none d-sm-block">
+                            <div class="card">
+                                <img src="../../../Assets/coursera/c5_header_mcsds-darkened.jpg" alt="c5_header_mcsds-darkened" class="card-img-top">
+                                <div class="card-body shadow-lg">
+                                    <h6 class="card-title">Master of Computer Science in Data Science</h6>
+                                    <p class="card-text">from the University of Illinois at Urbana-Champaign</p>
+                                    <p class="text-uppercase mb-0 cf3"><strong>100% online</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 d-none d-lg-block">
+                            <div class="card">
+                                <img src="../../../Assets/coursera/c6_Illinois_cropped.jpg" alt="c6_Illinois_cropped" class="card-img-top">
+                                <div class="card-body shadow-lg">
+                                    <h6 class="card-title">Master of Business Administration (iMBA)</h6>
+                                    <p class="card-text">from the University of Illinois at Urbana-Champaign</p>
+                                    <p class="text-uppercase mb-0 cf3"><strong>100% online</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="container p-5">
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="card">
+                                <img src="../../../Assets/coursera/c7_header.jpg" alt="c7_header" class="card-img-top">
+                                <div class="card-body shadow-lg">
+                                    <h6 class="card-title">Master of Science in Data Science</h6>
+                                    <p class="card-text">from the University of Colarado Boulder</p>
+                                    <p class="text-uppercase mb-0 cf2"><strong>100% online</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 d-none d-sm-block">
+                            <div class="card">
+                                <img src="../../../Assets/coursera/c8_banner.jpg" alt="c8_banner" class="card-img-top">
+                                <div class="card-body shadow-lg">
+                                    <h6 class="card-title">Master of Data Science</h6>
+                                    <p class="card-text">from HSE University</p>
+                                    <p class="text-uppercase mb-0 cf"><strong>100% online</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 d-none d-lg-block">
+                            <div class="card">
+                                <img src="../../../Assets/coursera/c9_croplogo.jpg" alt="c9_croplogo" class="card-img-top">
+                                <div class="card-body shadow-lg">
+                                    <h6 class="card-title">MSc in Innovation and Entrepreneurship</h6>
+                                    <p class="card-text">from HEC Paris</p>
+                                    <p class="text-uppercase mb-0 cf2"><strong>100% online</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="container p-5">
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="card">
+                                <img src="../../../Assets/coursera/c10_header.jpg" alt="c10_header" class="card-img-top">
+                                <div class="card-body shadow-lg">
+                                    <h6 class="card-title">Global Master of Business Administration (Global MBA)</h6>
+                                    <p class="card-text">from Macquarie University</p>
+                                    <p class="text-uppercase mb-0 cf2"><strong>100% online</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 d-none d-sm-block">
+                            <div class="card">
+                                <img src="../../../Assets/coursera/c11_ms-business-analytics-hse-banner.jpg" alt="c11_ms-business-analytics-hse-banner" class="card-img-top">
+                                <div class="card-body shadow-lg">
+                                    <h6 class="card-title">Master of Business Analytics</h6>
+                                    <p class="card-text">from HSE University</p>
+                                    <p class="text-uppercase mb-0 cf"><strong>100% online</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 d-none d-lg-block">
+                            <div class="card">
+                                <img src="../../../Assets/coursera/c12_master-of-data-network-analytics-hse-banner.jpg" alt="c12_master-of-data-network-analytics-hse-banner" class="card-img-top">
+                                <div class="card-body shadow-lg">
+                                    <h6 class="card-title">Master of Data and Network Analysis</h6>
+                                    <p class="card-text">from HSE University</p>
+                                    <p class="text-uppercase mb-0 cf2"><strong>100% online</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-2" data-bs-slide="prev">
+                <span class="ion-chevron-left text-black fs-1"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-2" data-bs-slide="next">
+                <span class="ion-chevron-right text-black fs-1"></span>
+            </button>
+        </div>
+    </div>
+    
+    <div class="text-center my-4">
+        <a href="#" class="h5 text-decoration-none s3-a"><strong>Explore Degrees&nbsp;&nbsp;<span class="ion-arrow-right-a"></span></strong></a>
+    </div>
+</div>
+
+
+<!-- ------------------------------------------------SECTION:5 SKILLS---------------------------------------------- -->
+<div class="container-fluid cs-5">
+    <h3 class="text-primary ps-4">Courses and Specializations</h3>
+    <h2 class="ps-4 s3-h2">Advance your career with new skills</h2>
+    <p class="ps-4 s3-p">Choose from over 4,000 courses in topics like business analytics, graphic design, Python, and more.</p>
+    <div id="carousel-3" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel-3" data-bs-slide-to="0" class="bg-black active"></button>
+            <button type="button" data-bs-target="#carousel-3" data-bs-slide-to="1" class="bg-black"></button>
+            <button type="button" data-bs-target="#carousel-3" data-bs-slide-to="2" class="bg-black"></button>
+            <button type="button" data-bs-target="#carousel-3" data-bs-slide-to="3" class="bg-black"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="container p-5">
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="card">
+                                <img src="../../../Assets/coursera/s5-1.jpeg" alt="s5-1" class="card-img-top">
+                                <div class="card-body shadow-lg text-white s5-cb1">
+                                    <h4 class="card-title">Deep Learning</h4>
+                                    <p class="card-text">DeepLearning.AI</p> 
+                                    <p class="text-uppercase mb-0 cf"><strong>Specialization (5 Courses)</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 d-none d-sm-block">
+                            <div class="card">
+                                <img src="../../../Assets/coursera/s5-2.jpeg" alt="s5-2" class="card-img-top">
+                                <div class="card-body shadow-lg text-white s5-cb1">
+                                    <h4 class="card-title">Python for Everybody</h4>
+                                    <p class="card-text">University of Michigan</p>
+                                    <p class="text-uppercase mb-0 cf"><strong>Specialization (5 Courses)</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 d-none d-lg-block">
+                            <div class="card">
+                                <img src="../../../Assets/coursera/s5-3.jpeg" alt="s5-3" class="card-img-top">
+                                <div class="card-body shadow-lg text-white s5-cb1">
+                                    <h4 class="card-title">Business Foundations</h4>
+                                    <p class="card-text">University of Pennsylvania</p>
+                                    <p class="text-uppercase mb-0 cf"><strong>Specialization (5 Courses)</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="container p-5">
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="card">
+                                <img src="../../../Assets/coursera/s5-4.jpeg" alt="s5-4" class="card-img-top">
+                                <div class="card-body shadow-lg text-white s5-cb2">
+                                    <h4 class="card-title">Foundations of Mindfulness</h4>
+                                    <p class="card-text text-muted">Rice University</p>
+                                    <p class="text-uppercase mb-0 cf2"><strong>Course</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 d-none d-sm-block">
+                            <div class="card">
+                                <img src="../../../Assets/coursera/s5-5.jpeg" alt="s5-5" class="card-img-top">
+                                <div class="card-body shadow-lg text-white s5-cb1">
+                                    <h4 class="card-title">Excel Skills for Business</h4>
+                                    <p class="card-text">Macquarie University</p>
+                                    <p class="text-uppercase mb-0 cf"><strong>Specialization (4 Courses)</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 d-none d-lg-block">
+                            <div class="card">
+                                <img src="../../../Assets/coursera/s5-6.jpeg" alt="s5-6" class="card-img-top">
+                                <div class="card-body shadow-lg text-white s5-cb1">
+                                    <h4 class="card-title">Security in Google Cloud</h4>
+                                    <p class="card-text">Google Cloud</p>
+                                    <p class="text-uppercase mb-0 cf2"><strong>Specialization (3 Courses)</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="container p-5">
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="card">
+                                <img src="../../../Assets/coursera/s5-7.jpeg" alt="s5-7" class="card-img-top">
+                                <div class="card-body shadow-lg text-white s5-cb2">
+                                    <h4 class="card-title">Cloud Computing Basics (Cloud 101)</h4>
+                                    <p class="card-text text-muted">LearnQuest</p>
+                                    <p class="text-uppercase mb-0 cf2"><strong>Course</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 d-none d-sm-block">
+                            <div class="card">
+                                <img src="../../../Assets/coursera/s5-8.jpeg" alt="s5-8" class="card-img-top">
+                                <div class="card-body shadow-lg text-white s5-cb2">
+                                    <h4 class="card-title">Innovation Through Design&colon; Think, Make, Break, Repeat</h4>
+                                    <p class="card-text text-muted">The University of Sydney</p>
+                                    <p class="text-uppercase mb-0 cf3"><strong>Course</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 d-none d-lg-block">
+                            <div class="card">
+                                <img src="../../../Assets/coursera/s5-9.jpeg" alt="s5-9" class="card-img-top">
+                                <div class="card-body shadow-lg text-white s5-cb2">
+                                    <h4 class="card-title">Statistics with SAS</h4>
+                                    <p class="card-text text-muted">SAS</p>
+                                    <p class="text-uppercase mb-0 cf"><strong>Course</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="container p-5">
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="card">
+                                <img src="../../../Assets/coursera/s5-10.jpeg" alt="s5-10" class="card-img-top">
+                                <div class="card-body shadow-lg text-white s5-cb2">
+                                    <h4 class="card-title">Powerful Tools for Teaching and Learning&colon; Digital Storytelling</h4>
+                                    <p class="card-text text-muted">University of Houston</p>
+                                    <p class="text-uppercase mb-0 cf3"><strong>Course</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 d-none d-sm-block">
+                            <div class="card">
+                                <img src="../../../Assets/coursera/s5-11.jpeg" alt="s5-11" class="card-img-top">
+                                <div class="card-body shadow-lg text-white s5-cb2">
+                                    <h4 class="card-title">Problem Solving Using Computational Thinking</h4>
+                                    <p class="card-text text-muted">University of Michigan</p>
+                                    <p class="text-uppercase mb-0 cf3"><strong>Course</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 d-none d-lg-block">
+                            <div class="card">
+                                <img src="../../../Assets/coursera/s5-12.jpeg" alt="s5-12" class="card-img-top">
+                                <div class="card-body shadow-lg text-white s5-cb2">
+                                    <h4 class="card-title">DNA Decoded</h4>
+                                    <p class="card-text text-muted">McMaster University</p>
+                                    <p class="text-uppercase mb-0 cf"><strong>Course</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-3" data-bs-slide="prev">
+                <span class="ion-chevron-left text-black fs-1"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-3" data-bs-slide="next">
+                <span class="ion-chevron-right text-black fs-1"></span>
+            </button>
+        </div>
+    </div>
+    
+    <div class="text-center my-4">
+        <a href="#" class="h5 text-decoration-none s3-a"><strong>Explore Skills&nbsp;&nbsp;<span class="ion-arrow-right-a"></span></strong></a>
+    </div>
+</div>
+
+
+<!-- ------------------------------------------------SECTION:6 FREE COURSES---------------------------------------------- -->
+<div class="container-fluid cs-6">
+    <h3 class="text-primary ps-4">100% Free</h3>
+    <h2 class="ps-4 s3-h2">Start Learning with Free Courses</h2>
+    <p class="ps-4 s3-p">Free online courses from the world's top universities and companies.</p>
+    <div id="carousel-4" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel-4" data-bs-slide-to="0" class="bg-black active"></button>
+            <button type="button" data-bs-target="#carousel-4" data-bs-slide-to="1" class="bg-black"></button>
+            <button type="button" data-bs-target="#carousel-4" data-bs-slide-to="2" class="bg-black"></button>
+            <button type="button" data-bs-target="#carousel-4" data-bs-slide-to="3" class="bg-black"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="container p-5">
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="card">
+                                <img src="../../../Assets/coursera/s6-1.jpeg" alt="s6-1" class="card-img-top">
+                                <div class="card-body shadow-lg">
+                                    <h4 class="card-title">Machine Learning</h4>
+                                    <p class="card-text text-muted">Stanford University</p> 
+                                    <p class="text-uppercase mb-0 cf"><strong>Course</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 d-none d-sm-block">
+                            <div class="card">
+                                <img src="../../../Assets/coursera/s6-2.jpeg" alt="s6-2" class="card-img-top">
+                                <div class="card-body shadow-lg">
+                                    <h4 class="card-title">The Science of Well&hyphen;Being</h4>
+                                    <p class="card-text text-muted">Yale University</p>
+                                    <p class="text-uppercase mb-0 cf2"><strong>Course</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 d-none d-lg-block">
+                            <div class="card">
+                                <img src="../../../Assets/coursera/s6-3.jpeg" alt="s6-3" class="card-img-top">
+                                <div class="card-body shadow-lg">
+                                    <h4 class="card-title">Learning How to Learn&colon; Powerful mental tools to help you</h4>
+                                    <p class="card-text text-muted">Deep Teaching Solutions</p>
+                                    <p class="text-uppercase mb-0 cf3"><strong>Course</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="container p-5">
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="card">
+                                <img src="../../../Assets/coursera/s6-4.jpeg" alt="s6-4" class="card-img-top">
+                                <div class="card-body shadow-lg">
+                                    <h4 class="card-title">Financial Markets</h4>
+                                    <p class="card-text text-muted">Yale University</p>
+                                    <p class="text-uppercase mb-0 cf"><strong>Course</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 d-none d-sm-block">
+                            <div class="card">
+                                <img src="../../../Assets/coursera/s6-5.jpeg" alt="s6-5" class="card-img-top">
+                                <div class="card-body shadow-lg">
+                                    <h4 class="card-title">English for Career Development</h4>
+                                    <p class="card-text text-muted">University of Pennsylvania</p>
+                                    <p class="text-uppercase mb-0 cf2"><strong>Course</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 d-none d-lg-block">
+                            <div class="card">
+                                <img src="../../../Assets/coursera/s6-6.jpeg" alt="s6-6" class="card-img-top">
+                                <div class="card-body shadow-lg">
+                                    <h4 class="card-title">Successful Negotiation&colon; Essential Strategies and Skills</h4>
+                                    <p class="card-text text-muted">University of Michigan</p>
+                                    <p class="text-uppercase mb-0 cf3"><strong>Course</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="container p-5">
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="card">
+                                <img src="../../../Assets/coursera/s6-7.jpeg" alt="s6-7" class="card-img-top">
+                                <div class="card-body shadow-lg">
+                                    <h4 class="card-title">Chinese for Beginners</h4>
+                                    <p class="card-text text-muted">Peking University</p>
+                                    <p class="text-uppercase mb-0 cf"><strong>Course</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 d-none d-sm-block">
+                            <div class="card">
+                                <img src="../../../Assets/coursera/s6-8.jpeg" alt="s6-8" class="card-img-top">
+                                <div class="card-body shadow-lg">
+                                    <h4 class="card-title">Introduction to Psychology</h4>
+                                    <p class="card-text text-muted">Yale University</p>
+                                    <p class="text-uppercase mb-0 cf2"><strong>Course</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 d-none d-lg-block">
+                            <div class="card">
+                                <img src="../../../Assets/coursera/s6-9.jpeg" alt="s6-9" class="card-img-top">
+                                <div class="card-body shadow-lg">
+                                    <h4 class="card-title">Child Nutrition and Cooking</h4>
+                                    <p class="card-text text-muted">Stanford University</p>
+                                    <p class="text-uppercase mb-0 cf2"><strong>Course</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="container p-5">
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="card">
+                                <img src="../../../Assets/coursera/s6-10.jpeg" alt="s6-10" class="card-img-top">
+                                <div class="card-body shadow-lg">
+                                    <h4 class="card-title">Introduction to Philosophy</h4>
+                                    <p class="card-text text-muted">The University of Edinburgh</p>
+                                    <p class="text-uppercase mb-0 cf2"><strong>Course</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 d-none d-sm-block">
+                            <div class="card">
+                                <img src="../../../Assets/coursera/s6-11.jpeg" alt="s6-11" class="card-img-top">
+                                <div class="card-body shadow-lg">
+                                    <h4 class="card-title">Stanford Introduction to Food and Health</h4>
+                                    <p class="card-text text-muted">Stanford University</p>
+                                    <p class="text-uppercase mb-0 cf2"><strong>Course</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 d-none d-lg-block">
+                            <div class="card">
+                                <img src="../../../Assets/coursera/s6-12.jpeg" alt="s6-12" class="card-img-top">
+                                <div class="card-body shadow-lg">
+                                    <h4 class="card-title">First Step Korean</h4>
+                                    <p class="card-text text-muted">Yonsei University</p>
+                                    <p class="text-uppercase mb-0 cf"><strong>Course</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-4" data-bs-slide="prev">
+                <span class="ion-chevron-left text-black fs-1"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-4" data-bs-slide="next">
+                <span class="ion-chevron-right text-black fs-1"></span>
+            </button>
+        </div>
+    </div>
+    
+    <div class="text-center my-4">
+        <a href="#" class="h5 text-decoration-none s3-a"><strong>Explore Free Courses&nbsp;&nbsp;<span class="ion-arrow-right-a"></span></strong></a>
+    </div>
+</div>
+
+
+<!-- ------------------------------------------------SECTION:7 EXPLORE COURSES---------------------------------------------- -->
+<div class="container-fluid cs-7">
+    <h2 class="ps-2 s3-h2">Explore Coursera</h2>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 mt-4">
+        <div class="col">
+            <div class="mycard shadow m-2 mt-3 rounded-2">
+                <img src="../../../Assets/coursera/s7-1.jpeg" alt="s7-1" class="rounded-start">
+                <p class="p-2">Data Science <br /><span class="pt-2 text-muted">425 courses</span></p>
+            </div>
+        </div>
+        <div class="col">
+            <div class="mycard shadow m-2 mt-3 rounded-2">
+                <img src="../../../Assets/coursera/s7-2.jpeg" alt="s7-2" class="rounded-start">
+                <p class="p-2">Business <br /><span class="pt-2 text-muted">1095 courses</span></p>
+            </div>
+        </div>
+        <div class="col">
+            <div class="mycard shadow m-2 mt-3 rounded-2">
+                <img src="../../../Assets/coursera/s7-3.jpeg" alt="s7-3" class="rounded-start">
+                <p class="p-2">Computer Science <br /><span class="pt-2 text-muted">668 courses</span></p>
+            </div>
+        </div>
+        <div class="col">
+            <div class="mycard shadow m-2 mt-3 rounded-2">
+                <img src="../../../Assets/coursera/s7-4.jpeg" alt="s7-4" class="rounded-start">
+                <p class="p-2">Health <br /><span class="pt-2 text-muted">471 courses</span></p>
+            </div>
+        </div>
+        <div class="col">
+            <div class="mycard shadow m-2 mt-3 rounded-2">
+                <img src="../../../Assets/coursera/s7-5.jpeg" alt="s7-5" class="rounded-start">
+                <p class="p-2">Social Sciences <br /><span class="pt-2 text-muted">401 courses</span></p>
+            </div>
+        </div>
+        <div class="col">
+            <div class="mycard shadow m-2 mt-3 rounded-2">
+                <img src="../../../Assets/coursera/s7-6.jpeg" alt="s7-6" class="rounded-start">
+                <p class="p-2">Personal Development <br /><span class="pt-2 text-muted">137 courses</span></p>
+            </div>
+        </div>
+        <div class="col">
+            <div class="mycard shadow m-2 mt-3 rounded-2">
+                <img src="../../../Assets/coursera/s7-7.jpeg" alt="s7-7" class="rounded-start">
+                <p class="p-2">Arts and Humanities <br /><span class="pt-2 text-muted">228 courses</span></p>
+            </div>
+        </div>
+        <div class="col">
+            <div class="mycard shadow m-2 mt-3 rounded-2">
+                <img src="../../../Assets/coursera/s7-8.jpg" alt="s7-8" class="rounded-start">
+                <p class="p-2">Physical Science and Engineering <br /><span class="pt-2 text-muted">413 courses</span></p>
+            </div>
+        </div>
+        <div class="col">
+            <div class="mycard shadow m-2 mt-3 rounded-2">
+                <img src="../../../Assets/coursera/s7-9.jpeg" alt="s7-9" class="rounded-start">
+                <p class="p-2">Language Learning <br /><span class="pt-2 text-muted">150 courses</span></p>
+            </div>
+        </div>
+        <div class="col">
+            <div class="mycard shadow m-2 mt-3 rounded-2">
+                <img src="../../../Assets/coursera/s7-10.jpeg" alt="s7-10" class="rounded-start">
+                <p class="p-2">Information Technology <br /><span class="pt-2 text-muted">145 courses</span></p>
+            </div>
+        </div>
+        <div class="col">
+            <div class="mycard shadow m-2 mt-3 rounded-2">
+                <img src="../../../Assets/coursera/s7-11.jpeg" alt="s7-11" class="rounded-start">
+                <p class="p-2">Math and Logic <br /><span class="pt-2 text-muted">70 courses</span></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- ------------------------------------------------SECTION:8 WORLD-CLASS LEARNING---------------------------------------------- -->
+<div class="container-fluid cs-8 bg-info bg-opacity-10 p-0">
+    <div class="row">
+        <div class="col-lg-7">
+            <img src="../../../Assets/coursera/s8.png" alt="s8" class="img-fluid">
+        </div>
+        <div class="col-lg-5 s8-col2">
+            <h1 class="display-6">World-class learning for you</h1>
+            <p>Pursue <strong>a promotion, a raise, or switch careers. 89% of learners</strong> who have taken a course <strong>report career benefits.</strong></p>
+            <h6>&hyphen; Coursera Learner Outcome Survey, India (2021)</h6>
+            <button class="btn btn-primary text-white h3 p-3 px-5 mb-0"><strong>Join for Free</strong></button>
+        </div>
+    </div>
+</div>
+
+
+<!-- ------------------------------------------------SECTION:9 COURSERA COMMUNITY---------------------------------------------- -->
+<div class="container text-center cs-9">
+    <h1 class="display-1">From the Coursera community</h1>
+    <h4 class="display-6">87+ million people are already learning on Coursera</h4>
+    <div id="carousel-5" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel-5" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#carousel-5" data-bs-slide-to="1"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col col-lg-6 text-center">
+                        <img src="../../../Assets/coursera/s9-1.png" alt="s9-1" class="">
+                        <h1 class="text-primary">E. Naveen</h1>
+                        <h3>Google IT Professional Certificate</h3>
+                        <h6>Telangana</h6>
+                        <hr class="text-primary w-25 mx-auto"/>
+                        <p class="px-4">"Google's IT Support Certificate allowed me to get a foot in the door for
+                            the roles I went after, thereby allowing me to convert an offer."
+                        </p>
+                    </div>
+                    <div class="col col-lg-6 text-center">
+                        <img src="../../../Assets/coursera/s9-2.png" alt="s9-2" class="">
+                        <h1 class="text-primary">Manmeet G</h1>
+                        <h3>IBM Cybersecurity Analyst</h3>
+                        <h6>Gujarat</h6>
+                        <hr class="text-primary w-25 mx-auto"/>
+                        <p class="px-4">"The most amazing thing about this (IBM Cybersecurity Analyst) program is 
+                            the certified and experienced instructors."
+                        </p>
+                    </div>
+                </div> 
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col col-lg-6 text-center">
+                        <img src="../../../Assets/coursera/s9-3.png" alt="s9-3" class="">
+                        <h1 class="text-primary">Uma k</h1>
+                        <h3>IBM Data Science Professional Certificate</h3>
+                        <h6>Bihar</h6>
+                        <hr class="text-primary w-25 mx-auto"/>
+                        <p class="px-4">"The IBM Data Science Professional Certificate has continued to open doors
+                            for me."
+                        </p>
+                    </div>
+                    <div class="col col-lg-6 text-center">
+                        <img src="../../../Assets/coursera/s9-4.png" alt="s9-4" class="">
+                        <h1 class="text-primary">Bharathan M</h1>
+                        <h3>Deep Learning Specialization</h3>
+                        <h6>Gujarat</h6>
+                        <hr class="text-primary w-25 mx-auto"/>
+                        <p class="px-4">"The knowledge I gained through the Machine Learning and Deep Learning courses
+                            helped me land an internship."
+                        </p>
+                    </div>
+                </div> 
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel-5" data-bs-slide="prev">
+            <span class="ion-chevron-left text-primary fs-1"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel-5" data-bs-slide="next">
+            <span class="ion-chevron-right text-primary fs-1"></span>
+          </button>
+    </div>
+</div>
+
+<!-- ------------------------------------------------SECTION:10 COURSERA FOR BUSINESS---------------------------------------------- -->
+<div class="container-fluid cs-10">
+    <div class="row">
+        <div class="col col-lg-6">
+            <h1 class="display-5">Coursera for Business</h1>
+            <div class="s10-div1">
+                <p>Get world-class training and development programs developed by top universities and companies. 
+                    All on Coursera for Business.</p>                
+                <button class="btn-lg btn-outline-primary h3 p-3 mb-0 border border-2 border-primary s-1-b cs-10-b1">
+                    <strong>Coursera for Enterprise</strong></button>
+                <button class="btn-lg btn-outline-primary h3 p-3 mb-0 border border-2 border-primary s-1-b">
+                    <strong>Coursera for Teams</strong></button>                
+           </div>            
+        </div>
+        <div class="col col-lg-6 px-5 text-center">
+            <h6 class="text-primary">Thousands of institutions use Coursera's enterprise offering.</h6>
+            <div class="row mb-5 px-3 text-center">
+                <div class="col col-4">
+                    <img src="../../../Assets/coursera/s10-1.png" alt="s10-1" class="img-fluid mx-auto d-block">
+                </div>
+                <div class="col col-4">
+                    <img src="../../../Assets/coursera/s10-2.svg" alt="s10-2" class="img-fluid mx-auto d-block" style="width: 30%;">
+                </div>
+                <div class="col col-4">
+                    <img src="../../../Assets/coursera/s10-3.png" alt="s10-3" class="img-fluid mx-auto d-block">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-4">
+                    <img src="../../../Assets/coursera/s10-4.svg" alt="s10-4" class="img-fluid mx-auto d-block" style="width: 90%;">
+                </div>
+                <div class="col col-4">
+                    <img src="../../../Assets/coursera/s10-5.png" alt="s10-5" class="img-fluid mx-auto d-block">
+                </div>
+                <div class="col col-4">
+                    <img src="../../../Assets/coursera/s10-6.png" alt="s10-6" class="img-fluid mx-auto d-block">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- ------------------------------------------------SECTION:11 JOIN FOR FREE---------------------------------------------- --> 
+<div class="container cs-11">
+    <div>
+        <img src="../../../Assets/coursera/s11.png" alt="s11">
+    </div>
+    <div class="cs-11-div2">
+        <h1 class="display-6">Take the next step toward your personal and professional goals with Coursera.</h1>
+        <p>Join now to receive personalized recommendations from the full Coursera catalog.</p>
+        <button class="btn-lg btn-primary text-white h3 p-3 mb-0 cs-11-b"><strong>Join for Free</strong></button>
+    </div>
+</div>
+
+
+<!-- ------------------------------------------------SECTION:12 FOOTER---------------------------------------------- --> 
+<div class="container-fluid footer-12">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4">
+        <div class="col p-4">
+            <h6>Start or advance your career</h6>
+            <a href="#" class="link-dark">Google Data Analyst</a>
+            <a href="#" class="link-dark">Google Project Management</a>
+            <a href="#" class="link-dark">Google UX Design</a>
+            <a href="#" class="link-dark">Google IT Support</a>
+            <a href="#" class="link-dark">IBM Data Science</a>
+            <a href="#" class="link-dark">IBM Data Analyst</a>
+            <a href="#" class="link-dark">IBM Data Analytics with Excel and R</a>
+            <a href="#" class="link-dark">IBM Cybersecurity Analyst</a>
+            <a href="#" class="link-dark">IBM Data Engineering</a>
+            <a href="#" class="link-dark">IBM Full Stack Cloud Developer</a>
+            <a href="#" class="link-dark">Facebook Social Media Marketing</a>
+            <a href="#" class="link-dark">Facebook Marketing Analytics</a>
+            <a href="#" class="link-dark">Salesforce Sales Development Representative</a>
+            <a href="#" class="link-dark">Salesforce Sales Operations</a>
+            <a href="#" class="link-dark">Intuit Bookkeeping</a>
+            <a href="#" class="link-dark">Preparing for Google Cloud Certification: Cloud Architect</a>
+            <a href="#" class="link-dark">Preparing for Google Cloud Certification: Cloud Data Engineer</a>
+            <a href="#" class="link-dark">Launch your career</a>
+            <a href="#" class="link-dark">Prepare for a certification</a>
+            <a href="#" class="link-dark">Advance your career</a>
+        </div>
+        <div class="col p-4">
+            <h6>Browse popular topics</h6>
+            <a href="#" class="link-dark">Free Courses</a>
+            <a href="#" class="link-dark">Learn a Language</a>
+            <a href="#" class="link-dark">Python</a>
+            <a href="#" class="link-dark">Java</a>
+            <a href="#" class="link-dark">Web Design</a>
+            <a href="#" class="link-dark">SQL</a>
+            <a href="#" class="link-dark">Cursos Gratis</a>
+            <a href="#" class="link-dark">Microsoft Excel</a>
+            <a href="#" class="link-dark">Project Management</a>
+            <a href="#" class="link-dark">Cybersecurity</a>
+            <a href="#" class="link-dark">Human Resources</a>
+            <a href="#" class="link-dark">Data Science Free Courses</a>
+            <a href="#" class="link-dark">Speaking English</a>
+            <a href="#" class="link-dark">Content Writing</a>
+            <a href="#" class="link-dark">Full Stack Web Development</a>
+            <a href="#" class="link-dark">Artificial Intelligence</a>
+            <a href="#" class="link-dark">C Programming</a>
+            <a href="#" class="link-dark">Communication Skills</a>
+            <a href="#" class="link-dark">Blockchain</a>
+            <a href="#" class="link-dark">See all courses</a>
+        </div>
+        <div class="col p-4">
+            <h6>Popular courses and articles</h6>
+            <a href="#" class="link-dark">Skills for Data Science Teams</a>
+            <a href="#" class="link-dark">Data Driven Decision Making</a>
+            <a href="#" class="link-dark">Software Engineering Skills</a>
+            <a href="#" class="link-dark">Soft Skills for Engineering Teams</a>
+            <a href="#" class="link-dark">Management Skills</a>
+            <a href="#" class="link-dark">Marketing Skills</a>
+            <a href="#" class="link-dark">Skills for Sales Teams</a>
+            <a href="#" class="link-dark">Product Manager Skills</a>
+            <a href="#" class="link-dark">Skills for Finance</a>
+            <a href="#" class="link-dark">Popular Data Science Courses in the UK</a>
+            <a href="#" class="link-dark">Beliebte Technologiekurse in Deutschland</a>
+            <a href="#" class="link-dark">Popular Cybersecurity Certifications</a>
+            <a href="#" class="link-dark">Popular IT Certifications</a>
+            <a href="#" class="link-dark">Popular SQL Certifications</a>
+            <a href="#" class="link-dark">Marketing Manager Career Guide</a>
+            <a href="#" class="link-dark">Project Manager Career Guide</a>
+            <a href="#" class="link-dark">Python Programming Skills</a>
+            <a href="#" class="link-dark">Web Developer Career Guide</a>
+            <a href="#" class="link-dark">Data Analyst Skills</a>
+            <a href="#" class="link-dark">Skills for UX Designers</a>
+        </div>
+        <div class="col p-4">
+            <h6>Earn a degree or certificate online</h6>
+            <a href="#" class="link-dark">MasterTrack&reg; Certificates</a>
+            <a href="#" class="link-dark">Professional Certificates</a>
+            <a href="#" class="link-dark">University Certificates</a>
+            <a href="#" class="link-dark">MBA & Business Degrees</a>
+            <a href="#" class="link-dark">Data Science Degrees</a>
+            <a href="#" class="link-dark">Computer Science Degrees</a>
+            <a href="#" class="link-dark">Data Analytics Degrees</a>
+            <a href="#" class="link-dark">Public Health Degrees</a>
+            <a href="#" class="link-dark">Social Sciences Degrees</a>
+            <a href="#" class="link-dark">Management Degrees</a>
+            <a href="#" class="link-dark">Degrees from Top European Universities</a>
+            <a href="#" class="link-dark">Master's Degrees</a>
+            <a href="#" class="link-dark">Bachelor's Degrees</a>
+            <a href="#" class="link-dark">Degrees with a Performance Pathway</a>
+            <a href="#" class="link-dark">Bsc Courses</a>
+            <a href="#" class="link-dark">What is a Bachelor's Degree?</a>
+            <a href="#" class="link-dark">How Long Does a Master's Degree Take?</a>
+            <a href="#" class="link-dark">Is an Online MBA Worth It?</a>
+            <a href="#" class="link-dark">7 Ways to Pay for Graduate School</a>
+            <a href="#" class="link-dark">See all certificates</a>
+        </div>
+    </div>
+
+    <div class="row footer-r2">
+        <div class="col p-4">
+            <h6>Coursera</h6>
+            <a href="#" class="link-dark">About</a>
+            <a href="#" class="link-dark">What We Offer</a>
+            <a href="#" class="link-dark">Leadership</a>
+            <a href="#" class="link-dark">Careers</a>
+            <a href="#" class="link-dark">Catalog</a>
+            <a href="#" class="link-dark">Coursera Plus</a>
+            <a href="#" class="link-dark">Professional Certificates</a>
+            <a href="#" class="link-dark">MasterTrack&reg; Certificates</a>
+            <a href="#" class="link-dark">Degrees</a>
+            <a href="#" class="link-dark">For Enterprise</a>
+            <a href="#" class="link-dark">For Government</a>
+            <a href="#" class="link-dark">For Campus</a>
+            <a href="#" class="link-dark">Become a Partner</a>
+            <a href="#" class="link-dark">Coronavirus Response</a>
+        </div>
+        <div class="col p-4">
+            <h6>Community</h6>
+            <a href="#" class="link-dark">Learners</a>
+            <a href="#" class="link-dark">Partners</a>
+            <a href="#" class="link-dark">Developers</a>
+            <a href="#" class="link-dark">Beta Testers</a>
+            <a href="#" class="link-dark">Translators</a>
+            <a href="#" class="link-dark">Blog</a>
+            <a href="#" class="link-dark">Tech Blog</a>
+            <a href="#" class="link-dark">Teaching Center</a>
+        </div>
+        <div class="col p-4">
+            <h6>More</h6>
+            <a href="#" class="link-dark">Press</a>
+            <a href="#" class="link-dark">Investors</a>
+            <a href="#" class="link-dark">Terms</a>
+            <a href="#" class="link-dark">Privacy</a>
+            <a href="#" class="link-dark">Help</a>
+            <a href="#" class="link-dark">Accessibility</a>
+            <a href="#" class="link-dark">Contact</a>
+            <a href="#" class="link-dark">Articles</a>
+            <a href="#" class="link-dark">Directory</a>
+            <a href="#" class="link-dark">Affiliates</a>
+        </div>
+        <div class="col col-md-4 px-5">
+            <div>
+                <img src="../../../Assets/coursera/s12-1.svg" alt="s12-1" class="img-fluid mx-auto d-block my-4" style="width: 78%;">
+            </div>
+            <div>
+                <img src="../../../Assets/coursera/s12-2.png" alt="s12-2" class="img-fluid mx-auto d-block mb-4" style="width: 78%;">
+            </div>
+            <div>
+                <img src="../../../Assets/coursera/s12-3.png" alt="s12-3" class="img-fluid mx-auto d-block " style="width: 42%;">
+            </div>
+        </div>
+        <hr />
+        <div class="d-flex justify-content-between footer-flex1">
+            <div>
+                <p>&copy; 2022 Coursera Inc. All rights reserved.</p>
+            </div>
+            <div class="d-flex footer-flex2">
+                <img src="../../../Assets/coursera/s12-4.png" alt="s12-4" class="img-fluid mx-auto d-block">
+                <img src="../../../Assets/coursera/s12-5.png" alt="s12-5" class="img-fluid mx-auto d-block">
+                <img src="../../../Assets/coursera/s12-6.png" alt="s12-6" class="img-fluid mx-auto d-block">
+                <img src="../../../Assets/coursera/s12-7.png" alt="s12-7" class="img-fluid mx-auto d-block">
+                <img src="../../../Assets/coursera/s12-8.png" alt="s12-8" class="img-fluid mx-auto d-block">
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

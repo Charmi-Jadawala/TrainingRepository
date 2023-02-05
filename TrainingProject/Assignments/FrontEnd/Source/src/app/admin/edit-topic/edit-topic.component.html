@@ -1,0 +1,69 @@
+<div class="container-fluid bg-primary text-white">
+    <div class="container ps-1">
+        <div class="row">
+            <div class="col-6 text-start">
+                <h2 class="p-2 m-0"><span class="ion-android-create"></span>&nbsp;&nbsp;Edit Topic</h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container border border-1 my-3 p-0">
+    <h4 class="bg-light border-bottom mb-0 p-2">Edit Topic</h4>
+    <form [formGroup]="topicForm" (ngSubmit)="onTopicSubmit()" class="p-3">
+        <div>
+            <div class="mb-3">
+                <label for="mid" class="form-label pb-1 mb-0 fs-5 text-muted">Module ID</label>
+                <input type="number" id="mid" class="form-control text-muted" formControlName="moduleId" readonly>
+            </div>
+
+            <div class="mb-3">
+                <label for="tid" class="form-label pb-1 mb-0 fs-5 text-muted">Topic ID</label>
+                <input type="number" id="tid" class="form-control text-muted" formControlName="topicId" readonly>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="topicTitle" formControlName="topicTitle"
+                    placeholder="Topic Title" />
+                <label for="topicTitle">Topic Title<span class="text-danger">*</span></label>
+            </div>
+
+            <div class="form-floating mb-3">
+                <select id="type" class="form-select" formControlName="type">
+                    <option value="Reading">Reading</option>
+                    <option value="Video">Video</option>
+                </select>
+                <label for="type">Content Type<span class="text-danger">*</span></label>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="duration" formControlName="duration"
+                    placeholder="Duration" />
+                <label for="duration">Duration<span class="text-danger">*</span></label>
+            </div>
+
+            <div *ngIf="isReading; then block1; else block2"></div>
+            <ng-template #block1>
+                <div class="form-floating mb-3">
+                    <angular-editor id="description" formControlName="description" [config]="editorConfig"
+                        placeholder="Content*">
+                    </angular-editor>
+                </div>
+            </ng-template>
+            <ng-template #block2 class="d-flex justify-content-center">
+                <div class="col">
+                    <label for="video" class="form-label  pb-1 mb-0 fs-5">Video<span
+                            class="text-danger">*</span></label>
+                    <input type="file" class="form-control" id="video" (change)="insertVideo($event)" />
+                </div>
+            </ng-template>
+
+        </div>
+        <div class="row p-2">
+            <div class="col-sm-4 col-lg-3 d-grid pe-1 ms-auto">
+                <button type="submit" [disabled]="topicForm.invalid" class="btn btn-success d-block my-1 my-sm-0"><span
+                        class="ion-checkmark-round"></span>&nbsp;&nbsp;Save Changes</button>
+            </div>
+        </div>
+    </form>
+</div>

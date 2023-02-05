@@ -1,0 +1,45 @@
+<div class="container-fluid p-0">
+    <div class="row vh-100">
+        <div class="col-sm-5 col-md-4 col-lg-3 bg-dark p-0">
+            <!--Small device navbar-->
+            <div class="d-sm-none fixed-top bg-dark">
+                <button class="btn btn-primary m-2 ms-4" data-bs-toggle="collapse" data-bs-target="#navbar"><span class="ion-navicon-round text-white"></span></button>
+                <div id="navbar" class="collapse bg-dark">
+                    <ul class="p-4">
+                        <li class=""><a [routerLink]="['/objective']" class="nav-link pb-1 text-info">OBJECTIVE</a></li>
+                        <li class=""><a [routerLink]="['/personaldetails']" class="nav-link pb-1 text-info">PERSONAL DETAILS</a></li>
+                        <li class=""><a [routerLink]="['/education']" class="nav-link pb-1 text-info">EDUCATION</a></li>
+                        <li class=""><a [routerLink]="['/projects']" class="nav-link pb-1 text-info">PROJECTS</a></li>
+                        <li class=""><a [routerLink]="['/certifications']" class="nav-link pb-1 text-info">CERTIFICATIONS</a></li>
+                        <li class=""><a [routerLink]="['/contactdetails']" class="nav-link pb-1 text-info">CONTACT DETAILS</a></li>
+                        <li class=""><a [routerLink]="['/skills']" class="nav-link pb-1 text-info">SKILLS</a></li>
+                        <li class=""><a [routerLink]="['/declaration']" class="nav-link pb-1 text-info">DECLARATION</a></li>
+                    </ul>     
+                </div>
+            </div>
+            <!--Large device navbar-->
+            <div class="d-none d-sm-block sticky-top">
+                <nav class="navbar justify-content-center bg-dark ms-2">
+                    <a href="#" class="d-block m-0 navbar-brand">
+                        <img src="../../assets/c1.jpg" alt="My pic" class="rounded-circle mt-0 mx-auto">
+                    </a>
+                    <ul class="navbar-nav p-2">
+                        <li class="nav-item"><a [routerLink]="['/objective']" class="nav-link pb-1 text-info">OBJECTIVE</a></li>
+                        <li class="nav-item"><a [routerLink]="['/personaldetails']" class="nav-link pb-1 text-info">PERSONAL DETAILS</a></li>
+                        <li class="nav-item"><a [routerLink]="['/education']" class="nav-link pb-1 text-info">EDUCATION</a></li>
+                        <li class="nav-item"><a [routerLink]="['/projects']" class="nav-link pb-1 text-info">PROJECTS</a></li>
+                        <li class="nav-item"><a [routerLink]="['/certifications']" class="nav-link pb-1 text-info">CERTIFICATIONS</a></li>
+                        <li class="nav-item"><a [routerLink]="['/contactdetails']" class="nav-link pb-1 text-info">CONTACT DETAILS</a></li>
+                        <li class="nav-item"><a [routerLink]="['/skills']" class="nav-link pb-1 text-info">SKILLS</a></li>
+                        <li class="nav-item"><a [routerLink]="['/declaration']" class="nav-link pb-1 text-info">DECLARATION</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="col-sm-7 col-md-8 col-lg-9 bg-light">
+            <div class="container-fluid m-0">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+</div>    

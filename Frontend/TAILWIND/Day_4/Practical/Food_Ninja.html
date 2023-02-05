@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Ninja</title>
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <style>
+        body{
+            font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        }
+    </style>
+</head>
+<body>
+    <div class="grid md:grid-cols-4">
+        <div class="md:col-span-1">
+            <div class="md:flex md:justify-end">
+                <nav class="flex justify-between items-center md:block py-3 md:py-0 px-3 md:px-0 md:text-right md:pt-3">
+                    <div class="pb-1.5">
+                        <h1 class="font-semibold text-2xl text-slate-600">FOOD NINJA</h1>
+                    </div>
+                    <div class="space-y-1 hidden md:block">
+                        <p class="border-r-4 border-red-500">Home&nbsp;<span class="ion-home px-2"></span></p>
+                        <p>About&nbsp;<span class="ion-help pl-2.5 pr-3.5"></span></p>
+                        <p>Contact&nbsp;<span class="ion-email pl-2 pr-3"></span></p>
+                    </div>
+                    <div class="md:hidden">
+                        <span class="ion-navicon-round"></span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="md:col-span-3 bg-slate-100 px-16 py-10">
+            <div class="flex justify-center md:justify-end gap-3">
+                <a href="#" class="p-3 py-2 text-red-500 border-2 border-red-500 rounded-full hover:bg-red-500 hover:text-white transition ease-in delay-200">
+                    LOG IN
+                </a>
+                <a href="#" class="p-3 py-2 text-red-500 border-2 border-red-500 rounded-full hover:bg-red-500 hover:text-white transition ease-in delay-200">
+                    SIGN UP
+                </a>
+            </div>
+            <div class="mt-6 mb-10">
+                <h1 class="font-semibold text-7xl text-slate-600">Recipes</h1>
+                <h4 class="pt-2.5 font-medium text-3xl text-slate-400">For Ninjas</h4>
+            </div>
+            <div class="py-2">
+                <h3 class="pb-6 text-xl font-semibold text-slate-500">Latest Recipes</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 justify-center gap-6">
+                    <div class="shadow-lg bg-white rounded-md overflow-hidden hover:shadow-2xl relative">
+                        <img src="../../../Assets/food1.jpeg" alt="food1" class="h-48 w-full">
+                        <div class="px-2 py-4 space-y-1">
+                            <h1 class="text-slate-600 text-lg font-medium">Healthy Salad Basket</h1>
+                            <p class="text-slate-400 text-base">Recipe By Mario</p>
+                            <span class="ion-android-time bg-slate-300 rounded-full py-1 px-2 absolute top-1 left-1">&nbsp;25 MINS</span>
+                        </div>
+                    </div>
+                    <div class="shadow-lg bg-white rounded-md overflow-hidden hover:shadow-2xl relative">
+                        <img src="../../../Assets/food2.jpeg" alt="food2" class="h-48">
+                        <div class="px-2 py-4 space-y-1">
+                            <h1 class="text-slate-600 text-lg font-medium">Home-made French Fries</h1>
+                            <p class="text-slate-400 text-base">Recipe By Mario</p>
+                            <span class="ion-android-time bg-slate-300 rounded-full py-1 px-2 absolute top-1 left-1">&nbsp;25 MINS</span>
+                        </div>
+                    </div>
+                    <div class="shadow-lg bg-white rounded-md overflow-hidden hover:shadow-2xl relative">
+                        <img src="../../../Assets/food3.jpeg" alt="food3" class="h-48">
+                        <div class="px-2 py-4 space-y-1">
+                            <h1 class="text-slate-600 text-lg font-medium">Delicious Noodles</h1>
+                            <p class="text-slate-400 text-base">Recipe By Mario</p>
+                            <span class="ion-android-time bg-slate-300 rounded-full py-1 px-2 absolute top-1 left-1">&nbsp;25 MINS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-8">
+                <h3 class="pb-6 text-xl font-semibold text-slate-500">Most Popular</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 justify-center gap-6">
+                    <div class="shadow-lg bg-white rounded-md overflow-hidden hover:shadow-2xl relative">
+                        <img src="../../../Assets/food1.jpeg" alt="food1" class="h-48 w-full">
+                        <div class="px-2 py-4 space-y-1">
+                            <h1 class="text-slate-600 text-lg font-medium">Healthy Salad Basket</h1>
+                            <p class="text-slate-400 text-base">Recipe By Mario</p>
+                            <span class="ion-android-time bg-slate-300 rounded-full py-1 px-2 absolute top-1 left-1">&nbsp;25 MINS</span>
+                        </div>
+                    </div>
+                    <div class="shadow-lg bg-white rounded-md overflow-hidden hover:shadow-2xl relative">
+                        <img src="../../../Assets/food2.jpeg" alt="food2" class="h-48">
+                        <div class="px-2 py-4 space-y-1">
+                            <h1 class="text-slate-600 text-lg font-medium">Home-made French Fries</h1>
+                            <p class="text-slate-400 text-base">Recipe By Mario</p>
+                            <span class="ion-android-time bg-slate-300 rounded-full py-1 px-2 absolute top-1 left-1">&nbsp;25 MINS</span>
+                        </div>
+                    </div>
+                    <div class="shadow-lg bg-white rounded-md overflow-hidden hover:shadow-2xl relative">
+                        <img src="../../../Assets/food3.jpeg" alt="food3" class="h-48">
+                        <div class="px-2 py-4 space-y-1">
+                            <h1 class="text-slate-600 text-lg font-medium">Delicious Noodles</h1>
+                            <p class="text-slate-400 text-base">Recipe By Mario</p>
+                            <span class="ion-android-time bg-slate-300 rounded-full py-1 px-2 absolute top-1 left-1">&nbsp;25 MINS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-16 mb-8 text-center">
+                <a href="#" class="p-3 py-2 text-red-500 border-2 border-red-500 rounded-full hover:bg-red-500 hover:text-white transition ease-in delay-200">LOAD MORE</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+{
+  "kind": "collectionType",
+  "collectionName": "white_papers",
+  "info": {
+    "singularName": "white-paper",
+    "pluralName": "white-papers",
+    "displayName": "WhitePapers"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "richtext",
+      "required": true
+    },
+    "LongText": {
+      "type": "richtext"
+    },
+    "Source": {
+      "type": "string"
+    },
+    "Classification": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::classification.classification"
+    },
+    "Category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::white-paper-categorie.white-paper-categorie"
+    },
+    "Icon": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Attachment": {
+      "allowedTypes": [
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "CreatedDate": {
+      "type": "date"
+    },
+    "PublishedDate": {
+      "type": "date"
+    },
+    "GroupClassification": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::group-classification.group-classification"
+    },
+    "IsHighlighted": {
+      "type": "boolean"
+    },
+    "IsAvailableOnInsights": {
+      "type": "boolean"
+    },
+    "NavURL": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,154 @@
+/* <!-- ------------------------------------------------SECTION:8 WORLD-CLASS LEARNING---------------------------------------------- --> */
+.cs-8 {
+    margin-top: 8%;
+    margin-bottom: 7%;
+}
+
+.cs-8 img {
+    margin-top: -5%;
+    margin-bottom: -1%;
+    padding: 0;
+}
+
+.s8-col2 {
+    padding-top: 8%;
+    padding-left: 4%;
+    padding-right: 3%;
+}
+
+.cs-8 .display-6 {
+    font-size: 270%;
+    font-weight: 480;
+}
+
+.cs-8 p {
+    padding-top: 5%;
+    font-size: 150%;
+}
+
+.cs-8 h6 {
+    font-size: 124%;
+    padding-top: 6%;
+    padding-bottom: 4%;
+}
+
+
+/* <!-- ------------------------------------------------SECTION:9 COURSERA COMMUNITY---------------------------------------------- --> */
+.cs-9 {
+    margin-top: 12%;
+    margin-bottom: 7%;
+}
+
+.cs-9 .display-1 {
+    font-size: 467%;
+    font-weight: 500;
+}
+
+.cs-9 h4 {
+    padding-top: 2%;
+    padding-bottom: 6%;
+    font-weight: 400;
+}
+
+.cs-9 img {
+    height: 300px;
+}
+
+#carousel-5 .carousel-item .row {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#carousel-5 .carousel-item h1 {
+    padding-top: 5%;
+    font-size: 200%;
+    margin-bottom: 0;
+}
+
+#carousel-5 .carousel-item h3 {
+    padding-top: 1%;
+    font-size: 135%;
+}
+
+#carousel-5 .carousel-item h6 {
+    padding-top: 0;
+    font-size: 120%;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+#carousel-5 .carousel-item hr {
+    padding: 0.2%;
+    margin: 8%;
+}
+
+#carousel-5 .carousel-item p {
+    font-size: 150%;
+    font-weight: 420;
+}
+
+
+/* <!-- ------------------------------------------------SECTION:10 COURSERA FOR BUSINESS---------------------------------------------- --> */
+.cs-10 {
+    margin-top: 10%;
+    margin-bottom: 7%;
+    padding: 10% 6% 13%;
+    background-color: rgba(234, 220, 224, 0.3);
+}
+
+.cs-10 .display-5 {
+    font-size: 320%;
+    font-weight: 600;
+    padding-bottom: 5%;
+}
+
+.s10-div1 {
+    margin-right: 7%;
+}
+
+.cs-10 p {
+    font-size: 150%;
+    padding-right: 4%;
+    padding-bottom: 1%;
+}
+
+.cs-10-b1 {
+    margin-right: 2.6%;
+}
+
+.cs-10 h6 {
+    font-size: 154%;
+    padding-top: 4%;
+    padding-bottom: 6%;
+    font-weight: 620;
+}
+
+
+/* <!-- ------------------------------------------------SECTION:11 JOIN FOR FREE---------------------------------------------- --> */
+.cs-11 {
+    margin-top: 8%;
+    margin-bottom: 7%;
+}
+
+.cs-11 img {
+    width: 54%;
+    margin-bottom: 4%;
+}
+
+.cs-11-div2 {
+    padding-left: 6.6%;
+}
+
+.cs-11-div2 h1 {
+    font-weight: 620 !important;
+    margin-bottom: 3%;
+}
+
+.cs-11-div2 p {
+    font-size: 114%;
+}
+
+.cs-11-b {
+    width: 19%;
+    margin-top: 3.4%;
+}

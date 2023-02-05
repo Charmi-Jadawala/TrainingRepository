@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+}
+
+h1{
+    color: rgb(58, 46, 235);
+}
+
+ul{
+    color: rgb(228, 44, 44);
+    list-style: none;
+}
+
+ol{
+    color: rgb(226, 25, 149);
+    list-style: none;
+}
+
+ul li{
+    display: inline-block;
+    width: 33%;
+}
+
+ol li{
+    display: inline;
+}
+

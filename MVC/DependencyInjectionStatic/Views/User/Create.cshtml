@@ -1,0 +1,42 @@
+﻿@model DependencyInjection.Repository.UserMaster
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+
+    
+<div class="form-horizontal">
+    <h4>UserMaster</h4>
+    <hr />
+    <form id="StudentDetail" method="post" action="@Url.Action("Create")" class="mx-5 px-5 my-5">
+        <div class="input-group">
+            <span class="input-group-text">Name: </span>
+            <input type="text" class="form-control" placeholder="Username" name="uName" id="uName">
+        </div>
+
+
+        <div class="input-group">
+            <span class="input-group-text">Email ID: </span>
+            <input type="text" class="form-control" placeholder="Email" name="uEmail">
+        </div>
+
+
+        <div class="input-group">
+            <span class="input-group-text">Mobile No.:</span>
+            <input type="text" class="form-control" placeholder="MobileNo" name="uPhone">
+        </div>
+
+
+        <div class="mt-4">
+            <button type="submit" class="btn btn-success" value="Submit" name="action">Submit</button>
+            <button type="reset" class="btn btn-warning ms-2" value="Reset" name="action">Cancel</button>
+        </div>
+    </form>
+</div>
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

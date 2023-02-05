@@ -1,0 +1,24 @@
+/* <!-- ------------------------------------------------SECTION:7 EXPLORE COURSES---------------------------------------------- --> */
+.cs-7{
+    padding-top: 10%;
+    padding-bottom: 7%;
+}
+
+.cs-7 col{
+    height: 200px;
+}
+
+.mycard:hover{
+    box-shadow: 5px 10px 18px #888888 !important;
+}
+
+.cs-7 img{
+    display: inline-block;
+    height: 136px;
+    width: 120px;
+}
+
+.cs-7 p{
+    display: inline-block;
+    font-weight: 700;
+}

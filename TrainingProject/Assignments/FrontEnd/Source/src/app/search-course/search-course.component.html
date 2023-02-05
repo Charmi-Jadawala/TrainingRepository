@@ -1,0 +1,71 @@
+<app-navbar></app-navbar>
+<div class="container-fluid cs-6 p-5 mt-5">
+    <div class="text-center mt-5">
+        <h3 class="text-primary ps-5 ms-4">100% Free</h3>
+        <h2 class="ps-5 s3-h2 ms-4">Start Learning with Free Courses</h2>
+        <p class="ps-5 s3-p ms-4">Free online courses from the world's top universities and companies.</p>
+    </div>
+
+    <div class="row mt-5 mb-3">
+        <div class="col form-floating">
+            <select id="category" (change)="onSubmitCategory($event.target.value)" class="form-select">
+                <option value="" selected disabled hidden>Please select course category</option>
+                <option *ngFor="let c of categories" value="{{ c.categoryId }}">
+                    {{ c.categoryName }}
+                </option>
+            </select>
+            <label for="category" class="ps-4">Category</label>
+        </div>
+        <div class="col form-floating">
+            <select id="subcategory" (change)="onSubmitSubCategory($event.target.value)" class="form-select">
+                <option value="" selected disabled hidden>Please select course subcategory</option>
+                <option *ngFor="let s of subCategories" value="{{ s.subCategoryId }}">
+                    {{ s.subCategoryName }}
+                </option>
+            </select>
+            <label for="subcategory" class="ps-4">Subcategory</label>
+        </div>
+        <div class="col form-floating">
+            <input type="text" (keyup.enter)="onSubmitCourse($event)" [(ngModel)]="searchCourseValue"
+                class="form-control" id="course" placeholder="course">
+            <label for="course" class="ps-4">Course</label>
+        </div>
+    </div>
+
+    <div class="row p-5 mx-5" *ngIf="showAll">
+        <div class="col-sm-6 col-lg-4" *ngFor="let course of allCourses; let i=index">
+            <div class="card m-5 mb-2">
+                <img src="{{ course.coverImage }}" alt="course-image" class="card-img-top">
+                <div class="card-body shadow-lg">
+                    <a class="card-title h4 text-decoration-none"
+                        [routerLink]="['/course', course.courseId]">{{ course.courseName }}</a>
+                    <p class="card-text text-muted">{{ course.offerredBy }}</p>
+                    <p class="text-uppercase mb-0 mt-4"><strong>Course</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div *ngIf="condition; then block1; else block2">
+    </div>
+
+    <ng-template #block1>
+        <div class="row p-5 mx-5">
+            <div class="col-sm-6 col-lg-4" *ngFor="let course of courses; let i=index">
+                <div class="card m-5 mb-2">
+                    <img src="{{ course.coverImage }}" alt="course-image" class="card-img-top">
+                    <div class="card-body shadow-lg">
+                        <a class="card-title h4 text-decoration-none"
+                            [routerLink]="['/course', course.courseId]">{{ course.courseName }}</a>
+                        <p class="card-text text-muted">{{ course.offerredBy }}</p>
+                        <p class="text-uppercase mb-0 mt-4"><strong>Course</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ng-template>
+    <ng-template #block2>
+        <h3 class="text-center mt-5 pt-5" *ngIf="!showAll"><span class="ion-alert"></span> No records found...</h3>
+    </ng-template>
+</div>
+<app-footer></app-footer>

@@ -1,0 +1,141 @@
+/* <!-- ------------------------------------------------SECTION:3 CERTIFICATES---------------------------------------------- --> */
+.cs-3 {
+    padding-top: 6%;
+    padding-bottom: 7%;
+}
+
+.s3-h2 {
+    font-size: 260%;
+    font-weight: 400;
+}
+
+.s3-p {
+    font-size: 140%;
+    font-weight: 380;
+    margin-bottom: 0;
+}
+
+.card:hover {
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.cs-3 .card-body {
+    height: 320px;
+}
+
+.cs-3 .card-img-top {
+    height: 240px;
+}
+
+.cs-3 .card-title {
+    margin-bottom: 4px !important;
+}
+
+.cs-3 .cf {
+    font-weight: 350;
+    margin-top: 48%;
+}
+
+.cs-3 .cf2 {
+    font-weight: 350;
+    margin-top: 38%;
+}
+
+.cs-3 .cf4 {
+    font-weight: 350;
+    margin-top: 27%;
+}
+
+.s3-a:hover {
+    text-decoration: underline !important;
+}
+
+
+/* <!-- ------------------------------------------------SECTION:4 DEGREES---------------------------------------------- --> */
+.cs-4 {
+    padding-top: 10%;
+    padding-bottom: 7%;
+}
+
+.cs-4 .card-title {
+    color: #1266F1;
+    font-size: 117%;
+    font-weight: 400;
+    margin-bottom: 3px !important;
+}
+
+.cs-4 .card-text {
+    font-weight: 320;
+}
+
+.cs-4 .card-body {
+    height: 240px;
+    background-color: #ffffff;
+}
+
+.cs-4 .card-img-top {
+    height: 148px;
+}
+
+.cs-4 .cf {
+    font-weight: 350;
+    margin-top: 32%;
+}
+
+.cs-4 .cf2 {
+    font-weight: 350;
+    margin-top: 24%;
+}
+
+.cs-4 .cf3 {
+    font-weight: 350;
+    margin-top: 14%;
+}
+
+
+/* <!-- ------------------------------------------------SECTION:5 SKILLS---------------------------------------------- --> */
+.cs-5 {
+    padding-top: 10%;
+    padding-bottom: 7%;
+}
+
+.cs-5 .s5-cb1 {
+    background-color: #842df7;
+    height: 320px;
+}
+
+.cs-5 .s5-cb2 {
+    background-color: #ffffff;
+    color: #1266f1 !important;
+    height: 320px;
+}
+
+.cs-5 .card-img-top {
+    height: 240px;
+}
+
+.cs-5 .card-title {
+    font-size: 160%;
+    font-weight: 460;
+    margin-bottom: 5px !important;
+}
+
+.cs-5 .card-text {
+    font-size: 120%;
+    font-weight: 360;
+}
+
+.cs-5 .cf {
+    font-weight: 350;
+    margin-top: 48%;
+}
+
+.cs-5 .cf2 {
+    font-weight: 350;
+    margin-top: 37%;
+}
+
+.cs-5 .cf3 {
+    font-weight: 350;
+    margin-top: 25%;
+}

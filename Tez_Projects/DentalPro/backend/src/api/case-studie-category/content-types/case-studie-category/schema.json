@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "case_studie_categories",
+  "info": {
+    "singularName": "case-studie-category",
+    "pluralName": "case-studie-categories",
+    "displayName": "CaseStudiesCategories",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "NavURL": {
+      "type": "string"
+    },
+    "Image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Title": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

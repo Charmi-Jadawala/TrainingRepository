@@ -1,0 +1,182 @@
+<div class="mt-3 mb-5">
+    <div class="container w-50 mx-auto bg-light p-3">
+        <form [formGroup]="StudentForm" (ngSubmit)="onSubmit()">
+            <h1 class="display-6 text-center text-primary">Student Form</h1>
+            <div formGroupName="Name" class="mt-2 mb-4">
+                <h2 class="display-6 fs-3 text-black">Name</h2>
+
+                <label for="fname" class="form-label fs-5 text-primary">First Name:</label>
+                <input type="text" class="form-control" id="fname" formControlName="FirstName" />
+
+                <label for="mname" class="form-label fs-5 text-primary">Middle Name:</label>
+                <input type="text" class="form-control" id="mname" formControlName="MiddleName" />
+
+                <label for="lname" class="form-label fs-5 text-primary">Last Name:</label>
+                <input type="text" class="form-control" id="lname" formControlName="LastName" />
+            </div>
+
+            <label for="dob" class="form-label fs-5 text-primary">Date of Birth:</label>
+            <input type="date" class="form-control" id="dob" formControlName="DOB" />
+
+            <label for="pob" class="form-label fs-5 text-primary">Place of Birth:</label>
+            <input type="text" class="form-control" id="pob" formControlName="POB" />
+
+            <label for="flang" class="form-label fs-5 text-primary">First Language:</label>
+            <input type="text" class="form-control" id="flang" formControlName="FLang" />
+
+            <div formGroupName="Address" class="my-4">
+                <h2 class="display-6 fs-3 text-black">Address</h2>
+
+                <label for="city" class="form-label fs-5 text-primary">City:</label>
+                <input type="text" class="form-control" id="city" formControlName="City" />
+
+                <label for="state" class="form-label fs-5 text-primary">State:</label>
+                <input type="text" class="form-control" id="state" formControlName="State" />
+
+                <label for="country" class="form-label fs-5 text-primary">Country:</label>
+                <input type="text" class="form-control" id="country" formControlName="Country" />
+
+                <label for="pincode" class="form-label fs-5 text-primary">Pincode:</label>
+                <input type="number" class="form-control" id="pincode" formControlName="Pincode" />
+            </div>
+
+            <div formGroupName="Father" class="my-4">
+                <h2 class="display-6 fs-2 text-black">Father's Details</h2>
+                <div formGroupName="Name" class="mt-2 mb-4">
+                    <h2 class="display-6 fs-3 text-black">Name</h2>
+    
+                    <label for="fname" class="form-label fs-5 text-primary">First Name:</label>
+                    <input type="text" class="form-control" id="fname" formControlName="FirstName" />
+    
+                    <label for="mname" class="form-label fs-5 text-primary">Middle Name:</label>
+                    <input type="text" class="form-control" id="mname" formControlName="MiddleName" />
+    
+                    <label for="lname" class="form-label fs-5 text-primary">Last Name:</label>
+                    <input type="text" class="form-control" id="lname" formControlName="LastName" />
+                </div>
+
+                <label for="email" class="form-label fs-5 text-primary">Email:</label>
+                <input type="email" class="form-control" id="email" formControlName="Email" />
+
+                <label for="edu" class="form-label fs-5 text-primary">Educational Qualification:</label>
+                <input type="text" class="form-control" id="edu" formControlName="EduQua" />
+
+                <label for="prof" class="form-label fs-5 text-primary">Profession:</label>
+                <input type="text" class="form-control" id="prof" formControlName="Profession" />
+
+                <label for="desg" class="form-label fs-5 text-primary">Designation:</label>
+                <input type="text" class="form-control" id="desg" formControlName="Desg" />
+
+                <label for="phone" class="form-label fs-5 text-primary">Contact No.:</label>
+                <input type="tel" class="form-control" id="phone" formControlName="Phone" />
+            </div>
+
+            <div formGroupName="Mother" class="my-4">
+                <h2 class="display-6 fs-2 text-black">Mother's Details</h2>
+                <div formGroupName="Name" class="mt-2 mb-4">
+                    <h2 class="display-6 fs-3 text-black">Name</h2>
+    
+                    <label for="fname" class="form-label fs-5 text-primary">First Name:</label>
+                    <input type="text" class="form-control" id="fname" formControlName="FirstName" />
+    
+                    <label for="mname" class="form-label fs-5 text-primary">Middle Name:</label>
+                    <input type="text" class="form-control" id="mname" formControlName="MiddleName" />
+    
+                    <label for="lname" class="form-label fs-5 text-primary">Last Name:</label>
+                    <input type="text" class="form-control" id="lname" formControlName="LastName" />
+                </div>
+
+                <label for="email" class="form-label fs-5 text-primary">Email:</label>
+                <input type="email" class="form-control" id="email" formControlName="Email" />
+
+                <label for="edu" class="form-label fs-5 text-primary">Educational Qualification:</label>
+                <input type="text" class="form-control" id="edu" formControlName="EduQua" />
+
+                <label for="prof" class="form-label fs-5 text-primary">Profession:</label>
+                <input type="text" class="form-control" id="prof" formControlName="Profession" />
+
+                <label for="desg" class="form-label fs-5 text-primary">Designation:</label>
+                <input type="text" class="form-control" id="desg" formControlName="Desg" />
+
+                <label for="phone" class="form-label fs-5 text-primary">Contact No.:</label>
+                <input type="tel" class="form-control" id="phone" formControlName="Phone" />
+            </div>
+
+            <div class="mt-2 mb-4" formArrayName="Emergency">
+                <h2 class="display-6 fs-3 text-black">Emergency Contact Details</h2>
+
+                <div *ngFor="let emg of getEmergency.controls; let i = index">
+                    <div [formGroupName]="i">
+                        <label for="name" class="form-label fs-5 text-primary">Name:</label>
+                        <input type="text" class="form-control mb-1" id="name" formControlName="Name" />
+
+                        <label for="rel" class="form-label fs-5 text-primary">Relation:</label>
+                        <input type="text" class="form-control mb-1" id="rel" formControlName="Relation" />
+
+                        <label for="phone" class="form-label fs-5 text-primary">Contact No.:</label>
+                        <input type="tel" class="form-control mb-1" id="phone" formControlName="Phone" />
+                    </div>
+                </div>
+
+                <button (click)="addPerson()" type="button" class="btn btn-outline-primary my-2">Add Person</button>
+            </div>
+
+            <div class="mt-2 mb-4" formArrayName="Reference">
+                <h2 class="display-6 fs-3 text-black">Reference Details</h2>
+
+                <div *ngFor="let ref of getReference.controls; let i = index">
+                    <div [formGroupName]="i">
+                        <label for="rdet" class="form-label fs-5 text-primary">Reference Details:</label>
+                        <input type="text" class="form-control mb-1" id="rdet" formControlName="Details" />
+
+                        <label for="rname" class="form-label fs-5 text-primary">Reference through:</label>
+                        <input type="text" class="form-control mb-1" id="rname" formControlName="Through" />
+                    
+                        <label for="add" class="form-label fs-5 text-primary">Address:</label>
+                        <textarea class="form-control" id="add" formControlName="Add" ></textarea>
+
+                        <label for="phone" class="form-label fs-5 text-primary">Contact No:</label>
+                        <input type="tel" class="form-control" id="phone" formControlName="Phone" />
+                    </div>
+                </div>
+
+                <button (click)="addRef()" type="button" class="btn btn-outline-primary my-2">Add Reference</button>
+            </div>
+
+            <h1 class="display-6 fs-3 my-4 text-center text-black">Form Status: {{ StudentForm.status }}</h1>
+
+            <button type="submit" [disabled]="StudentForm.invalid" class="btn btn-primary">Submit</button>
+            <button type="reset" class="btn btn-primary ms-3">Clear</button>
+            <button type="button" class="btn btn-primary ms-3" (click)="showDataList()">Show Data</button>
+        </form>  
+    </div>
+
+    <div *ngIf="showData" class="my-4">
+        <table class="table table-hover">
+            <caption></caption>
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>DOB</th>
+                    <th>Birth Place</th>
+                    <th>First Language</th>
+                    <th>Address</th>
+                    <th>Father's Name</th>
+                    <th>Mother's Name</th>
+                </tr>
+            </thead>
+            <tbody *ngFor="let student of StudentList">
+                <tr>
+                    <td>{{ student.Name.FirstName }}  {{ student.Name.MiddleName }}  {{ student.Name.LastName }}</td>
+                    <td>{{ student.DOB }}</td>
+                    <td>{{ student.POB }}</td>
+                    <td>{{ student.FLang }}</td>
+                    <td>{{ student.Address.City }}  {{ student.Address.State }}  {{ student.Address.Country }}  {{ student.Address.Pincode }}</td>
+                    <td>{{ student.Father.Name.FirstName }}  {{ student.Father.Name.MiddleName }}  {{ student.Father.Name.LastName }}</td>
+                    <td>{{ student.Mother.Name.FirstName }}  {{ student.Mother.Name.MiddleName }}  {{ student.Mother.Name.LastName }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+

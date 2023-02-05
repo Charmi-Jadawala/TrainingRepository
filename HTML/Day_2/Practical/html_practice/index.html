@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Practice</title>
+  </head>
+  <body>
+    <div id="app">
+      <nav>
+        <a href="#Semantic Markup Article-1">Semantic Markup Article&hyphen;1</a>
+        <a href="#Semantic Markup Article-2">Semantic Markup Article&hyphen;2</a>
+        <a href="#Forms">Form</a>
+        <a href="#audiovideo">Audio&amp;Video</a>
+      </nav>
+      <section>
+        <header>
+          <h1>Basic HTML Practice</h1>
+          <h2>Day&hyphen;2</h2>
+        </header>
+        <article id="Semantic Markup Article-1">
+          <h1>Semantic Markup Article&hyphen;1</h1>
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+            deserunt mollit anim id est laborum."</p>
+        </article>
+        <aside>
+          <h2>Aside Tag</h2>
+          <p>This content should be displayed aside, however it is a part of Semantic Markup
+            only.
+          </p>
+        </aside>
+        <article id="Semantic Markup Article-2">
+          <header>
+            <h1>Semantic Markup Article&hyphen;2</h1>
+          </header>
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+            deserunt mollit anim id est laborum."</p>
+          <footer>
+            <p>This is the footer of Semantic Markup Article&hyphen;2</p>
+          </footer>
+        </article>
+      </section>
+
+      <section id="Forms">
+        <form id="form">
+          <fieldset>
+            <legend>Basic Form</legend>
+            <br />
+            <label for="fname">Enter your first name:</label>
+            <input type="text" id="fname" required autofocus value="Charmi" />
+            <br /><br />
+            <label for="lname">Enter your last name:</label>
+            <input type="text" id="lname" required value="Jadawala" />
+            <br /><br />
+            <label for="date">Select date:</label>
+            <input type="date" required title="Please select correct date">
+            <br /><br />
+            <label for="time">Enter time:</label>
+            <input type="time" id="time" required />
+            <br /><br />
+            <label for="month">Select month:</label>
+            <input type="month" id="month" required />
+            <br /><br />
+            <label for="week">Select week:</label>
+            <input type="week" id="week" required />
+            <br /><br />
+            <label for="range">Enter range:</label>
+            <input type="range" id="range" min="10" max="100" title="Enter range between 10-100">
+            <br /><br />
+            <label for="search">Enter search text:</label>
+            <input type="search" id="search" placeholder="Enter whatever you want to search" />
+            <br /><br />
+            <label for="tel">Enter your contact no.:</label>
+            <input type="tel" id="tel" required pattern="[0-9]{10}" />
+            <br /><br />
+            <label for="email">Enter your email id:</label>
+            <input type="email" id="email" required multiple title="You can enter multiple email ids">
+            <br /><br />
+            <label for="color">Pick your favourite color:</label>
+            <input type="color" id="color" required />
+            <br /><br />
+            <label for="datalist">Enter your department:</label>
+            <input type="text" id="datalist" list="mydl" required placeholder="Department" />
+            <datalist id="mydl">
+              <option value=".NET"></option>
+              <option value="PHP"></option>
+              <option value="Mobile"></option>
+              <option value="Node/React"></option>
+              <option value="QA"></option>
+            </datalist>
+            <br /><br />
+            <label for="progressbar">Enter your progress:</label>
+            <progress id="progressbar" value="60" min="0" max="100" title="Min-0 and Max-100"></progress>
+            <br /><br />
+            <label for="meter">Enter meter value</label>
+            <meter id="meter" min="0" max="100" low="20" high="80" optimum="60" value="70" title="Low=20 and High=80"></meter>
+            <br /><br />
+          </fieldset>
+        </form>
+      </section>
+
+      <section id="audiovideo">
+        <header>
+          <h1>Audio and Video Section:</h1>
+        </header>
+        <h2>Video:</h2>
+        <video src="mov_bbb.mp4" width="300" height="200" muted controls poster="img_chania.jpg">
+          <track src="fgsubtitles_en.vtt" kind="subtitles" srclang="en" label="English">
+        </video>
+        <h2>Audio:</h2>
+        <audio src="horse.ogv" autoplay controls loop></audio>
+      </section>
+    </div>
+  </body>
+</html>

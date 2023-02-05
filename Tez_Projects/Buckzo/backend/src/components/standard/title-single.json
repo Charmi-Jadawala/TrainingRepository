@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_standard_titlesingle",
+  "info": {
+    "displayName": "011 - Title Single",
+    "icon": "arrow-alt-circle-down",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "VueReferenceCode": {
+      "type": "string",
+      "default": "T",
+      "required": true
+    },
+    "GuideURL": {
+      "type": "string"
+    },
+    "NavURL": {
+      "type": "string"
+    },
+    "Title": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

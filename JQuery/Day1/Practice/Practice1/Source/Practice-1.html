@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Ex-1</title>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#p_ex1").css("color", "blue");
+            });
+
+            $("#helpText").hover(function(){
+                $("#helpText").toggle();
+            });
+
+            $("input[name=techradio]").click(function(){
+                $("#result").text($('input[name="techradio"]:checked').val()).css("color", "red"); 
+            })
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <h1 class="display-6 text-black fs-1 pb-4">1. Create one paragraph, add some dummy text and apply blue background color using jquery.</h1>
+        <p id="p_ex1" class="fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis libero a repudiandae nostrum, 
+            tenetur magnam vitae est facere, dolor temporibus quibusdam. Sed veritatis eius, eos quas inventore 
+            repudiandae minima quod.</p>
+        <button class="btn btn-outline-primary mb-4" type="button">Apply Color</button>
+    </div>
+
+    <div>
+        <h1 class="display-6 text-black fs-1 pb-4">2. There is one Hide/show the text inside the #helpText span element when the user's mouse 
+            passes over the text.</h1>
+        <p id="p_ex2" class="fs-5">Please hover your mouse 
+            <span id="helpText" class="fw-bold text-primary">HERE</span> 
+            to experience the jQuery Hide/Show effect.</p>
+    </div>
+
+    <div>
+        <h1 class="display-6 text-black fs-1 pb-4">3. Clicking on a particular radio button should display the related technology name.</h1>
+        <form action="" id="myForm">
+            <label for="tech" class="form-label fs-5">Please select your technology :&nbsp;</label>
+            <label class="radio-inline">
+                <input type="radio" name="techradio" value="PHP">&nbsp;PHP&nbsp;&nbsp;
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="techradio" value="ASP.NET">&nbsp;ASP.NET&nbsp;&nbsp;
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="techradio" value="ASP">&nbsp;ASP&nbsp;&nbsp;
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="techradio" value="JSP">&nbsp;JSP&nbsp;&nbsp;
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="techradio" value="PERL">&nbsp;PERL&nbsp;&nbsp;
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="techradio" value="Cold Fusion">&nbsp;Cold Fusion&nbsp;&nbsp;
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="techradio" value="Other">&nbsp;Other&nbsp;&nbsp;
+            </label><br />
+
+            <label class="text-primary fs-6" for="result">You have selected :&nbsp;</label><span id="result"></span><br />
+
+            <button type="submit" class="btn btn-primary mt-3 mb-4">Submit</button><br /> 
+        </form>
+    </div>
+</body>
+</html>

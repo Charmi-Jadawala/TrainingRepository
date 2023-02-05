@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_teams_title_content_with_team_lists",
+  "info": {
+    "displayName": "063 - Title Content With Team List",
+    "icon": "stamp",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "richtext",
+      "required": true
+    },
+    "SubTitle": {
+      "type": "richtext"
+    },
+    "LongText": {
+      "type": "richtext"
+    },
+    "Teams": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::team.team"
+    },
+    "VueReferenceCode": {
+      "type": "string",
+      "required": true
+    },
+    "GuideURL": {
+      "type": "string"
+    }
+  }
+}

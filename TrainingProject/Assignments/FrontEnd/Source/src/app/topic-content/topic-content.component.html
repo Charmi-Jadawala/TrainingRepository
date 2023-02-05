@@ -1,0 +1,15 @@
+<app-navbar></app-navbar>
+<div class="container mx-auto mt-5 pt-5">
+    <div *ngIf="content">
+        <h1 class="my-4 display-5">{{ content.topicTitle }}</h1>
+        <div *ngIf="isReading; then block1; else block2"></div>
+        <ng-template #block1>
+            <div [innerHTML]="content.description"></div>
+        </ng-template>
+        <ng-template #block2 class="d-flex justify-content-center">
+            <video class="w-100 rounded-4" controls>
+                <source src="{{ content.description }}" type="video/mp4" />
+            </video>
+        </ng-template>
+    </div>
+</div>

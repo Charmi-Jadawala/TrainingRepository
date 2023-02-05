@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History</title>
+</head>
+<body>
+    <div>
+        <h1 class="display-6 text-black">Use Window.history object to move to previous url in the history list.</h1>
+
+        <h3 class="pt-5 fs-4 fw-normal">Click the button to navigate to the Previous Page (Assignment HOME Page)</h3>
+        <button class="btn btn-dark mt-3" type="button" onclick="prevPage()">Click Me !</button>
+
+    </div>
+    <script>
+        function prevPage(){
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_case_studies_060_case_studies",
+  "info": {
+    "displayName": "060 - Title Content With CaseStudies",
+    "icon": "om",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "LongText": {
+      "type": "richtext"
+    },
+    "Case_Studies": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::case-studies.case-studies"
+    },
+    "VueReferenceCode": {
+      "type": "string"
+    },
+    "GuideURL": {
+      "type": "string"
+    },
+    "CTA": {
+      "type": "richtext"
+    },
+    "SubTitle": {
+      "type": "richtext"
+    },
+    "Title": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

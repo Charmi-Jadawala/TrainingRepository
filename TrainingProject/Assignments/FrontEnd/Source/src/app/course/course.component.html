@@ -1,0 +1,83 @@
+<app-navbar></app-navbar>
+<div class="main container-fluid mt-5 pt-5 px-0" *ngFor="let course of courseDetails">
+    <div class="row text-white m-5 p-5">
+        <div class="col-8 px-5 fs-5">
+            <p class="fs-5"><strong>{{ course.Category }}</strong> <span class="">&nbsp; > &nbsp;</span>
+                <strong>{{ course.SubCategory }}</strong></p>
+
+            <h2 class="fs-1"><strong>{{ course.CourseName }}</strong></h2>
+
+            <span class="ion-ios-star text-warning">&nbsp;&nbsp;<strong>{{ course.Stars }}</strong></span>
+            &nbsp;&nbsp;&nbsp;
+            <span>{{ course.Ratings }} ratings</span>
+            <div class="pt-2" *ngFor="let instructor of instructors">
+                <p>{{ instructor.InstructorName }}</p>
+            </div>
+            <div class="mt-3">
+                <div *ngIf="isLoggedIn; then block1; else block2"></div>
+                <ng-template #block1>
+                    <div *ngIf="condition; then subblock1; else subblock2"></div>
+                    <ng-template #subblock1>
+                        <button class="btn btn-secondary p-4 fs-5" [routerLink]="['/layout', course.CourseId]"><strong>Go to Course</strong></button>
+                    </ng-template>
+                    <ng-template #subblock2>
+                        <button class="btn btn-secondary p-4 fs-5" (click)="addCourse()"><strong>Enroll for Free</strong></button>
+                    </ng-template>
+                </ng-template>
+                <ng-template #block2>
+                    <button class="btn btn-secondary p-4 fs-5" data-bs-toggle="modal"
+                        data-bs-target="#login"><strong>Enroll for Free</strong></button>
+                </ng-template>
+            </div>
+            <p class="pt-3"><strong>{{ course.AlreadyEnrolled }}</strong> already enrolled</p>
+        </div>
+        <div class="col-4">
+            <h5>Offered By</h5>
+            <h5>{{ course.OfferredBy }}</h5>
+        </div>
+    </div>
+</div>
+<div class="container-fluid px-0" *ngFor="let course of courseDetails">
+    <div class="row m-5 p-5 pt-0">
+        <div class="col-8 px-5">
+            <h6 class="display-6 text-black">About this Course</h6>
+            <div [innerHTML]="course.About" class="text-justify"></div>
+            <br /> <br /> <br />
+            <h6 class="display-6 text-black">Instructors</h6>
+            <div class="row">
+                <div class="col" *ngFor="let instructor of instructors">
+                    <p class="text-muted"><strong>Instructor rating &nbsp;&nbsp;
+                            <span class="ion-ios-star text-warning"></span>
+                            {{ instructor.Stars }}/5 ({{ instructor.Ratings }} Ratings) </strong></p>
+                    <p class="fs-5 mb-0 pb-0">{{ instructor.InstructorName }}</p>
+                    <p class="mb-0 pb-1">{{ instructor.Designation }}, {{ instructor.Specialization }}</p>
+                    <p class="text-warning mb-0 pb-1">{{ course.OfferredBy }}</p>
+                    <p class="mb-0 pb-1"><span class="ion-person-stalker"></span>&nbsp;&nbsp;
+                        <strong>{{ instructor.Learners }}</strong> Learners</p>
+                    <p><span class="ion-ios-paper"></span>&nbsp;&nbsp; <strong>{{ instructor.CourseCount }}</strong>
+                        Courses</p>
+                </div>
+            </div>
+            <br /> <br /> <br />
+            <h6 class="display-6 text-black">Offered by</h6>
+            <div>{{ course.OfferredByAbout }}</div>
+        </div>
+        <div class="col-4 pt-2">
+            <div class="mb-4">
+                <h5 class="display-6 text-black pb-5 fs-2"><span class="ion-ios-clock"></span>&nbsp;Approx.
+                    {{ course.Duration }} to complete</h5>
+                <h5 class="display-6 text-black pb-5 fs-2"><span class="ion-levels"></span>&nbsp;{{ course.Level }}
+                    Level
+                </h5>
+                <h5 class="display-6 text-black pb-5 fs-2"><span
+                        class="ion-chatbox-working"></span>&nbsp;{{ course.Language }}</h5>
+                <h5 class="display-6 text-black pb-5 fs-2"><span class="ion-ios-world"></span>&nbsp;100% online</h5>
+                <h5 class="display-6 text-black pb-5 fs-2"><span class="ion-calendar"></span>&nbsp;Flexible deadlines
+                </h5>
+            </div>
+            <span class="badge rounded-pill bg-danger m-2 fs-5 p-2"
+                *ngFor="let skill of skills">{{ skill.Skills }}</span>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

@@ -1,0 +1,66 @@
+<h1 class="m-1 mb-2 text-center display-5 text-primary">Employee Form</h1>
+<div class="container mx-auto mt-3">
+
+    <form action="">
+        <label for="id" class="form-label fs-5">Employee ID:</label>
+        <input type="text" [(ngModel)]="id" name="id" id="id" class="mx-2 mb-3 form-control-sm text-primary" /><br />
+
+        <label for="Name" class="form-label fs-5">Name:</label>
+        <input type="text" [(ngModel)]="Name" name="Name" id="Name" class="mx-2 mb-3 form-control-sm text-primary" /><br />
+
+        <label for="Address" class="form-label fs-5">Address:</label>
+        <input type="text" [(ngModel)]="Address" name="Address" id="Address" class="mx-2 mb-3 form-control-sm text-primary" /><br />
+
+        <label for="Gender" class="form-label fs-5">Gender:</label>
+        <input type="radio" [(ngModel)]="Gender" id="Male" name="Gender" class="m-1 ms-2" value="Male" />
+        <label for="Male" class="form-label fs-5">Male</label>
+        <input type="radio" [(ngModel)]="Gender" id="Female" name="Gender" class="m-1 ms-2" value="Female" />
+        <label for="Female" class="form-label fs-5">Female</label>
+        <input type="radio" [(ngModel)]="Gender" id="Other" name="Gender" class="m-1 ms-2" value="Other" />
+        <label for="Other" class="form-label fs-5">Other</label><br />
+
+        <label for="Doj" class="form-label fs-5">Date of Joining:</label>
+        <input type="date" [(ngModel)]="Doj" name="Doj" id="Doj" class="mx-2 mb-3 form-control-sm text-primary" /><br />
+
+        <label for="Hobbies" class="form-label fs-5">Hobbies:</label>
+        <input type="text" [(ngModel)]="Hobbies" name="Hobbies" id="Hobbies" class="mx-2 mb-4 form-control-sm text-primary" /><br />
+
+        <button (click)="addData()" class="btn btn-outline-primary me-2">Store Data</button>
+        <button (click)="filterData()" class="mx-2 btn btn-outline-primary">Filter Data</button>
+        <button (click)="sortedData()" class="mx-2 btn btn-outline-primary">Sort Data</button>
+        <button type="reset" class="mx-2 btn btn-outline-primary">Reset</button>
+    </form>
+
+
+    <table *ngIf="showData" class="table my-4 table-striped">
+        <caption></caption>
+        <thead>
+            <tr>
+                <th>Employee ID</th>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Gender</th>
+                <th>Date of Joining</th>
+                <th>Hobbies</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let employee of employeeArray">
+                <td>{{ employee.EmployeeID }}</td>
+                <td>{{ employee.Name }}</td>
+                <td>{{ employee.Address }}</td>
+                <td>{{ employee.Gender }}</td>
+                <td>{{ employee.DOJ }}</td>
+                <td>{{ employee.Hobbies }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <h3 *ngIf="filterStatus" class="mb-2 display-6 fs-3">List of Employees who have joined in the current month: 
+        <p *ngFor="let filteredEmp of filteredArray" class="my-1 text-primary fs-4">
+            {{ filteredEmp.Name }}
+        </p>
+    </h3>
+
+</div>

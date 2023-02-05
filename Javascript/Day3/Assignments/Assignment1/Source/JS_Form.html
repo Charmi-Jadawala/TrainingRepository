@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Form</title>
+</head>
+<body>
+    <h1 class="display-6 text-black fs-2 pb-3">Design a form for storing employee details.</h1>
+    <p  class="text-primary fs-5">Employee Form with Validation :</p>
+
+    <form action="" id="myForm">
+        <label for="Name" class="form-label fs-5">Employee Name :</label>
+        <input type="text" name="Name" id="Name" class="form-control-sm mx-1"><br /><br />
+
+        <label for="ID" class="form-label fs-5">Employee ID :</label>
+        <input type="number" name="ID" id="ID" class="form-control-sm mx-1"><br /><br />
+
+        <label for="Age" class="form-label fs-5">Age :</label>
+        <input type="number" name="Age" id="Age" class="form-control-sm mx-1"><br /><br />
+
+        <label for="Gender" class="form-label fs-5">Gender :</label>
+        <input type="radio" name="Gender" id="Male">
+        <label for="Male" class="form-label fs-5">Male</label>
+        <input type="radio" name="Gender" id="Female">
+        <label for="Female" class="form-label fs-5">Female</label><br /><br />
+
+        <label for="Desg" class="form-label fs-5">Designation :</label>
+        <input type="text" name="Desg" id="Desg" class="form-control-sm mx-1"><br /><br />
+
+        <label for="Sal" class="form-label fs-5">Salary :</label>
+        <input type="number" name="Sal" id="Sal" class="form-control-sm mx-1"><br /><br />
+
+        <label for="Loc" class="form-label fs-5">Location :</label>
+        <select name="Loc" id="Loc">
+            <option value=""></option>
+            <option value="Ahmedabad">Ahmedabad</option>
+            <option value="Baroda">Baroda</option>
+            <option value="Surat">Surat</option>
+            <option value="Rajkot">Rajkot</option>
+        </select><br /><br />
+
+        <label for="Email" class="form-label fs-5">Email ID :</label>
+        <input type="text" name="Email" id="Email" class="form-control-sm mx-1"><br /><br />
+
+        <label for="Doj" class="form-label fs-5">Date of Joining :</label>
+        <input type="text" id="Doj" name="Doj" placeholder='"MM-DD-YYYY"' class="form-control-sm mx-1"><br /><br />
+
+        <label for="Cont" class="form-label fs-5">Contact Number :</label>
+        <input type="number" name="Cont" id="Cont" class="form-control-sm mx-1"><br /><br />
+
+        <button type="button" class="btn btn-outline-primary my-3 mx-1" onclick="valForm()">Submit</button>
+        <button type="button" class="btn btn-outline-primary my-3" onclick="Reset()">Reset</button>
+    </form>
+    
+    <p id="result" class="text-danger fs-5"></p>
+
+    <script>
+        function valForm(){
+            let msg="";
+            
+            var empid = document.getElementById("ID").value;
+            var idpat = /\d\d\d\d\d/;
+            var idpres = idpat.test(empid);
+
+            var empname = document.getElementById("Name").value;
+            var enapat = /[A-z]/;
+            var enapres = enapat.test(empname);
+
+            var age = parseInt(document.getElementById("Age").value);
+
+            var design = document.getElementById("Desg").value;
+            var despat = /[A-z]/;
+            var despres = despat.test(design);
+
+            var sal = parseInt(document.getElementById("Sal").value);
+
+            var loc = document.getElementById("Loc").value;
+
+            var emailid = document.getElementById("Email").value;
+            var emailpat = /[a-z]@[a-z].[a-z]/;
+            var emailpres = emailpat.test(emailid);
+
+            var doj = document.getElementById("Doj").value;
+            let datepat = /\d\d-\d\d-\d\d\d\d/;
+            let datepres = datepat.test(doj);
+            const myDate = doj.split("-");
+            var month = myDate[0];
+            var day = myDate[1];
+            var year = myDate[2]
+
+            var contact = parseInt(document.getElementById("Cont").value);
+            var conpat =/\d\d\d\d\d\d\d\d\d\d/;
+            var conpres = conpat.test(contact);
+
+            if(empname == ""){
+                msg = "Please enter your Name !";
+            } 
+            else if(enapres == false){
+                msg = "Please enter valid Name !";
+            }
+            else if(idpres == false){
+                msg = "Employee ID should be of 5 digits or more !";
+            }
+            else if(isNaN(age)){
+                msg = "Please enter valid Age !";
+            }
+            else if(age < 18 || age > 60){
+                msg = "Please enter age between 18 and 60 !";
+            }
+            else if(document.getElementById("Male").checked == false && document.getElementById("Female").checked == false){
+                msg = "Please select your Gender !";
+            }
+            else if(design == ""){
+                msg = "Please enter your Designation !";
+            } 
+            else if(despres == false){
+                msg = "Please enter valid Designation !";
+            }
+            else if(isNaN(sal)){
+                msg = "Please enter valid Salary !";
+            }
+            else if(sal < 1000){
+                msg = "Please check Zeros !";
+            }
+            else if(loc == ""){
+                msg = "Please select the Location !"
+            }
+            else if(emailpres == false){
+                msg = "Please enter Email ID in correct format !";
+            }
+            else if(datepres == false){
+                msg = "Please enter date of joining in proper format !";
+            }
+            else if(month < 1 || month > 12){
+                msg = "Please enter valid month !";
+            }
+            else if(day < 1 || day > 31){
+                msg = "Please enter valid day !";
+            }
+            else if((month < 7 &&  month % 2 == 0 && day == 31) || (month > 7 &&  month % 2 != 0 && day == 31) || (month == 2 && day > 28)){
+                msg = "Please check the date w.r.t month !";
+            }
+            else if(isNaN(contact)){
+                msg = "Please enter valid Contact Number !";
+            }
+            else if(conpres == false){
+                msg = "Please check the Contact Number !";
+            }
+            else{
+                msg = "Form submitted successfully !!!";
+            }
+
+            document.getElementById("result").style.display = "block";
+            document.getElementById("result").innerHTML = msg;
+        }
+        function Reset(){
+            document.getElementById("myForm").reset();
+            document.getElementById("result").style.display = "none";
+        }
+    </script>
+</body>
+</html>

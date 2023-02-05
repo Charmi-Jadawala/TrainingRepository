@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        *{
+          box-sizing: border-box;
+          padding: 0px;
+          margin: 0px;
+        }
+        
+        /*------MAIN NAVBAR------*/
+        
+        .main-nav{
+          display: flex;
+          background-color: #0d6efd;
+          height: 100px;
+        }
+        
+        .main-nav p{
+          flex: 20%;
+          text-align: center;
+        }
+        
+        .main-nav img{
+          height: 100px;
+          width: auto;
+          padding: 10px;
+        }
+        
+        .main-nav ul{
+          flex: 80%;
+          display: flex;
+          justify-content: space-evenly; 
+        }
+        
+        .main-nav li{
+          list-style-type: none;
+          display: inline-block;
+          padding-top: 36px;
+        }
+        
+        .main-nav a{
+          text-decoration: none;
+          color: #ffffff;
+        } 
+        
+        /*------MAIN NAVBAR------*/
+      
+        /*------SIDEBAR------*/
+      
+      .main{
+          display: flex;
+      }
+      
+      .sidebar{
+          flex: 20%;
+          background-color: #0dcaf0;
+          padding: 20px;
+      }
+      
+      .sidebar li{
+          list-style-position: inside;
+          padding-left: 20px;
+      }
+      
+      .sidebar ol ul a{
+          text-decoration: none;
+          color: #ffffff;
+      }
+      .sidebar ol ul ol a{
+          color: #000000;
+      }
+      
+       /*------SIDEBAR------*/
+      
+      .content{
+          flex: 80%;
+          overflow: auto;
+          padding: 20px;
+          border: 2px solid #000000;
+          box-shadow: 0px 0px 22px #000000;
+          background-color: #ffffff;
+          margin: 20px;
+          height: 80vh;
+      }
+
+      .content li{
+          list-style-position: inside;
+      }
+      </style>
+      </head>
+      <body>
+        <div>
+          <nav class="main-nav">
+            <p><img src="../../../Assets/radix.png" alt="Radix Logo"></p>
+            <ul>
+              <li><a href="../../../index.html">HOME</a></li>
+              <li><a href="../../HTML.html">HTML</a></li>
+              <li><a href="../../../CSS/CSS.html">CSS</a></li>
+            </ul>
+          </nav>
+        </div>
+        <main class="main">
+            <div class="sidebar">
+                <ol>
+                    <li>Day&hyphen;1
+                        <ul>
+                            <li><a href="#">Assignments</a>
+                                <ol>
+                                    <li><a href="../Assignment/Employee_Form.html">Employee Details Form</a></li>
+                                </ol>
+                            </li>
+                            <li><a href="#">Practicals</a>
+                                <ol>
+                                    <li><a href="Report_Card.html">Report Card</a></li>
+                                    <li><a href="Dept_Hier.html">Department Heirarchy</a></li>
+                                    <li><a href="Login_Form.html">Login Form</a></li>
+                                    <li><a href="Article.html">Article</a></li>
+                                    <li><a href="Hori_Menu.html">Horizontal Menu</a></li>
+                                </ol> 
+                            </li>
+                        </ul>
+                    </li><br />
+                    <li>Day&hyphen;2
+                        <ul>
+                            <li><a href="#">Assignments</a>
+                                <ol>
+                                    <li><a href="../../Day_2/Assignment/Resume.html">Resume</a></li>
+                                </ol> 
+                            </li>
+                            <li><a href="#">Practicals</a>
+                                <ol>
+                                    <li><a href="../../Day_2/Practical/Basic_Form.html">Basic Form</a></li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+              </div>
+              <div class="content">
+                <h1>Hello from Home Page!!!</h1>
+              </div>
+        </main>            
+</body>
+</html>

@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_download_066_title_content_with_download_lists",
+  "info": {
+    "displayName": "066 - Title Content With Download List",
+    "icon": "sort-up"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "richtext",
+      "required": true
+    },
+    "SubTitle": {
+      "type": "richtext"
+    },
+    "LongText": {
+      "type": "richtext"
+    },
+    "Downloads": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::download.download"
+    },
+    "VueReferenceCode": {
+      "type": "string",
+      "required": true
+    },
+    "GuideURL": {
+      "type": "string",
+      "required": false
+    }
+  }
+}

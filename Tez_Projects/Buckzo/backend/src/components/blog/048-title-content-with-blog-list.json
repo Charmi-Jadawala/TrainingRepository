@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_blog_048_title_content_with_blog_lists",
+  "info": {
+    "displayName": "048 - Title Content With Blog List",
+    "icon": "long-arrow-alt-up",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "LongText": {
+      "type": "richtext"
+    },
+    "Blogs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blog.blog"
+    },
+    "VueReferenceCode": {
+      "type": "string",
+      "required": true,
+      "default": "TCWithBlogL"
+    },
+    "GuideURL": {
+      "type": "string"
+    },
+    "SubTitle": {
+      "type": "richtext"
+    },
+    "Title": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

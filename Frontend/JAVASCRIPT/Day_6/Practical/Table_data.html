@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Data</title>
+</head>
+<body>
+    <div>
+        <h1 class="display-6 text-primary fs-2 pb-4">Printing Table at Run-Time.</h1>
+        <table class="table table-bordered text-primary">
+            <caption></caption>
+            <thead class="table-dark">
+                <tr>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Location</th>
+                </tr>
+            </thead>
+            <tbody id="tdata"></tbody>
+        </table>
+    </div>   
+
+    <script type="text/javascript">
+        const products = [
+            {Name: "Cheese", Price: 2.50, Location: "Refrigerated foods"},
+            {Name: "Crisps", Price: 3, Location: "the Snack isle"},
+            {Name: "Pizza", Price: 4, Location: "Refrigerated foods"},
+            {Name: "Chocolate", Price: 1.50, Location: "the Snack isle"},
+            {Name: "Self-raising flour", Price: 1.50, Location: "Home baking"},
+            {Name: "Ground almonds", Price: 3, Location: "Home baking"},
+        ];
+
+        var data = "";
+        for(let i = 0; i < products.length; i++){
+            data += "<tr><td>" + products[i].Name + "</td><td>" + products[i].Price + "</td><td>" + products[i].Location + "</td></tr>";
+        }
+        document.getElementById("tdata").innerHTML = data;
+    </script>
+</body>
+</html>

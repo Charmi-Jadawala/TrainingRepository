@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Call</title>
+</head>
+<body>
+    <div>
+        <h1 class="display-6 text-black fs-2 pb-3">Using Function call create employee object with field Name, Address and Designation and pass it to function.</h1> 
+
+        <p class="text-primary fs-5" id="Employee-1"></p>
+        <p class="text-primary fs-5" id="Employee-2"></p>
+    </div>
+
+    <div>
+        <h1 class="display-6 text-black fs-2 pt-4 pb-3">Using Function Apply pass employee object to a function defined in the function.</h1>
+
+        <p class="text-success fs-5" id="Employee-3"></p>
+    </div>
+
+   
+
+    <script>
+        const emp_display1 = {
+            details: function(){
+                return this.emp_name + "<br />" + this.address + "<br />" + this.designation;
+            }
+        }
+
+        const emp1 = {
+            emp_name: "Charmi",
+            address: "Ahmedabad",
+            designation: "Software Engineer"
+        }
+
+        const emp2 = {
+            emp_name: "Gopi",
+            address: "Ahmedabad",
+            designation: "Software Developer"
+        }
+
+        document.getElementById("Employee-1").innerHTML = "Employee - 1 :" + "<br />" + emp_display1.details.call(emp1);
+        document.getElementById("Employee-2").innerHTML = "Employee - 2 :" + "<br />" + emp_display1.details.call(emp2);
+
+        const emp_display2 = {
+            full_details: function(country){
+                return this.emp_name + "<br />" + this.designation + "<br />" + this.address + "<br />" + country;
+            }
+        } 
+
+        const emp3 = {
+            emp_name: "Vipasha",
+            address: "Ahmedabad",
+            designation: "Assistant Manager"
+        }
+
+        document.getElementById("Employee-3").innerHTML = "Employee - 3 :" + "<br />" + emp_display2.full_details.apply(emp3, ["India"]);
+    </script>
+</body>
+</html>

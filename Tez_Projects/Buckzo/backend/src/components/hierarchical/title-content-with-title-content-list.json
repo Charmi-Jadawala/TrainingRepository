@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_hierarchical_tcwithtclist",
+  "info": {
+    "displayName": "023 - Title Content With Title Content List",
+    "icon": "arrow-left",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "LongText": {
+      "type": "richtext"
+    },
+    "TitleContentList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "standard.title-content-single"
+    },
+    "VueReferenceCode": {
+      "type": "string",
+      "default": "TCWithTCL",
+      "required": true
+    },
+    "GuideURL": {
+      "type": "string"
+    },
+    "CTA": {
+      "type": "richtext"
+    },
+    "SubTitle": {
+      "type": "richtext"
+    },
+    "ShortText": {
+      "type": "richtext"
+    },
+    "Title": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

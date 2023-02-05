@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+h1{
+    text-align: center;
+    margin: 16px;
+}
+.out_div{
+    border: 3px solid rgb(0, 0, 0);
+    padding: 12px;
+}
+
+.ins_div{
+    float: left;
+    width: 31.66%;
+    border: 3px solid rgb(0, 0, 0);
+    margin: 12px;
+    padding: 12px;
+    text-align: justify;
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}

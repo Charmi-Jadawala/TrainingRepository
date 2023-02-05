@@ -1,0 +1,27 @@
+<div class="bg-light text-center p-4 mx-auto">
+  <h1 class="display-5 text-primary text-center">Login Page</h1>
+  <div class="container mt-4">
+    <form action="">
+      <label for="username" class="form-label fs-5">Username: </label>
+      <input
+        type="text"
+        [(ngModel)]="username"
+        name="username"
+        id="username"
+        class="form-control-sm mx-2 text-primary mb-3"
+      /><br />
+      
+      <label for="password" class="form-label fs-5">Password: </label>
+      <input
+        type="password"
+        [(ngModel)]="password"
+        name="password"
+        id="password"
+        class="form-control-sm mx-2 text-primary mb-4"
+      /><br />
+
+      <button type="button" class="btn btn-outline-primary ms-0 mx-2" (click)="validate()">Login</button>
+      <button type="button" class="btn btn-outline-primary" (click)="logout()">Logout</button>
+    </form>
+  </div>
+</div>

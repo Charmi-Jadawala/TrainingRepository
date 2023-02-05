@@ -1,0 +1,104 @@
+﻿body {
+    margin: 0;
+    color: #000;
+    background-color: #fff;
+    font-size: 14px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    /*max-width: 280px;*/
+    border-radius: 0 !important;
+}
+
+
+/*-----------------------------Navbar-----------------------------*/
+.custom-navbar {
+    background: #e6ae7d;
+    padding: 0 !important;
+}
+.custom-navbar .navbar-nav > li > a:hover,
+.custom-navbar .navbar-nav > li > a:focus {
+    color: #000 !important;
+    background-color: #fff;
+}
+
+/*-----------------------------Custom Text-----------------------------*/
+.custom-text{
+    color:#e6ae7d !important;
+}
+
+/*-----------------------------Custom Border-----------------------------*/
+.custom-border {
+    border:9px solid #e6ae7d;
+    display:inline-block !important;
+    left:0 !important;
+    right: 0 !important;
+    margin: 0 35%;
+}
+
+/*-----------------------------Custom Button-----------------------------*/
+.custom-btn {
+    color: #fff;
+    background-color: #e6ae7d !important;
+    border-color: #e6ae7d !important;
+    border-radius: 0 !important;
+}
+
+.custom-btn:hover,
+.custom-btn:focus {
+    color: #fff;
+    background-color: #000 !important;
+    border-color: #000 !important;
+}
+
+/*-----------------------------About Us-----------------------------*/
+.link-style {
+    color: #000;
+    text-decoration: none;
+}
+.link-style:hover,
+.link-style:focus{
+    color: #e6ae7d;
+}
+
+/*-----------------------------Footer-----------------------------*/
+.footer-middle {
+    padding: 50px 0;
+    background: #f7f7f7;
+}
+.footer-list-style > li > a{
+    color: #000;
+    text-decoration: none;
+}
+.footer-list-style > li > a:hover,
+.footer-list-style > li > a:focus{
+    color: #e6ae7d;
+}
+.footer-border {
+    border-top: 1px solid #cbcbcb;
+}
+.footer-icons > i{
+    color: #000;
+}
+.footer-icons:hover {
+    border-color: #e6ae7d !important;
+}
+.footer-icons:hover > i {
+    color:#e6ae7d !important;
+}

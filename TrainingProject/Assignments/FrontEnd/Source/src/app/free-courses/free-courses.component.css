@@ -1,0 +1,37 @@
+/* <!-- ------------------------------------------------SECTION:6 FREE COURSES---------------------------------------------- --> */
+.cs-6 {
+    padding-top: 10%;
+    padding-bottom: 7%;
+}
+
+.cs-6 .card-body {
+    background-color: #ffffff;
+    color: #1266f1 !important;
+    height: 320px;
+}
+
+.cs-6 .card-img-top {
+    height: 240px;
+}
+
+.cs-6 .card-title {
+    font-size: 160%;
+    font-weight: 460;
+    margin-bottom: 5px !important;
+}
+
+.cs-6 .card-text {
+    font-size: 120%;
+    font-weight: 360;
+}
+
+.s3-h2 {
+    font-size: 260%;
+    font-weight: 400;
+}
+
+.s3-p {
+    font-size: 140%;
+    font-weight: 380;
+    margin-bottom: 0;
+}

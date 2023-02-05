@@ -1,0 +1,188 @@
+    <main class="main">
+        <div class="sidebar">
+            <ol type="A">
+                <li>Day&hyphen;1
+                    <ul type="circle" >
+                        <li><a href="#">Assignments</a>
+                            <ol type="1">
+                                <li><a href="./Day_1/Assignment/Resume.html">Resume</a></li>
+                            </ol>
+                        </li>
+                        <li><a href="#">Practicals</a>
+                            <ol type="1">
+                                <li><a href="Report_Card.html">Report Card</a></li>
+                                <li><a href="Border.html">CSS Borders</a></li>
+                                <li><a href="City_List.html">City List</a></li>
+                                <li><a href="Univ_Select.html">Universal Selector</a></li>
+                                <li><a href="Group_Select.html">Grouping Selector</a></li>         
+                            </ol>
+                        </li>
+                    </ul>
+                </li><br />
+                <li>Day&hyphen;2
+                    <ul type="circle">
+                        <li><a href="#">Assignments</a>
+                            <ol type="1">
+                                <li><a href="Basic_Layout.html">Basic Layout</a></li>
+                            </ol>
+                        </li>
+                        <li><a href="#">Practicals</a>
+                            <ol type="1">
+                                <li><a href="Div.html">Div Display</a></li>
+                                <li><a href="Position.html">Position Property</a></li>
+                                <li><a href="Overflow.html">Overflow Property</a></li>         
+                            </ol>
+                        </li>
+                    </ul>
+                </li><br />
+                <li>Day&hyphen;3
+                    <ul type="circle" >
+                        <li><a href="#">Assignments</a>
+                            <ol type="1">
+                                <li><a href="Menu_List.html">Menu List</a></li>
+                            </ol>
+                        </li>
+                        <li><a href="#">Practicals</a>
+                            <ol type="1">
+                                <li><a href="Flex_1.html">Flex&hyphen;1</a></li>
+                                <li><a href="Flex_2.html">Flex&hyphen;2</a></li>
+                                <li><a href="Flex_img_gallery.html">Flexbox Image Gallery</a></li>       
+                            </ol>
+                        </li>
+                    </ul>
+                </li><br />
+                <li>Day&hyphen;4
+                    <ul type="circle" >
+                        <li><a href="#">Assignments</a>
+                            <ol type="1">
+                                <li><a href="Resp_img_gallery.html">Responsive Image Gallery</a></li>
+                                <li><a href="Resp_layout.html">Responsive Layout</a></li>
+                                <li><a href="Resp_Resume.html">Responsive Resume</a></li>
+                            </ol>
+                        </li>
+                        <li><a href="#">Practicals</a>
+                            <ol type="1">
+                                <li><a href="Border_color.html">Media Queries&hyphen;1</a></li>
+                                <li><a href="Breakpoints.html">Media Queries&hyphen;2</a></li>
+                                <li><a href="Hide_elements.html">Media Queries&hyphen;3</a></li>
+                                <li><a href="Fontsize.html">Media Queries&hyphen;4</a></li>       
+                            </ol>
+                        </li>
+                    </ul>
+                </li><br />
+                <li>Day&hyphen;5
+                    <ul type="circle" >
+                        <li><a href="#">Additional Assignment</a>
+                            <ol type="1">
+                                <li><a href="New_Layout.html">New Layout</a></li>
+                            </ol>
+                        </li>
+                    </ul>
+                </li><br />
+            </ol>
+          </div>
+          <div class="content">
+            <img src="../Assets/css.png" alt="CSS Logo">
+          </div>
+    </main>
+
+
+
+What is Bootstrap
+
+Typography & Utilites
+
+ - Section Introduction
+
+ - Text Alignment & Display
+
+ - Float & Fixed Positions
+
+ - Colors & Background
+
+ - Margin and Spacing
+
+ - Sizing & Borders
+
+ - CSS Breakpoints
+
+CSS Components
+
+ - Section Intro
+
+ - Buttons & Buttons Groups
+
+ - Navbars & Nav
+
+ - ListGroups & Badges
+
+ - Forms & Input
+
+ - Input Groups
+
+ - Alerts and Progress Bars
+
+ - Tables & Pagination
+
+ - Working with Cards
+
+ - Media Objects
+
+ - Breadcrumbs
+
+ - Carousel
+
+ - Badge
+
+ What to learn
+Grid System & Flex Box
+
+ - Grid Alignment
+
+ - Flexbox Classes
+
+ - Auto Margin wrap & Ordering
+
+Java Script Widgets
+
+ - Carousel Slider
+
+ - Collapse & Accordion
+
+ - Tooltips
+
+ - Popovers
+
+ - Modals
+
+ Bootstrap4 with scss.
+
+Variables
+
+Nesting
+
+Partials
+
+Mixins
+
+Extend/Inheritance
+
+Operators
+
+
+
+
+
+
+
+
+
+
+
+
+
+WEB DEVELOPMENT
+Project Abstract: WORKING IN WEB DEVELOPMENT DOMAIN AND RELATED TECHNOLOGIES LIKE REDMIN, GIT, 
+    HTML5, CSS3, JAVASCRIPT, SQL, ADVANCED SQL, BOOTSTRAP4, TAILWIND, JQUERY AND ANGULAR. THE PROJECT 
+    MAINLY INCLUDES ASSIGNMENTS AND TASKS RELATED TO ABOVE MENTIONED TECHNOLOGIES.
+Project Keyword: .NET

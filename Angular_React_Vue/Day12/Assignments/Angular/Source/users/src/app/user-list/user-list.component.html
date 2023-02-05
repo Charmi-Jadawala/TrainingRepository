@@ -1,0 +1,11 @@
+<div class="container-fluid p-4 fs-6 text-center">
+    <h1 class="pb-2">Welcome to User List Page !!!</h1>
+
+    <span *ngFor="let user of userList">
+        <a [routerLink]="['/userdetails', user.userID]" routerLinkActive="active" class="btn btn-primary m-2">{{ user.userName }}</a>
+    </span>
+</div>
+<router-outlet></router-outlet>
+
+    
+       

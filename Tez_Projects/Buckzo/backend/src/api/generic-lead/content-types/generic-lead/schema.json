@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "generic_leads",
+  "info": {
+    "singularName": "generic-lead",
+    "pluralName": "generic-leads",
+    "displayName": "GenericLeads",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "FullName": {
+      "type": "string",
+      "required": true
+    },
+    "Email": {
+      "type": "email",
+      "required": true
+    },
+    "Company": {
+      "type": "string"
+    },
+    "RelatedType": {
+      "type": "string"
+    },
+    "Message": {
+      "type": "text"
+    },
+    "Phone": {
+      "type": "string"
+    },
+    "Country": {
+      "type": "string"
+    },
+    "Subject": {
+      "type": "string"
+    }
+  }
+}

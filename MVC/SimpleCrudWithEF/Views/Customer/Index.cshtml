@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Customer Page";
+}
+
+<h2>Customers</h2>
+
+@Html.ActionLink("Customer from Germany", "Germany", "Customer", new { id = "germany" })
+@Html.ActionLink("Customer from Mexico", "Mexico", "Customer", new { id = "mexico" })
+
+<div id="CustomerList"></div>
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#germany").click(function (event) {
+            event.preventDefault();
+            $("#CustomerList").load("/Customer/Germany");
+        });
+        $("#mexico").click(function (event) {
+            event.preventDefault();
+            $("#CustomerList").load("/Customer/Mexico");
+        });
+    });
+</script>

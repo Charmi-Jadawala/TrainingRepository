@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_call_to_action_calltoaction",
+  "info": {
+    "displayName": "039 - Call To Action",
+    "icon": "align-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "LongText": {
+      "type": "richtext"
+    },
+    "VueReferenceCode": {
+      "type": "string",
+      "default": "CTA",
+      "required": true
+    },
+    "GuideURL": {
+      "type": "string"
+    },
+    "CTA": {
+      "type": "richtext"
+    },
+    "Title": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

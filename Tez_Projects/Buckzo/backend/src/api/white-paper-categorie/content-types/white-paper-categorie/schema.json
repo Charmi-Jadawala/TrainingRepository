@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "white_paper_categories",
+  "info": {
+    "singularName": "white-paper-categorie",
+    "pluralName": "white-paper-categories",
+    "displayName": "WhitePaperCategories"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "richtext",
+      "required": true
+    },
+    "Image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "NavURL": {
+      "type": "string"
+    }
+  }
+}

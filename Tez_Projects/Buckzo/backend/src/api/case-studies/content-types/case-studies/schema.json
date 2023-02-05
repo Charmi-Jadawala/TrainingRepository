@@ -1,0 +1,68 @@
+{
+  "kind": "collectionType",
+  "collectionName": "case_studie",
+  "info": {
+    "singularName": "case-studies",
+    "pluralName": "case-studie",
+    "displayName": "CaseStudies",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "NavURL": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "LongText": {
+      "type": "richtext"
+    },
+    "Category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::case-studie-category.case-studie-category"
+    },
+    "Icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "ShortVideo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "videos"
+      ]
+    },
+    "Video": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "videos"
+      ]
+    },
+    "VueReferenceCode": {
+      "type": "string"
+    },
+    "Title": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

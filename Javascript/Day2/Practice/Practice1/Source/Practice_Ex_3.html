@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Exercise-3</title>
+</head>
+<body>
+    <h1 class="display-6 text-black fs-2 pb-3">JavaScript function to extract a specified number of characters from a string</h1>
+    <form action="" id="myForm3">
+        <label for="strtxt" class="form-label fs-5">Please enter a string :</label>
+        <input type="text" id="strtxt" class="form-control-sm mx-1" name="strtxt"><br />
+        <label for="num" class="form-label fs-5">Please enter the start number :</label>
+        <input type="text" id="num1" class="form-control-sm mx-1" name="num1"><br />
+        <label for="num" class="form-label fs-5">Please enter the end number :</label>
+        <input type="text" id="num2" class="form-control-sm mx-1" name="num2"><br />
+        <button type="button" class="btn btn-outline-primary my-3 mx-1" onclick="myFun()">Click Me</button>
+        <button type="button" class="btn btn-outline-primary my-3" onclick="Reset()">Reset</button>
+        <p id="p3" class="text-primary fs-5"></p>
+    </form>
+
+    <script>
+        function myFun(){
+            let text = document.getElementById("strtxt").value;
+            let start = parseInt(document.getElementById("num1").value);
+            let end = parseInt(document.getElementById("num2").value);
+            let len = text.length;
+            let result = "";
+
+            if(isNaN(start) || isNaN(end) || start > len || end > len){
+                result = "Please enter valid start or end number";
+            }
+            else{
+                result = text.substr(start, end);
+            }
+            document.getElementById("p3").style.display = "block";
+            document.getElementById("p3").innerHTML = result;
+        }
+        function Reset(){
+        document.getElementById("myForm3").reset();
+        document.getElementById("p3").style.display = "none";
+        }
+    </script>
+</body>
+</html>
+
+    
+
+
+
+
+
+
+
+
+
+
+

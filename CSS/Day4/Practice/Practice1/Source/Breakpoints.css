@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 640px){
+    h1, h2{
+        border: 4px solid #0000ff;
+    }
+    p{
+        background-color: #0000ff;
+    }
+}
+
+@media only screen and (min-width: 640px){
+    h1, h2{
+        border: 4px solid rgb(182, 38, 182);
+    }
+    p{
+        background-color: rgb(182, 38, 182);
+    }
+}
+
+@media only screen and (min-width: 768px){
+    h1, h2{
+        border: 4px solid #ff0000;
+    }
+    p{
+        background-color: #ff0000;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    h1, h2{
+        border: 4px solid #d9ff00;
+    }
+    p{
+        background-color: #d9ff00;
+    }
+}

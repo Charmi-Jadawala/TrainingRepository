@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Timer</title>
+</head>
+<body>
+    <div>
+        <h3 class="display-6 text-black fs-2 pb-4">University of Mumbai needs to set an online exam for their students. For that they need to set a timer for three hours. 
+            After 3 hours exams should be finished.</h3>
+        
+        <p class="text-danger fs-4" id="demo"></p>
+    </div>
+    
+    <script>
+        var h = 2;
+        var m = 59;
+        var s = 60;
+        if(h == 0 && m == 59 && s == 00){
+            document.getElementById("demo").innerHTML = "Time is Up !!!";
+        }
+        else{
+            setInterval(updateCount, 1000);
+
+            function updateCount(){
+                if (s != 0){
+                    s --;
+                    s = s < 10 ? "0" + s : s;
+                }
+                else if(m != 0 && s == 00){
+                    s = 59;
+                    m --;
+                    m = m < 10 ? "0" + m : m;
+                }
+                else if(h != 0 & m == 00){
+                    m = 59;
+                    h --;
+                }
+                else{
+                    document.getElementById("demo").innerHTML = "Time Left ::" + " " +  h + ":" + m + ":" + s;
+                }
+                document.getElementById("demo").innerHTML = "Time Left ::" + " " +  h + ":" + m + ":" + s;
+            }
+        }
+
+    </script>
+</body>
+</html>
+
+   

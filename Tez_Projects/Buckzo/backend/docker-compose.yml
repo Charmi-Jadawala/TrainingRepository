@@ -1,0 +1,11 @@
+version: '3.3'
+
+services:
+  strapi:
+    build:
+      context: .
+    volumes:
+      - ./:/app
+      - /app/node_modules
+    ports:
+      - 1332:1332

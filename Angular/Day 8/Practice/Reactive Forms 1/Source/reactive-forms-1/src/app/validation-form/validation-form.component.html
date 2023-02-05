@@ -1,0 +1,33 @@
+<div class="mt-3 mb-5">
+    <div class="container w-50 mx-auto bg-light p-3">
+        <form [formGroup]="ValidateForm" (ngSubmit)="onSubmit()">
+            <h1 class="display-6 text-center text-primary">Validation Form</h1>
+
+            <label for="name" class="form-label fs-5 text-primary">Name:</label>
+            <input type="text" class="form-control" id="name" formControlName="Name" />
+
+            <div formGroupName="Contact" class="my-3">
+                <h2 class="display-6 fs-3 text-black">Contact</h2>
+
+                <label for="mobNo" class="form-label fs-5 text-primary">Phone No.:</label>
+                <input type="number" class="form-control" id="mobNo" formControlName="PhoneNo" />
+
+                <label for="email" class="form-label fs-5 text-primary">Email ID:</label>
+                <input type="text" class="form-control" id="email" formControlName="EmailId" />
+            </div>
+
+
+            <label for="age" class="form-label fs-5 text-primary">Age:</label>
+            <input type="number" class="form-control mb-4" id="age" formControlName="Age" />
+
+            <label for="city" class="form-label fs-5 text-primary">City:</label>
+            <input type="text" class="form-control mb-4" id="city" formControlName="City" />
+
+            <button type="submit" class="btn btn-primary ms-3">Submit</button>
+            <button type="reset" class="btn btn-primary ms-3" (click)="clear()">Clear</button>
+        </form>  
+
+        <h1 class="display-6 fs-3 my-4 text-center text-black">Form Status:  {{ ValidateForm.status }}</h1>
+        <h1 *ngIf="showData" class="display-6 fs-3 my-4 text-center text-black">Form Data:  {{ ValidateForm.value | json }}</h1>
+    </div>
+</div>

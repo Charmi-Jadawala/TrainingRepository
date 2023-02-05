@@ -1,0 +1,23 @@
+{
+  "name": "tez-frontend",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "tez dev",
+    "build": "tez build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@icon/icofont": "^1.0.1-alpha.1",
+    "@tailwindcss/typography": "^0.5.2",
+    "@tezjs/vue": "1.0.0-beta.6",
+    "@vuelidate/core": "^2.0.0-alpha.44",
+    "@vuelidate/validators": "^2.0.0-alpha.31"
+  },
+  "devDependencies": {
+    "@tezjs/cli": "1.0.0-beta.6",
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.0.24"
+  }
+}

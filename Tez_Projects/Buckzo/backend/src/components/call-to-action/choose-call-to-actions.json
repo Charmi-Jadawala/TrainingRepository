@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_call_to_action_choosecalltoactions",
+  "info": {
+    "displayName": "041 - Choose Call To Actions",
+    "icon": "align-left",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "VueReferenceCode": {
+      "type": "string",
+      "default": "CCTA",
+      "required": true
+    },
+    "GuideURL": {
+      "type": "string"
+    },
+    "CallToAction": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::call-to-action.call-to-action"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+[
+    {
+        "Amount": 10000,
+        "PaymentDate": "12/12/2020",
+        "Status": "true"
+    },
+    {
+        "Amount": 12000,
+        "PaymentDate": "12/12/2020",
+        "Status": "false"
+    }
+]

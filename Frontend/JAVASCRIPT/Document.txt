@@ -1,0 +1,218 @@
+ALGORITHMS OF ALL JS PROGRAMS:-
+
+
+Module-1
+
+-->Practice Exercise:-
+
+1> Accept three numbers from the user using prompt, find the greater of these the numbers and do the sum of that numbers which are greater than 40.
+
+User Input Possibilities: 
+- positive no.
+- positive no. greater than 40
+- negative no.
+- negative no. greater than 40
+- some kind of text/string
+- no i/p 
+
+Algorithm:
+
+1. Take 3 user inputs with the help of prompt as mentioned in the question.
+2. Store each user input values in 3 different variables respectively.
+3. Create the variables max and sum & initialize sum=0.
+4. Check whether all the user inputs are nos. or not using isNaN().
+5. If any of the user input is not a number than print error msg.
+6. Else call a function which finds maximum of 3 nos.
+7. Print the max number using innerHTML.
+8. Create an array "sumarray" of this 3 user inputs inorder to find the sum of nos. greater than 40.
+9. Use the for loop to iterate over the sumarray.
+10. In the for loop use the if statement to determine the nos. greater than 40.
+11. Lastly add the nos. greater than 40 and store the value in sum variable.
+12. Print the sum using innerHTML.
+
+
+2> Declare array with 5 city names and iterate these values with the help of loop and display it with alert.
+
+User Input Possibilities: 
+- User click on Click Me button -> o/p shown in alert box
+- User doesn't click on Click Me button -> user is unable to see the o/p
+
+Algorithm:
+
+1. Create a button Click Me.
+2. Create an array cities which contains names of 5 cities.
+3. Create a variable citylist.
+4. Using forEach loop inorder to iterate over the cities array.
+5. Store all the city names in variable citylist.
+6. Use alert(citylist) to print all array items in the alert box.
+
+
+--> Assignment:-
+
+1> Create an application for performing basic math operations like Addition, Subtraction, Multiplication and Division.
+
+User Input Possibilities: 
+- positive no.
+- negative no.
+- can select add radio button
+- can select sub radio button
+- can select mul radio button
+- can select divi radio button
+- doesn't select any radio button
+- some kind of text/string
+- no i/p 
+
+Algorithm:
+
+1. First create a form with form id "myForm".
+2. Add 2 input fields of type "number" with ids "num1" and "num2" respectively.
+3. Create 4 radio buttons with ids "add", "sub", "mul", "divi" inorder to perform respective operations.
+4. Create a button named "Calculate" which will call a myFun() function on click.
+5. Create a button named "Reset" which will call a Reset() function on click.
+6. Create a span tag to display the calculation result.
+7. Create a myFun() function and use parseInt() and .value to get the user input and store it in 2 variables "x" and "y".
+8. Create a result variable to store the calculated value.
+9. Check whether all the user inputs are nos. or not using isNaN().
+10. If any of the user input is not a number than print error msg.
+11. Else check which radio button is checked (selected) and perform the corresponding operation.
+12. Set the span element to display = "block" and print the result value using innerHTML.
+13. Create a Reset() function to reset the form.
+14. Also set the span element to display = "none" inorder to hide the previous result in Reset() function.
+
+
+
+Module-2
+
+-->Practice Exercise:-
+
+1> Write a JavaScript function to check whether a string is blank or not.
+
+User Input Possibilities: 
+- some kind of text/string
+- no i/p 
+- some numbers/digits which would be then converted to string though user entered nos.
+
+Algorithm:
+
+1. First create a form with form id "myForm".
+2. Add an input field of type "text" with id "strtxt".
+3. Create a button named "Check" which will call a strCheck() function on click.
+4. Create a button named "Reset" which will call a Reset() function on click.
+5. Create a strCheck() function and use .value to get the user input and store it in a variable named "text".
+6. Create 2 variables "result" - to store the result and "len" - to store the length.
+7. Check if the length of the user input is 0 then print the msg - "Entered string is empty." using "result" variable.
+8. Else print the msg - "Entered string is not empty." using "result" variable and also print the entered string length.
+9. Set the <p> element to display = "block" and print the result value using innerHTML.
+10. Create a Reset() function to reset the form.
+11. Also set the <p> element to display = "none" inorder to hide the previous result in Reset() function.
+
+
+2> Write a JavaScript function to split a string and convert it into an array of words.
+
+User Input Possibilities: 
+- some kind of text/string
+- no i/p 
+- some numbers/digits which would be then converted to string though user entered nos.
+
+Algorithm:
+
+1. First create a form with form id "myForm".
+2. Add an input field of type "text" with id "strtxt".
+3. Create a button named "Check" which will call a strArr() function on click.
+4. Create a button named "Reset" which will call a Reset() function on click.
+5. Create a strArr() function and use .value to get the user input and store it in a variable named "text".
+6. Create an array variable named "arr" - to store the string converted into array of words.
+7. Use JavaScript arr.split("") method to convert string into array of words.
+8. Initialize "result" variable to empty string inorder to print the array of words.
+9. Use the for loop from 0 to array length to print the array of words.
+10. Set the <p> element to display = "block" and print the result value using innerHTML.
+11. Create a Reset() function to reset the form.
+12. Also set the <p> element to display = "none" inorder to hide the previous result in Reset() function.
+
+
+3> Write a JavaScript function to extract a specified number of characters from a string.
+
+User Input Possibilities: 
+- some kind of text/string
+- no i/p 
+- some numbers/digits which would be then converted to string though user entered nos.
+- start no. greater than string length
+- end no. greater than string length
+
+Algorithm:
+
+1. First create a form with form id "myForm".
+2. Add 3 input fields of type "text" with id "strtxt", "num1" and "num2" respectively.
+3. Create a button named "Check" which will call a myFun() function on click.
+4. Create a button named "Reset" which will call a Reset() function on click.
+5. Create a myFun() function and use .value to get the user inputs and store the values in variables named "text", "start" and "end".
+6. Create 2 variables "result" - to store the result and "len" - to store the length.
+7. Check if start or end is not a number or if start > string length or end > string length, then print "Please enter valid start or end number"
+using "result".
+8. Else use JavaScript text.substr(start, end) method to extract a specified number of characters from a string.
+9. Set the <p> element to display = "block" and print the result value using innerHTML.
+10. Create a Reset() function to reset the form.
+11. Also set the <p> element to display = "none" inorder to hide the previous result in Reset() function.
+
+
+4> Write a JavaScript function to get the current date.
+
+User Input Possibilities: 
+- no user i/p required just a button click
+
+Algorithm:
+
+1. First create a form with form id "myForm".
+2. Create a button named "Date" which will call a myFun() function on click.
+3. Add 3 <p> tags with ids "d-default", "d-utc", "d-iso" respectively.
+4. Create a myFun() function and initialize a const variable named "date" with new Date().
+5. Use the JavaScript date, date.toUTCString(), date.toISOString() methods to print the dates in different formats.
+
+
+5> Try some operation with list like push, pop, shifting, deleting element.
+
+User Input Possibilities: 
+- no user i/p required just a button click
+
+Algorithm:
+
+1. Create a button named "Array Operations" which will call an arrFun() function on click and 5 <p> tags with ids "ori1", "push", "unshift", "pop",
+   & "shift" respectively.
+2. Create an arrFun() function and initialize a const variable named "city" with ["Ahmedabad", "Baroda", "Surat", "Rajkot", "Kutch"].
+3. Use the JavaScript array methods to perform various operations like push, pop, shift, delete, etc...
+4. Use JavaScript city.push("Bhuj") to push/add an element at the end of array city.
+5. Use JavaScript city.unshift("Somnath") to push/add an element at the start of array city.
+6. Use JavaScript city.pop() to remove/delete an element from the end of array city.
+7. Use JavaScript city.shift() to remove/delete an element from the start of array city.
+
+
+--> Assignment:-
+
+1> Date entered by the user should be checked for whether it is a Valid Date or not.
+
+User Input Possibilities: 
+- date in proper format
+- date not in proper format
+- no i/p 
+
+Algorithm:
+
+1. First create a form with form id "myForm".
+2. Add an input field of type "text" with ids"dateinp".
+3. Create a button named "Submit" which will call a dateFun() function on click.
+4. Create a button named "Reset" which will call a Reset() function on click.
+5. Create a <p> tag to display the output message/result.
+6. Create a dateFun() function and use .value to get the user input and store it in a variable "inpdate".
+7. Create 1 pattern using regular expression and check whether the user input matches with the required pattern or not.
+8. Create a result variable to store the result/output message.
+9. If the user input doesn't match with the required pattern then print "Please enter date in proper format !".
+10. Else first obtain the values of month, day and year and store it in variables named "month", "day" and "year" respectively.
+11. Then check if the month value is between 1 - 12, if not then print "Please enter valid month !".
+12. Then check if the day value is between 1 - 31, if not then print "Please enter valid day !".
+13. Then check if the days match with the month, if not then print "Please check the date w.r.t month !".
+14. Else print "Congratulations ! You entered a valid date".
+15. Set the <p> element to display = "block" and print the result value using innerHTML.
+16. Create a Reset() function to reset the form.
+17. Also set the <p> element to display = "none" inorder to hide the previous result in Reset() function.
+
+

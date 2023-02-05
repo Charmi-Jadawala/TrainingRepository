@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_advanced_tclist",
+  "info": {
+    "displayName": "016 - Title Content List",
+    "icon": "angle-double-left",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "TitleContentList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "standard.title-content-single",
+      "required": true
+    },
+    "VueReferenceCode": {
+      "type": "string",
+      "default": "TCL",
+      "required": true
+    },
+    "GuideURL": {
+      "type": "string"
+    }
+  }
+}

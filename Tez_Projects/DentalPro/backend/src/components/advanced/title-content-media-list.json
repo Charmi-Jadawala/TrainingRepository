@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_advanced_tcmlist",
+  "info": {
+    "displayName": "017 - Title Content Media List",
+    "icon": "angle-double-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "TitleContentMediaList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "standard.title-content-media-single",
+      "required": true
+    },
+    "VueReferenceCode": {
+      "type": "string",
+      "default": "TCML",
+      "required": true
+    },
+    "GuideURL": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_news_062_title_content_with_news_blog_lists",
+  "info": {
+    "displayName": "062 - Title Content With News-Blog List",
+    "icon": "sort-amount-up-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "LongText": {
+      "type": "richtext"
+    },
+    "Blogs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blog.blog"
+    },
+    "NewsItems": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::news-item.news-item"
+    },
+    "VueReferenceCode": {
+      "type": "string",
+      "required": true,
+      "default": "TCWithNewsBlogL"
+    },
+    "GuideURL": {
+      "type": "string"
+    },
+    "SubTitle": {
+      "type": "richtext"
+    },
+    "Title": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

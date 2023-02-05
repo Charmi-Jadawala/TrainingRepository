@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_news_061_title_content_with_news_lists",
+  "info": {
+    "displayName": "061 - Title Content With News List",
+    "icon": "level-up-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "LongText": {
+      "type": "richtext"
+    },
+    "News_Items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::news-item.news-item"
+    },
+    "VueReferenceCode": {
+      "type": "string"
+    },
+    "GuideURL": {
+      "type": "string"
+    },
+    "SubTitle": {
+      "type": "richtext"
+    },
+    "Title": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,6 @@
+<div class="container-fluid bg-light p-4 fs-6 text-center">
+    <h2 class="pb-2">User Data</h2>
+    <div *ngFor="let data of displayList" class="display-6 fs-3 text-primary">
+        <p class="m-0">{{ data.userID }} &nbsp; {{ data.userName }} &nbsp; {{ data.Gender }} &nbsp; {{ data.Designation }} &nbsp; {{ data.PanNumber }}</p>
+    </div>
+</div> 

@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 6px;
+}
+
+h1{
+    font-size: 100px;
+    color: blueviolet;
+}
+
+h2{
+    font-size: 80px;
+    color: blueviolet;
+}
+
+p{
+    font-size: 60px;
+    color: blueviolet;
+}
+
+@media only screen and (max-width: 992px){
+    h1{
+        font-size: 80px;
+        color: crimson;
+    }
+    h2{
+        font-size: 60px;
+        color: crimson;
+    }
+    p{
+        font-size: 40px;
+        color: crimson;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    h1{
+        font-size: 60px;
+        color: fuchsia;
+    }
+    h2{
+        font-size: 40px;
+        color: fuchsia;
+    }
+    p{
+        font-size: 20px;
+        color: fuchsia;
+    }
+}
+
+@media only screen and (max-width: 640px){
+    h1{
+        font-size: 40px;
+        color: chartreuse;
+    }
+    h2{
+        font-size: 20px;
+        color: chartreuse;
+    }
+    p{
+        font-size: 10px;
+        color: chartreuse;
+    }
+}
+

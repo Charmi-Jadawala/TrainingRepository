@@ -1,0 +1,32 @@
+<div class="container-fluid bg-light p-4 fs-6 text-center">
+    <h1 class="pb-2 display-4">India-USA Tour</h1>
+
+    <div>
+        <span class="text-primary display-6">Choose flight route:</span>
+        <button type="button" (click)="viaAtlantic()" class="btn btn-primary mt-0 m-2">Via Atlantic</button>
+        <button (click)="viaPacific()" class="btn btn-primary mt-0 m-2">Via Pacific</button>
+    </div>
+
+    <div class="mt-2">
+        <h3 class="text-primary display-6 mb-2">Choose menu:</h3>
+        <div class="m-2">
+            <span class="display-6 fs-3 me-3 text-black">Atlantic Menu:</span>
+            <div class="btn-group">
+                <button type="button" *ngFor="let i of AtlanticMenu" (click)="atlanticMenu(i.id)" class="btn btn-outline-primary">Book {{i.item}}</button>
+            </div>
+        </div>
+
+        <div class="m-2">
+            <span class="display-6 fs-3 me-3 text-black">Pacific Menu:</span>
+            <div class="btn-group">
+                <button type="button" *ngFor="let i of PacificMenu" (click)="pacificMenu(i.id)" class="btn btn-outline-primary">Book {{i.item}}</button>
+            </div>
+        </div>
+    </div>
+    
+    <router-outlet></router-outlet>
+</div>
+
+
+  
+  

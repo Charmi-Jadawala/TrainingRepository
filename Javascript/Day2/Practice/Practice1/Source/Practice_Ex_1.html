@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Exercise-1</title>
+</head>
+<body>
+    <div>
+        <h1 class="display-6 text-black fs-2 pb-3">JavaScript function to check whether a string is blank or not.</h1>
+        <form action="" id="myForm1">
+            <label for="strtxt" class="form-label fs-5">Please enter something :</label>
+            <input type="text" id="strtxt" class="form-control-sm mx-1" name="strtxt"><br />
+            <button type="button" class="btn btn-outline-primary my-3 mx-1" onclick="strCheck()">Check</button>
+            <button type="button" class="btn btn-outline-primary my-3" onclick="Reset()">Reset</button>
+            <p id="p1" class="text-primary fs-5"></p>
+        </form>
+    </div>
+
+    <script>
+        
+        function strCheck(){
+            let text = document.getElementById("strtxt").value;
+            let result, len;
+            if(text.length == 0){
+                result = "Entered string is empty."
+                len = text.length;
+            }
+            else{
+                result = "Entered string is not empty."
+                len = text.length;
+            }
+            document.getElementById("p1").style.display = "block";
+            document.getElementById("p1").innerHTML = result + "<br />" + "String Length :" + " " + len;
+        }
+        function Reset(){
+           document.getElementById("myForm1").reset();
+           document.getElementById("p1").style.display = "none";
+        }
+    </script>
+</body>
+</html>
+
+    
+
+
+
+
+
+
+
+

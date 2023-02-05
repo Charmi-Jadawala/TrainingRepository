@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Closure</title>
+</head>
+<body>
+    <div>
+        <h1 class="display-6 text-black fs-2 pb-2">Explain Function closure with practical.</h1>
+
+        <button class="btn btn-outline-success mb-2" type="button" onclick="myFun()">Count</button>
+
+        <p class="text-success fs-4 fw-normal" id="demo1">0</p>
+    </div>
+
+    <script>
+        const inc = (function () {
+        let count = 0;
+        return function () {count += 1; return count;}
+        })();
+
+        function myFun(){
+        document.getElementById("demo1").innerHTML = inc();
+        }
+    </script>
+</body>
+</html>

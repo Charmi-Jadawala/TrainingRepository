@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_white_paper_069_title_content_with_white_paper_lists",
+  "info": {
+    "displayName": "069 - Title Content With WhitePaper List",
+    "icon": "caret-right"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "richtext",
+      "required": true
+    },
+    "SubTitle": {
+      "type": "richtext"
+    },
+    "LongText": {
+      "type": "richtext"
+    },
+    "WhitePapers": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::white-paper.white-paper"
+    },
+    "VueReferenceCode": {
+      "type": "string",
+      "required": true
+    },
+    "GuideURL": {
+      "type": "string"
+    }
+  }
+}

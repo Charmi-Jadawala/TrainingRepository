@@ -1,0 +1,77 @@
+<div class="container-fluid bg-primary text-white">
+    <div class="container ps-1">
+        <div class="row">
+            <div class="col-6 text-start">
+                <h2 class="p-2 m-0"><span class="ion-plus-round"></span>&nbsp;&nbsp;Add Module</h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container border border-1 my-3 p-0">
+    <h4 class="bg-light border-bottom mb-0 p-2">Add Module</h4>
+    <form [formGroup]="moduleForm" (ngSubmit)="onModuleSubmit()" class="p-3">
+        <div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="moduleName" formControlName="moduleName"
+                    placeholder="Module Name" />
+                <label for="moduleName">Module Name<span class="text-danger">*</span></label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="weekNo" formControlName="weekNo"
+                    placeholder="Week Number" />
+                <label for="weekNo">Week No<span class="text-danger">*</span></label>
+            </div>
+
+            <div class="container border border-1 rounded-2 my-3 p-0" formArrayName="topics">
+                <h6 class="bg-light border-bottom mb-0 p-2">Add Topic Details</h6>
+
+                <div *ngFor="let topic of getTopics().controls; let j = index" class="p-3">
+                    <div [formGroupName]="j">
+                        <div class="mb-3 text-primary fs-6">Topic - {{ j+1 }}</div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="topicTitle" formControlName="topicTitle"
+                                placeholder="Topic Title" />
+                            <label for="topicTitle">Topic Title<span class="text-danger">*</span></label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <select id="type" class="form-select" formControlName="type">
+                                <option value="Reading">Reading</option>
+                                <option value="Video">Video</option>
+                            </select>
+                            <label for="type">Content Type<span class="text-danger">*</span></label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input type="number" class="form-control" id="duration" formControlName="duration"
+                                placeholder="Duration" />
+                            <label for="duration">Duration<span class="text-danger">*</span></label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <angular-editor id="description" formControlName="description" [config]="editorConfig"
+                                placeholder="Content*">
+                            </angular-editor>
+                        </div>
+                    </div>
+                </div>
+
+                <button (click)="addTopic()" type="button" class="btn btn-primary ms-3 my-3">Add
+                    Topic</button>
+            </div>
+        </div>
+        <div class="row p-2">
+            <div class="col-sm-4 col-lg-3"></div>
+            <div class="col-3 d-none d-lg-block"></div>
+            <div class="col-sm-4 col-lg-3 d-grid pe-0">
+                <button type="submit" [disabled]="moduleForm.invalid" class="btn btn-success d-block my-1 my-sm-0"><span
+                        class="ion-checkmark-round"></span>&nbsp;&nbsp;Add Module</button>
+            </div>
+            <div class="col-sm-4 col-lg-3 d-grid pe-1">
+                <button type="reset" class="btn btn-danger"><span class="ion-close-round"></span>&nbsp;Cancel
+                </button>
+            </div>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resize Window</title>
+</head>
+<body>
+    <div>
+        <h1 class="display-6 text-black pb-4">Try to change windows height and width using Windows object.</h1>
+
+        <p class="text-primary pb-0 mb-2 fs-4">Click the button to create a new window</p>
+        <button class="btn btn-outline-primary mb-5" type="button" onclick="newWindow()">New Window</button>
+
+        <p class="text-success pb-0 mb-2 fs-4">Click the button to create a new window</p>
+        <button class="btn btn-outline-success mb-5" type="button" onclick="resizeWin()">Resize Window</button>
+    </div>
+    
+
+    <script>
+        let newwin;
+        function newWindow(){
+            newwin = window.open("", "", "width=700, height=700");
+        }
+
+        function resizeWin(){
+            newwin.resizeTo(400, 400);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<button type="button" class="btn btn-primary mx-2" (click)="getList()">
+  Get Data
+</button>
+<div *ngIf="showData" class="my-4">
+  <table class="table table-hover">
+    <caption></caption>
+    <thead>
+      <tr>
+        <th>Student ID</th>
+        <th>Student Name</th>
+        <th>Age</th>
+        <th>Address</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let student of studentList">
+        <td>{{ student.Id }}</td>
+        <td>{{ student.Name.FirstName }} {{ student.Name.LastName }}</td>
+        <td>{{ student.Age }}</td>
+        <td>{{ student.Address }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

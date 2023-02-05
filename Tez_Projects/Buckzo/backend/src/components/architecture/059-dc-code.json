@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_architecture_dccode",
+  "info": {
+    "displayName": "059 - DC Code",
+    "icon": "check",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "VueReferenceCode": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,38 @@
+Project Documentation -- BLOG SITE
+
+
+-->> Overview about Blog-Site :-
+
+This project is basically a blog site project that imparts information about travelling sites of Ahmedabad. Its main goal is to provide useful information or insights about the places
+which one can visit while he/she comes to Ahmedabad. We can say that this site is for travel or entertainment purpose.
+
+According to research, it has been discovered that whenever a person wishes to travel a new place, he/she definately tries to collect information
+about "Places to Visit" from internet or google. And that's why this site would be much helpful for all those travel persons.
+
+Also this blog-site is very much user friendly and contains a lot of information about the History of Ahmedabad as well travel places of Ahmedabad.
+
+-->> Targeted Audience :-
+
+1. People who wish to visit Ahmedabad.
+2. Travelers who want to eplore Ahmedabad.
+3. School students who want to gain knowledge about Ahmedabad & its History for their projects.
+4. College students who want to gain knowledge about Ahmedabad & its History for their projects.
+5. People interested in reading various types of blogs.
+6. People who like exploring new things out of curiosity.
+
+-->> Products :-
+
+This blog-site contains basically 10 different blogs as of now. But in future we can add more blogs also...
+
+-->> Domain :-
+
+As discussed earlier, the domain of this project is Travel or we can say Entertainment.
+
+Technically this whole project is made using Html & Tailwind Css and is a single page blog-site.Also it is fully responsive.
+
+-->> Functionality :-
+
+It is very easy to use this blog-site.
+
+In the navbar it contains some important links along with some icons. Then it contains a hero image of Ahmedabad City. Afterwards it contains an "Explore Blogs" Section
+which contains 10 different cards of 10 blogs. The user can click on that cards to read that respective card.

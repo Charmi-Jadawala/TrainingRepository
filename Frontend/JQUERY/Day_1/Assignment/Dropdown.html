@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown List</title>
+    <script>
+        $(document).ready(function(){
+            $("select.country").change(function(){
+                var selectedCountry = $(this).children("option:selected").val();
+                $("#clist").hide();
+                $("#result").text(selectedCountry).css("color", "red");
+                if(selectedCountry == "Please select"){
+                    $("#clist").show(); 
+                    $("#result").text(selectedCountry).css("color", "red").hide();
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <h1 class="display-6 text-black fs-1 pb-4">1. Put a droplist with 5 country name from list object using jquery.</h1>
+        
+        <form action="" id="myForm">
+            <label for="country" class="fs-5 text-primary mb-5">Choose a Country :&nbsp;</label>
+            <select name="country" class="country">
+                <option value="Please select" selected>Please select</option>
+                <option value="India">India</option>
+                <option value="United Kingdom (UK)">United Kingdom (UK)</option>
+                <option value="France">France</option>
+                <option value="USA">USA</option>
+                <option value="Australia">Australia</option>
+            </select>
+        </form>
+        <p class="fs-5 text-primary mt-5 pt-5 mb-1">Your Selected Country :&nbsp;</p>
+        <ul class="list-unstyled fs-6" id="clist">
+            <li>India</li>
+            <li>United Kingdom (UK)</li>
+            <li>France</li>
+            <li>USA</li>
+            <li>Australia</li>
+        </ul>
+        <span id="result" class="fs-6"></span>
+    </div>
+</body>
+</html>

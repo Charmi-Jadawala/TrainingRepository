@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getJSON</title>
+    <script>
+        $(document).ready(function(){
+            $.getJSON("https://gorest.co.in/public-api/users", function(jsondata){
+                var inputdata = jsondata.data;
+                $.each(inputdata, function(index, outputdata){
+                   var {id, name, email, gender, status} = outputdata;
+                   $("#result").append(`<tr><td>${id}</td><td>${name}</td><td>${email}</td><td>${gender}</td><td>${status}</td></tr>`); 
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <h1 class="display-6 text-black fs-1 pb-4">1. Use getJSON method access the WEB API and display the result in one table.</h1>
+        <table class="table table-bordered table-striped">
+            <caption></caption>
+            <thead class="table-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Gender</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="result"></tbody>
+        </table>  
+    </div>
+</body>
+</html>

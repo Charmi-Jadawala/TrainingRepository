@@ -1,0 +1,191 @@
+<!-- ------------------------------------------------NAVBAR---------------------------------------------- -->
+<nav class="navbar navbar-expand-lg bg-white navbar-light border-bottom border-2 py-0 fixed-top">
+    <div class="container-fluid p-0">
+        <a href="#" class="text-center">
+            <img src="../../assets/coursera_logo.png" alt="Coursera Logo" class="logo-main img-fluid">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown text-center p-2 ps-0">
+                    <a href="#"
+                        class="nav-link dropdown-toggle btn btn-primary text-white fs-5 h3 me-3 px-3 my-auto border border-3 border-dark b1"
+                        role="button" data-bs-toggle="dropdown">
+                        <strong>Explore</strong></a>
+                    <ul class="dropdown-menu dropdown-menu-start overflow-scroll bg-light px-4">
+                        <li>
+                            <h6 class="dropdown-header text-black fw-bold fs-4 pb-4">Goals</h6>
+                        </li>
+                        <li><a href="#" class="dropdown-item py-2">Take a free course</a></li>
+                        <li><a href="#" class="dropdown-item py-2">Earn a Degree</a></li>
+                        <li><a href="#" class="dropdown-item py-2">Earn a Certificate</a></li>
+                        <li><a href="#" class="dropdown-item py-2">Advance your career</a></li>
+                        <li><a href="#" class="dropdown-item py-2">Train your team</a></li>
+                        <li>
+                            <h6 class="dropdown-header text-black fw-bold fs-4 pt-5 pb-4">Subjects</h6>
+                        </li>
+                        <li><a href="#" class="dropdown-item py-2">Data Science</a></li>
+                        <li><a href="#" class="dropdown-item py-2">Business</a></li>
+                        <li><a href="#" class="dropdown-item py-2">Computer Science</a></li>
+                        <li><a href="#" class="dropdown-item py-2">Information Technology</a></li>
+                        <li><a href="#" class="dropdown-item py-2">Language Learning</a></li>
+                        <li><a href="#" class="dropdown-item py-2">Health</a></li>
+                        <li><a href="#" class="dropdown-item py-2">Personal Development</a></li>
+                        <li><a href="#" class="dropdown-item py-2">Physical Science and Engineering</a></li>
+                        <li><a href="#" class="dropdown-item py-2">Social Sciences</a></li>
+                        <li><a href="#" class="dropdown-item py-2">Arts and Humanities</a></li>
+                        <li><a href="#" class="dropdown-item py-2">Math and Logic</a></li>
+                        <li><a href="#" class="dropdown-item btn btn-outline-primary h6" role="button">Browse all
+                                subjects</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item text-center my-auto">
+                    <form action="">
+                        <div class="input-group">
+                            <input type="search" name="search" id="search" class="form-control-lg px-2 fw-light py-0"
+                                placeholder="What do you want to learn?" [routerLink]="['/searchCourse']">
+                            <span
+                                class="input-group-text ion-ios-search-strong bg-primary text-white py-0 border border-1 border-dark"></span>
+                        </div>
+                    </form>
+                </li>
+                <li class="nav-item text-center my-auto"><a href="#degrees"
+                        class="nav-link p-0 px-3 ps-5 fs-5 text-black l1">Degrees</a></li>
+                <li class="nav-item text-center my-auto"><a href="#findCareer" class="nav-link p-0 px-3 fs-5 text-black l1">Find
+                        your New Career</a></li>
+                <li class="nav-item text-center my-auto"><a href="#enterprise"
+                        class="nav-link p-0 px-3 fs-5 text-black l1">Enterprise</a></li>
+                <li class="nav-item text-center my-auto"><a href="#freeCourses"
+                        class="nav-link p-0 px-3 fs-5 text-black l1">Free Courses</a></li>
+            </ul>
+            <ul class="navbar-nav ms-lg-auto me-5">
+                <div *ngIf="condition; then block1; else block2">
+                </div>
+                <ng-template #block1>
+                    <button type="button" class="nav-item btn btn-primary text-center my-auto me-2"
+                        (click)="logout()">
+                        Logout
+                    </button>
+                    <button type="button" class="nav-item btn btn-primary text-center my-auto" [routerLink]="['/welcomeUser']">
+                        <strong>My Profile</strong>
+                    </button>
+                </ng-template>
+                <ng-template #block2>
+                    <button type="button" class="nav-item btn btn-primary text-center my-auto me-2"
+                        data-bs-toggle="modal" data-bs-target="#login">
+                        Log in
+                    </button>
+                    <button type="button" class="nav-item btn btn-primary text-center my-auto" data-bs-toggle="modal"
+                        data-bs-target="#joinForFree">
+                        <strong>Join for Free</strong>
+                    </button>
+                </ng-template>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<!-- Login Modal -->
+<div class="modal fade" id="login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="loginStaticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title w-100 text-center fs-3" id="loginStaticBackdropLabel"><strong>Welcome
+                        Back</strong></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form [formGroup]="loginForm" (ngSubmit)="onSubmitLogin()" class="p-3 pb-4">
+                    <div class="mb-3">
+                        <label for="Email" class="form-label pb-1 mb-0 fs-6"><strong>EMAIL</strong></label>
+                        <input type="Email" id="Email" formControlName="email" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="Password" class="form-label pb-1 mb-0 fs-6"><strong>PASSWORD</strong></label>
+                        <input type="Password" id="Password" formControlName="password" class="form-control">
+                    </div>
+                    <div class="mb-3 text-center" *ngIf="isInvalidUser">
+                        <p class="text-danger">{{ message }}</p>
+                    </div>
+                    <div class="d-grid mt-3">
+                        <button type="submit" [disabled]="loginForm.invalid"
+                            class="btn btn-primary d-block mt-1 fs-5" data-bs-dismiss="modal">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Sign Up Modal -->
+<div class="modal fade" id="joinForFree" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="registerStaticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title w-100 text-center fs-3" id="registerStaticBackdropLabel"><strong>Sign Up</strong>
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h6 class="px-2">Learn on your own time from top universities and businesses.</h6>
+                <form [formGroup]="signUpForm" (ngSubmit)="onSubmitSignUp()" class="p-3 py-4">
+                    <div class="mb-3">
+                        <label for="fullname" class="form-label pb-1 mb-0 fs-6"><strong>FULL NAME</strong></label>
+                        <input type="text" id="fullname" formControlName="fullName" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label pb-1 mb-0 fs-6"><strong>EMAIL</strong></label>
+                        <input type="email" id="email" formControlName="email" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label pb-1 mb-0 fs-6"><strong>PASSWORD</strong></label>
+                        <input type="password" id="password" formControlName="password" class="form-control">
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" [disabled]="signUpForm.invalid" class="btn btn-primary d-block mt-1 fs-5"
+                            data-bs-target="#verifyOtpModal" data-bs-toggle="modal" data-bs-dismiss="modal">Join for
+                            Free</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Verify OTP Modal -->
+<div class="modal fade" id="verifyOtpModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="verifyOtpModalToggleLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title fs-3" id="verifyOtpModalToggleLabel">Verify OTP</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form [formGroup]="verfiyOtp" (ngSubmit)="onVerify()" class="px-3 pt-2">
+                    <div class="mb-3">
+                        <label for="otp" class="form-label pb-1 mb-0 fs-5">Enter OTP</label>
+                        <input type="number" id="otp" formControlName="otp" class="form-control">
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <button type="submit" [disabled]="verfiyOtp.invalid" class="btn btn-primary">Verify</button>
+                            <button type="reset" (click)="onResend()" class="btn btn-primary ms-2">Resend OTP</button>
+                        </div>
+                    </div>
+                </form>
+                <p class="text-danger text-center pt-2">{{ verificationResult }}</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-target="#joinForFree" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">Go Back</button>
+            </div>
+        </div>
+    </div>
+</div>

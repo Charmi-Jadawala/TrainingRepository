@@ -1,0 +1,29 @@
+/* <!-- ------------------------------------------------NAVBAR---------------------------------------------- --> */
+.logo-main{
+    width: 60%!important;
+    height: auto;
+}
+
+.b1:hover{
+    background-color: #ffffff;
+    color: #1266f1 !important;
+}
+
+.dropdown-menu{
+    height: 86vh;
+    overflow-y: auto;
+}
+
+.dropdown-item:hover{
+    background-color: #ffffff;
+    color: #1266F1;
+}
+
+.l1:hover{
+    text-decoration: underline;
+    color: #1266F1 !important;
+}
+
+.l2:hover{
+    text-decoration: underline;
+}

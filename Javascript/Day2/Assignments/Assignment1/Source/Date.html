@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Constraints</title>
+</head>
+<body>
+    <h1 class="display-6 text-black fs-2 pb-3">Date entered by the user should be checked for whether it is a Valid Date or not.</h1>
+    <form action="" id="myForm">
+        <label for="dateinp" class="form-label fs-5">Please enter a Date :</label>
+        <input type="text" id="dateinp" class="form-control-sm mx-1" name="dateinp" placeholder='"MM-DD-YYYY"'><br />
+        <button type="button" class="btn btn-outline-primary my-3 mx-1" onclick="dateFun()">Submit</button>
+        <button type="button" class="btn btn-outline-primary my-3" onclick="Reset()">Reset</button>
+        <p id="output" class="text-primary fs-5"></p>
+    </form>
+
+    <script>
+        function dateFun(){
+            let inpdate = document.getElementById("dateinp").value;
+            let pattern = /\d\d-\d\d-\d\d\d\d/;
+            let presult = pattern.test(inpdate);
+            const myDate = inpdate.split("-");
+            let result = "";
+            if(presult == false){
+                result = "Please enter date in proper format !";
+            }
+            else{
+                var month = myDate[0];
+                var day = myDate[1];
+                var year = myDate[2]
+                if(month < 1 || month > 12){
+                    result = "Please enter valid month !";
+                }
+                else if(day < 1 || day > 31){
+                    result = "Please enter valid day !";
+                }
+                else if((month < 7 &&  month % 2 == 0 && day == 31) || (month > 7 &&  month % 2 != 0 && day == 31) || (month == 2 && day > 28)){
+                    result = "Please check the date w.r.t month !";
+                }
+                else{
+                    result = "Congratulations ! You entered a valid date.";
+                }
+            }
+            document.getElementById("output").style.display = "block";
+            document.getElementById("output").innerHTML = result;
+        }
+        function Reset(){
+            document.getElementById("myForm").reset();
+            document.getElementById("output").style.display = "none";
+        }
+    </script>
+</body>
+</html>
+
+    
+
+
+
+
+
